@@ -3,9 +3,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 const config = {
 	css: {
 		preprocessorOptions: {
-			scss: {
-				additionalData: '@use "src/variables.scss" as *;'
-			}
+			scss: {}
 		}
 	},
 	plugins: [sveltekit()]

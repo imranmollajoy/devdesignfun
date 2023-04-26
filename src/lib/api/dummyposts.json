@@ -1,0 +1,110 @@
+[
+    {
+        "title": "Top 10 Tips for Productivity in Remote Work",
+        "date": "05/06/2022",
+        "tags": [
+            "remote work",
+            "productivity",
+            "tips"
+        ],
+        "category": "Productivity",
+        "author": "Jane",
+        "description": "Remote work can be a challenge, but these top 10 tips will help you stay productive and focused while working from home.",
+        "path": "/post/top-10-tips-for-productivity-in-remote-work",
+        "cover":{
+            "image":"https://placehold.co/600x400",
+            "alt":"placehold"
+        }
+    },
+    {
+        "title": "The Benefits of Meditation for Mental Health",
+        "date": "22/07/2022",
+        "tags": [
+            "meditation",
+            "mental health",
+            "self-care"
+        ],
+        "category": "Health",
+        "author": "Sarah",
+        "description": "Meditation has numerous benefits for mental health, including reducing stress and anxiety. Learn more about the benefits of meditation here.",
+        "path": "/post/the-benefits-of-meditation-for-mental-health"
+    },
+    {
+        "title": "10 Delicious and Easy Vegan Recipes",
+        "date": "15/08/2022",
+        "tags": [
+            "vegan",
+            "recipes",
+            "food"
+        ],
+        "category": "Food",
+        "author": "David",
+        "description": "Looking for some delicious and easy vegan recipes? Check out these 10 tasty dishes that are perfect for any meal.",
+        "path": "/post/10-delicious-and-easy-vegan-recipes"
+    },
+    {
+        "title": "The Importance of Regular Exercise for Overall Health",
+        "date": "10/09/2022",
+        "tags": [
+            "exercise",
+            "health",
+            "wellness"
+        ],
+        "category": "Health",
+        "author": "Mark",
+        "description": "Regular exercise has numerous benefits for overall health, including reducing the risk of chronic diseases. Learn more about the importance of exercise here.",
+        "path": "/post/the-importance-of-regular-exercise-for-overall-health"
+    },
+    {
+        "title": "Top 5 Books on Personal Finance",
+        "date": "13/10/2022",
+        "tags": [
+            "personal finance",
+            "books",
+            "recommendations"
+        ],
+        "category": "Finance",
+        "author": "Emma",
+        "description": "Want to improve your financial literacy and take control of your money? Check out these top 5 books on personal finance for practical advice and strategies.",
+        "path": "/post/top-5-books-on-personal-finance"
+    },
+    {
+        "title": "10 Must-Visit Tourist Attractions in New York City",
+        "date": "26/11/2022",
+        "tags": [
+            "travel",
+            "tourism",
+            "New York City"
+        ],
+        "category": "Travel",
+        "author": "Alex",
+        "description": "New York City is home to countless tourist attractions, but these 10 are must-sees for any visitor. From iconic landmarks to hidden gems, explore the best of NYC.",
+        "path": "/post/10-must-visit-tourist-attractions-in-new-york-city"
+    },
+    {
+        "title": "The Basics of Machine Learning",
+        "date": "08/01/2023",
+        "tags": [
+            "machine learning",
+            "data science",
+            "technology"
+        ],
+        "category": "Technology",
+        "author": "Tom",
+        "description": "Machine learning is an exciting field of data science that has numerous applications in industry and research. Learn the basics of machine learning and its key concepts.",
+        "path": "/post/the-basics-of-machine-learning"
+    },
+    {
+        "title": "5 Simple Tips for Better Sleep",
+        "date": "17/02/2023",
+        "tags": [
+            "sleep",
+            "health",
+            "tips"
+        ],
+        "category": "Health",
+        "author": "Lisa",
+        "description": "Struggling with insomnia or restless sleep? These 5 simple tips can help you get better quality rest and wake up feeling refreshed and energized.",
+        "path": "/post/5-simple-tips-for-better-sleep"
+    }
+]
