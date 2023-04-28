@@ -1,5 +1,4 @@
 import type { PostsType, PostType } from '$lib/types';
-import Dummy from './dummyposts.json';
 /**
  * Turn posts from GitHub into categories
  */
@@ -36,11 +35,11 @@ export async function getPosts(data: PostType[]): Promise<PostsType> {
 			.slice(0, postLimit);
 	}
 
-	function getCategorizedPosts() {
+	async function getCategorizedPosts() {
 		return {
-			code: getPostsByCategory(sortedPosts(), 'Code', 4),
-			apps: getPostsByCategory(sortedPosts(), 'Apps', 4),
-			design: getPostsByCategory(sortedPosts(), 'Design', 4)
+			code: await getPostsByCategory(sortedPosts(), 'Code', 4),
+			apps: await getPostsByCategory(sortedPosts(), 'Apps', 4),
+			design: await getPostsByCategory(sortedPosts(), 'Design', 4)
 		};
 	}
 
@@ -48,7 +47,7 @@ export async function getPosts(data: PostType[]): Promise<PostsType> {
 		posts: sortedPosts(),
 		latest: getLatestPosts(),
 		featured: getPicks(),
-		categorized: getCategorizedPosts()
+		categorized: await getCategorizedPosts()
 	};
 }
 

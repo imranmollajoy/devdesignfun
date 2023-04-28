@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { getFormattedDate } from '$lib/utilities';
 	export let data;
 </script>
 
@@ -16,7 +15,7 @@
 							</span>
 						</a>
 						<p class="inline opacity-50">
-							{getFormattedDate(post.date)}
+							{(post.date)}
 						</p>
 						<!-- <p class="inline opacity-50">{post.author}</p> -->
 					</span>

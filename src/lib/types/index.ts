@@ -13,7 +13,7 @@ export type PostType = {
 	category: string;
 	draft?: string;
 };
-type Categorized = {
+export type Categorized = {
 	apps: PostType[];
 	code: PostType[];
 	design: PostType[];

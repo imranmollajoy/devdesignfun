@@ -1,4 +1,6 @@
-export const GET = async () => {
+import { getFormattedDate } from '$lib/utilities';
+
+export const GET = async ({ url }) => {
 	const allPostFiles = import.meta.glob('../../post/**/**/**/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
@@ -8,9 +10,24 @@ export const GET = async () => {
 			// can't bother defining
 			const { metadata } = await resolver();
 			const postPath = path.slice(5, -10);
+			const { date, cover } = metadata;
+
+			let updatedCover = {};
+			if (cover) {
+				updatedCover = {
+					...cover,
+					image: `${url.origin}${postPath}/${cover.image}`
+				};
+			}
+
+			const updatedMetadata = {
+				...metadata,
+				date: getFormattedDate(date),
+				cover: updatedCover
+			};
 
 			return {
-				...metadata,
+				...updatedMetadata,
 				path: postPath
 			};
 		})
