@@ -12,7 +12,9 @@ slug: create-horizontal-scroll-section-html-css-js
 cover:
   image: featured.png
 weight: 9
+image: https://devdesignfun.com/post/2022/12/12/create-horizontal-scroll-section-html-css-js/featured.png
 ---
+
 
 ## Horizontal Section
 

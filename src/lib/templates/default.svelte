@@ -27,10 +27,11 @@
 	 * @type {string[]}
 	 */
 	export let tags;
+
 	/**
 	 * @type {string}
 	 */
-	export let cover;
+	export let image;
 	/**
 	 * The description of the page.
 	 */
@@ -44,22 +45,22 @@
 	 * @type {any[]}
 	 */
 	let related = [];
-	const finalImg = `${$page.url.href}/${cover?.image}`;
 	const get = async () => {
 		const response = await fetch(`${$page.url.origin}/api/post`);
 
 		const allposts = await response.json();
 
 		const posts = await getRelatedPosts(allposts, title, category, tags);
-		return posts;
+		return { posts };
 	};
 	onMount(async () => {
-		related = await get();
+		const g = await get();
+		related = g.posts;
 	});
 </script>
 
-{#if cover}
-	<Seo {title} ogType="article" {description} {tags} ogImage={finalImg} />
+{#if image}
+	<Seo {title} ogType="article" {description} {tags} ogImage={image} />
 {:else}
 	<Seo {title} ogType="article" {description} {tags} />
 {/if}
@@ -72,8 +73,8 @@
 				</span>
 			</a>
 			<h1>{title}</h1>
-			{#if cover}
-				<img src={finalImg} alt="" />
+			{#if image}
+				<img src={image} alt="" />
 			{/if}
 			<img src="" alt="" />
 			<div class="prose-xl max-w-none" id="toc-target">

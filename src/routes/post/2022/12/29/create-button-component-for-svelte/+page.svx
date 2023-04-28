@@ -3,7 +3,7 @@ title: Create A Reusable Button Component for Svelte
 date: 2023-12-29
 category: Code
 author: Imran
-description: 'Robust and flexible button component for your Svelte/SvelteKit project'
+description: Robust and flexible button component for your Svelte/SvelteKit project
 tags:
   - tutorial
   - how-to
@@ -13,6 +13,7 @@ slug: create-button-component-for-svelte
 weight: 99
 cover:
   image: featured.png
+image: https://devdesignfun.com/post/2022/12/29/create-button-component-for-svelte/featured.png
 ---
 
 
