@@ -6,6 +6,7 @@
 	import { getRelatedPosts } from '$lib/api/post';
 	import { onMount } from 'svelte';
 	import { TableOfContents } from '@skeletonlabs/skeleton';
+	import Seo from '$lib/components/SEO.svelte';
 	/**
 	 * @type {string}
 	 */
@@ -31,6 +32,11 @@
 	 */
 	export let cover;
 	/**
+	 * The description of the page.
+	 */
+	export let description;
+
+	/**
 	 * @type {string}
 	 */
 	export let slug;
@@ -51,6 +57,7 @@
 	});
 </script>
 
+<Seo {title} ogType="article" {description} {tags} ogImage="{$page.url.href}/{cover.image}" />
 <div class="container my-8">
 	<div class="grid grid-cols-3 gap-8">
 		<div class="col-span-3 lg:col-span-2 space-y-8">
