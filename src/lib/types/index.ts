@@ -12,6 +12,7 @@ export type PostType = {
 	tags: string[];
 	category: string;
 	draft?: string;
+	weight: number;
 };
 export type Categorized = {
 	apps: PostType[];

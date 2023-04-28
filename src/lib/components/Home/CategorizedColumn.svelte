@@ -6,8 +6,8 @@
 	export let title: string;
 </script>
 
-<div class="col-span-3 my-4 lg:col-span-1 space-y-4">
-	<h3 class="variant-filled-tertiary p-4 rounded-token">{title}</h3>
+<div class="col my-4">
+	<h2 class="mb-4">{title}</h2>
 	{#if posts.length !== 0}
 		{#each posts as post}
 			<ListPost

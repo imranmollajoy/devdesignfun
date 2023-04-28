@@ -77,9 +77,9 @@
 				{/each}
 			</div>
 		</div>
-		<div class="col">
+		<div class="col col-span-3 lg:col-span-1">
 			<div class="space-y-8 sticky top-32">
-				<TableOfContents target="#toc-target" />
+				<TableOfContents target="#toc-target" class="hidden lg:block" />
 
 				<div class="space-y-4">
 					<h3>Related</h3>

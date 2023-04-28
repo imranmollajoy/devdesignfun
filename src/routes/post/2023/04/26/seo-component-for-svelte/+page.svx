@@ -10,6 +10,7 @@ tags:
   - svelte
   - web-dev
 slug: seo-component-for-svelte
+weight: 10
 ---
 
 

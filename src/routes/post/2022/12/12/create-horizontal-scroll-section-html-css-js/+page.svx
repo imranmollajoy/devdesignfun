@@ -11,6 +11,7 @@ tags:
 slug: create-horizontal-scroll-section-html-css-js
 cover:
   image: featured.png
+weight: 9
 ---
 
 ## Horizontal Section

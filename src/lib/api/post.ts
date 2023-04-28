@@ -30,9 +30,7 @@ export async function getPosts(data: PostType[]): Promise<PostsType> {
 	}
 
 	function getPicks(): PostType[] {
-		return sortedPosts()
-			.sort(() => Math.random() - 0.5)
-			.slice(0, postLimit);
+		return [...posts].sort((f, s) => s.weight - f.weight).slice(0, 4);
 	}
 
 	async function getCategorizedPosts() {
