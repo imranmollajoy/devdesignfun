@@ -1,5 +1,5 @@
 import { getFormattedDate } from '$lib/utilities';
-
+import { dev } from '$app/environment';
 export const GET = async ({ url }) => {
 	const allPostFiles = import.meta.glob('../../post/**/**/**/*.svx');
 	const iterablePostFiles = Object.entries(allPostFiles);
@@ -13,10 +13,11 @@ export const GET = async ({ url }) => {
 			const { date, cover } = metadata;
 
 			let updatedCover = {};
+			const host = dev ? url.origin : 'https://devdesignfun.com';
 			if (cover) {
 				updatedCover = {
 					...cover,
-					image: `${url.origin}${postPath}/${cover.image}`
+					image: `${host}${postPath}/${cover.image}`
 				};
 			}
 
