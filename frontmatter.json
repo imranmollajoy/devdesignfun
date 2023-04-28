@@ -57,6 +57,17 @@
           "title": "image",
           "name": "image",
           "type": "image"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "datetime"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "fields",
+          "fields": []
         }
       ]
     }
@@ -83,5 +94,23 @@
     "tips",
     "tutorial",
     "web-dev"
-  ]
+  ],
+  "frontMatter.content.snippets": {
+    "code block": {
+      "description": "A code block",
+      "body": [
+        "```[[lang]]",
+        "```"
+      ],
+      "fields": [
+        {
+          "name": "lang",
+          "title": "lang",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
+    }
+  }
 }
