@@ -44,6 +44,7 @@
 	 * @type {any[]}
 	 */
 	let related = [];
+	const finalImg = `${$page.url.href}/${cover?.image}`;
 	const get = async () => {
 		const response = await fetch(`${$page.url.origin}/api/post`);
 
@@ -57,7 +58,11 @@
 	});
 </script>
 
-<Seo {title} ogType="article" {description} {tags} ogImage="{$page.url.href}/{cover.image}" />
+{#if cover}
+	<Seo {title} ogType="article" {description} {tags} ogImage={finalImg} />
+{:else}
+	<Seo {title} ogType="article" {description} {tags} />
+{/if}
 <div class="container my-8">
 	<div class="grid grid-cols-3 gap-8">
 		<div class="col-span-3 lg:col-span-2 space-y-8">
@@ -68,7 +73,7 @@
 			</a>
 			<h1>{title}</h1>
 			{#if cover}
-				<img src="{$page.url.href}/{cover.image}" alt="" />
+				<img src={finalImg} alt="" />
 			{/if}
 			<img src="" alt="" />
 			<div class="prose-xl max-w-none" id="toc-target">
