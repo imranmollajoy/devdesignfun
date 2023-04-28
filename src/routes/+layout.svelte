@@ -7,6 +7,7 @@
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import Seo from '$lib/components/SEO.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <Seo />
@@ -22,3 +23,5 @@
 </AppBar>
 
 <slot />
+
+<Footer />
