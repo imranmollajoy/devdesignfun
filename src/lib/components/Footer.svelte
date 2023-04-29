@@ -5,7 +5,7 @@
 	import logo from '../../../static/ddfllgotransparent.png';
 	let categories: any[] = [];
 	const get = async () => {
-		const response = await fetch(`${$page.url.origin}/api/post`);
+		const response = await fetch(`${$page.url.origin}/api/posts`);
 
 		const allposts = await response.json();
 
