@@ -1,32 +1,29 @@
 <script lang="ts">
+	import ListPost from '$lib/components/ListPost.svelte';
+
 	export let data;
 </script>
 
-<div class="container">
+<div class="container pb-64">
 	<h2 class="my-12">Tag: {data.tag}</h2>
 	<div class="space-y-8">
 		{#each data.posts as post}
-			<div class="space-y-2">
-				<p>
+			<article class="space-y-2 flex flex-col gap-4 lg:flex-row">
+				<div class="grow lg:basis-1/4">
+					<img src={post.cover?.image} alt="" />
+				</div>
+				<div class="grow lg:basis-3/4">
 					<span class="space-x-2">
-						<a href="/tag/{post.category}">
-							<span class="badge variant-filled-primary">
-								{post.category}
-							</span>
-						</a>
 						<p class="inline opacity-50">
 							{post.date}
 						</p>
-						<!-- <p class="inline opacity-50">{post.author}</p> -->
 					</span>
-				</p>
-				<div>
 					<a href="/article/{post.slug}">
 						<h3>{post.title}</h3>
 						<p>{post.description}</p>
 					</a>
 				</div>
-			</div>
+			</article>
 		{/each}
 	</div>
 </div>

@@ -2,6 +2,7 @@
 	import Seo from '$lib/components/SEO.svelte';
 	import Img from '$lib/components/img.svelte';
 	import { getFormattedDate } from '$lib/utilities';
+	import { TableOfContents } from '@skeletonlabs/skeleton';
 	export let data;
 </script>
 
@@ -48,6 +49,9 @@
 		</article>
 		<div class="col col-span-3 lg:col-span-1">
 			<div class="space-y-8 sticky top-32">
+				{#key data.content}
+					<TableOfContents target="#toc-target" />
+				{/key}
 				<div class="space-y-4">
 					<h3>Related</h3>
 					{#each data.related as post}

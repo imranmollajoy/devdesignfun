@@ -17,11 +17,11 @@
 </script>
 
 <div class="space-y-2 {cls} py-2 border-b-2 border-b-surface-100">
-	{#if cover}
-		<div class="grow-0 md:basis-1/2">
+	<div class="grow-0 md:basis-1/2">
+		{#if cover}
 			<img src={cover?.image} alt={cover?.alt} />
-		</div>
-	{/if}
+		{/if}
+	</div>
 
 	<div class="{txtCls} space-y-2">
 		<span class="space-x-2">
@@ -49,7 +49,7 @@
 				<a href="/article/{path}">
 					{#if title}
 						{#if smallTitle}
-							<h4>{title}</h4>
+							<h4 class="font-bold">{title}</h4>
 						{:else}
 							<h3>{title}</h3>
 						{/if}
