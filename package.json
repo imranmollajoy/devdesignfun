@@ -12,6 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@jsdevtools/rehype-toc": "^3.0.2",
 		"@skeletonlabs/skeleton": "^1.2.5",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.2",
@@ -31,6 +32,8 @@
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
+		"rehype-slug": "^5.1.0",
+		"remark-unwrap-images": "^3.0.1",
 		"sass": "^1.53.0",
 		"sitemap": "^7.1.1",
 		"svelte": "^3.54.0",

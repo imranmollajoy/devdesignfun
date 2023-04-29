@@ -2,10 +2,8 @@
 	import Seo from '$lib/components/SEO.svelte';
 	import Img from '$lib/components/img.svelte';
 	import { getFormattedDate } from '$lib/utilities';
-	import { TableOfContents } from '@skeletonlabs/skeleton';
 	export let data;
 </script>
-
 {#if data.meta.cover}
 	<Seo
 		title={data.meta.title}
@@ -34,9 +32,10 @@
 			{#if data.meta.cover}
 				<Img src="./{data.meta.slug}/{data.meta.cover?.image}" alt="" />
 			{/if}
-			<div class="prose-xl max-w-none" id="toc-target">
+			<main class="prose-xl max-w-none">
+				<h3>Table of contents</h3>
 				<svelte:component this={data.content} />
-			</div>
+			</main>
 			<div class="tags space-x-4">
 				{#each data.meta.tags as tag}
 					<a href="/tag/{tag}">
@@ -49,9 +48,8 @@
 		</article>
 		<div class="col col-span-3 lg:col-span-1">
 			<div class="space-y-8 sticky top-32">
-				{#key data.content}
-					<TableOfContents target="#toc-target" />
-				{/key}
+				<!-- {#key data.content}
+				{/key} -->
 				<div class="space-y-4">
 					<h3>Related</h3>
 					{#each data.related as post}

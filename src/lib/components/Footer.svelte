@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import { getAllCategories } from '$lib/api/post';
 	import { onMount } from 'svelte';
-	import logo from '../../../static/ddfllgotransparent.png';
 	let categories: any[] = [];
 	const get = async () => {
 		const response = await fetch(`${$page.url.origin}/api/posts`);
