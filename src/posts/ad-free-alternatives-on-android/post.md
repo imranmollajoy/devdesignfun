@@ -12,7 +12,7 @@ tags:
 cover:
   image: featured.png
 slug: ad-free-alternatives-on-android
-image: https://devdesignfun.com/post/2023/02/15/ad-free-alternatives-on-android/featured.png
+weight: 1
 ---
 
 

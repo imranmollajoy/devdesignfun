@@ -5,9 +5,12 @@ date: 2023-04-28
 category: Design
 author: Imran
 description: um
-tags: []
+tags:
+  - web design
+  - colors
 weight: 3
-draft: true
+updated: 2023-04-29T14:52:10.599Z
+draft: false
 ---
 
 ## Even t

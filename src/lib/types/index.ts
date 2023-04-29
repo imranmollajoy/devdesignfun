@@ -5,13 +5,13 @@ export type Cover = {
 export type PostType = {
 	title: string;
 	description: string;
-	path: string;
+	draft?: string;
+	slug: string;
 	author?: string;
 	cover?: Cover;
 	date: string;
 	tags: string[];
 	category: string;
-	draft?: string;
 	weight: number;
 };
 export type Categorized = {

@@ -1,54 +1,40 @@
 import fs from 'fs';
 import path from 'path';
 import fsExtra from 'fs-extra';
-import { glob } from 'glob';
 
 const fsPromises = fs.promises;
-// const targetDir = 'static/post';
-// const postsDir = 'src/routes/post';
+const targetDir = 'static/article';
+const postsDir = 'src/posts';
 
-async function copyImagesToPublic(images, slug, postsDir, targetDir) {
+async function copyImagesToPublic(images, slug) {
 	for (const image of images) {
 		await fsPromises.copyFile(`${postsDir}/${slug}/${image}`, `${targetDir}/${slug}/${image}`);
 	}
 }
 
-async function createPostImageFoldersForCopy(targetDir, postsDir) {
-	await fsExtra.emptyDir(targetDir);
+async function createPostImageFoldersForCopy() {
+	// Get every post folder: post-one, post-two etc.
+	const postSlugs = await fsPromises.readdir(postsDir);
 
-	// Use glob to recursively get all post directories
-	const postDirectories = await glob(`${postsDir}/**/*`, { onlyDirectories: true });
+	for (const slug of postSlugs) {
+		const allowedImageFileExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
 
-	for (const directory of postDirectories) {
-		// Check if there is a .md file in the post folder
-		const hasMdFile = await fsPromises
-			.stat(`${directory}/+page.svx`)
-			.then((stat) => stat.isFile())
-			.catch(() => false);
+		// Read all files inside current post folder
+		const postDirFiles = await fsPromises.readdir(`${postsDir}/${slug}`);
 
-		if (hasMdFile) {
-			const allowedImageFileExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
+		// Filter out files with allowed file extension (images)
+		const images = postDirFiles.filter((file) =>
+			allowedImageFileExtensions.includes(path.extname(file))
+		);
 
-			// Read all files inside current post folder
-			const postDirFiles = await fsPromises.readdir(`${directory}`);
+		if (images.length) {
+			// Create a folder for images of this post inside public
+			await fsPromises.mkdir(`${targetDir}/${slug}`);
 
-			// Filter out files with allowed file extension (images)
-			const images = postDirFiles.filter((file) =>
-				allowedImageFileExtensions.includes(path.extname(file))
-			);
-
-			if (images.length) {
-				// Extract post slug from the directory path
-				const slug = directory.slice(16, directory.length);
-
-				console.log(`${directory}`);
-				// Create a folder for images of this post inside public
-				await fsPromises.mkdir(`${targetDir}/${slug}`, { recursive: true });
-
-				await copyImagesToPublic(images, slug, postsDir, targetDir);
-			}
+			await copyImagesToPublic(images, slug);
 		}
 	}
 }
 
-createPostImageFoldersForCopy('static/post', 'src/routes/post');
+await fsExtra.emptyDir(targetDir);
+await createPostImageFoldersForCopy();

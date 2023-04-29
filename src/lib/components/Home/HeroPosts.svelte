@@ -2,8 +2,8 @@
 	import ListPost from '../ListPost.svelte';
 
 	export let featured;
-	const featuredFirst = featured[0];
-	const featuredRest = featured.slice(1, featured.length);
+	let featuredFirst = featured[0];
+	let featuredRest = featured.slice(1, featured.length);
 </script>
 
 <section class="hero">
@@ -14,7 +14,7 @@
 		<div class="container space-y-8">
 			<div class="grid grid-cols-3 gap-8">
 				<div class="col-span-3 lg:col-span-2">
-					<a class="featured-image h-full" href={featuredFirst.path}>
+					<a class="featured-image h-full" href="article/{featuredFirst.slug}">
 						{#if featuredFirst.cover}
 							<img src={`${featuredFirst.cover.image}`} alt="" class="w-full h-full object-cover" />
 						{:else}
@@ -39,7 +39,7 @@
 							category={post.category}
 							date={post.date}
 							description={post.description}
-							path={post.path}
+							path={post.slug}
 						/>
 					{/each}
 				</div>

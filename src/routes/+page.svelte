@@ -22,7 +22,7 @@
 					category={post.category}
 					date={post.date}
 					description={post.description}
-					path={post.path}
+					path={post.slug}
 					smallTitle
 				/>
 			{/each}

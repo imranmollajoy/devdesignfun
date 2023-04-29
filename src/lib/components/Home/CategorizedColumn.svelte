@@ -13,7 +13,7 @@
 			<ListPost
 				title={post.title}
 				date={post.date}
-				path={post.path}
+				path={post.slug}
 				smallTitle
 				cover={post.cover}
 				description={post.description}

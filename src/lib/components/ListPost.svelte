@@ -46,7 +46,7 @@
 		</span>
 		{#if path}
 			<div>
-				<a href={path}>
+				<a href="/article/{path}">
 					{#if title}
 						{#if smallTitle}
 							<h4>{title}</h4>

@@ -24,4 +24,4 @@
 
 <slot />
 
-<Footer />
+<!-- <Footer /> -->

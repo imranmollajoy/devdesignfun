@@ -5,13 +5,12 @@ if (args && args.length > 0) {
 	const fileArg = args[3]; // The file path
 	const frontMatterArg = args[4]; // Front matter data
 
-	const sliced = fileArg.slice(47, fileArg.length - 10);
-	const cover = JSON.parse(frontMatterArg).cover;
-	const image = `https://devdesignfun.com/${sliced}/${cover.image}`;
+	const sliced = fileArg.split('/').at(-2);
+	// const cover = JSON.parse(frontMatterArg).cover;
 
 	const output = JSON.stringify({
 		frontmatter: {
-			image: image
+			slug: sliced
 		}
 	});
 	console.log(output);

@@ -61,13 +61,18 @@
         {
           "title": "draft",
           "name": "draft",
-          "type": "datetime"
+          "type": "boolean"
         },
         {
           "title": "keywords",
           "name": "keywords",
           "type": "fields",
           "fields": []
+        },
+        {
+          "title": "updated",
+          "name": "updated",
+          "type": "datetime"
         }
       ]
     }
@@ -76,8 +81,8 @@
   "frontMatter.content.publicFolder": "",
   "frontMatter.content.pageFolders": [
     {
-      "title": "post",
-      "path": "[[workspace]]/src/routes/post"
+      "title": "posts",
+      "path": "[[workspace]]/src/posts"
     }
   ],
   "frontMatter.taxonomy.categories": [
@@ -88,11 +93,13 @@
   "frontMatter.taxonomy.tags": [
     "alternative of apps",
     "android alternative apps",
+    "colors",
     "how-to",
     "software",
     "svelte",
     "tips",
     "tutorial",
+    "web design",
     "web-dev"
   ],
   "frontMatter.content.snippets": {
