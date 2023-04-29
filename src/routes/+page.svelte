@@ -2,10 +2,12 @@
 	import CategorizedPosts from '$lib/components/Home/CategorizedPosts.svelte';
 	import HeroPosts from '$lib/components/Home/HeroPosts.svelte';
 	import ListPost from '$lib/components/ListPost.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	export let data;
 	const { posts, featured, categorized } = data.posts;
 </script>
 
+<Seo />
 <HeroPosts {featured} />
 
 <section class="py-12">

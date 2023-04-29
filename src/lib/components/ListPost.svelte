@@ -16,7 +16,7 @@
 	}
 </script>
 
-<div class="space-y-2 {cls} py-2 border-b-2 border-b-surface-100">
+<div class="space-y-2 {cls} py-2">
 	<div class="grow-0 md:basis-1/2">
 		{#if cover}
 			<img src={cover?.image} alt={cover?.alt} />

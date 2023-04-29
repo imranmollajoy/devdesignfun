@@ -6,11 +6,9 @@
 	import '../app.postcss';
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
-	import Seo from '$lib/components/SEO.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<Seo />
 <AppBar class="sticky top-0 z-10">
 	<svelte:fragment slot="lead">
 		<a href="/">
