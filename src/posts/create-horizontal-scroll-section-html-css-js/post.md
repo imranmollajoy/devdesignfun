@@ -10,7 +10,7 @@ tags:
   - web-dev
 slug: create-horizontal-scroll-section-html-css-js
 cover:
-  image: featured.png
+  image: featured.webp
 weight: 9
 ---
 

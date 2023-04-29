@@ -10,7 +10,7 @@ tags:
   - tips
   - software
 cover:
-  image: featured.png
+  image: featured.webp
 slug: ad-free-alternatives-on-android
 weight: 1
 ---

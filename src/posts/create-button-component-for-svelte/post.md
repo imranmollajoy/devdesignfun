@@ -12,7 +12,7 @@ tags:
 slug: create-button-component-for-svelte
 weight: 99
 cover:
-  image: featured.png
+  image: featured.webp
 ---
 
 

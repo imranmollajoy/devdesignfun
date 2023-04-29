@@ -83,6 +83,10 @@
     {
       "title": "posts",
       "path": "[[workspace]]/src/posts"
+    },
+    {
+      "title": "images",
+      "path": "[[workspace]]/static/article"
     }
   ],
   "frontMatter.taxonomy.categories": [

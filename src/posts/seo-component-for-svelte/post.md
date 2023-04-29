@@ -11,6 +11,8 @@ tags:
   - web-dev
 slug: seo-component-for-svelte
 weight: 10
+cover:
+  image: featured.webp
 ---
 
 

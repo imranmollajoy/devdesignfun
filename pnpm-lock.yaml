@@ -85,6 +85,9 @@ devDependencies:
   vite:
     specifier: ^4.2.0
     version: 4.3.1(sass@1.62.0)
+  webp-converter:
+    specifier: ^2.3.3
+    version: 2.3.3
 
 packages:
 
@@ -2327,6 +2330,11 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
+  /uuid@8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: true
+
   /vfile-message@2.0.4:
     resolution: {integrity: sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==}
     dependencies:
@@ -2376,6 +2384,12 @@ packages:
         optional: true
     dependencies:
       vite: 4.3.1(sass@1.62.0)
+    dev: true
+
+  /webp-converter@2.3.3:
+    resolution: {integrity: sha512-2p4XvPCIQ/CbUztEFA9vdkILVrRTdMtMxFpQTxlnPc3qx14MV5wnpVvK7m6pG70QdeL+Ser0+Tp843ONwh8VbQ==}
+    dependencies:
+      uuid: 8.3.2
     dev: true
 
   /which@2.0.2:
