@@ -20,7 +20,7 @@
 	 * 'website' or 'article'
 	 */
 	export let ogType: string = 'website';
-	export let ogImage: string;
+	export let ogImage: string = '';
 </script>
 
 <svelte:head>

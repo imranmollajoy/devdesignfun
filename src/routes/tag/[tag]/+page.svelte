@@ -21,7 +21,7 @@
 					</span>
 				</p>
 				<div>
-					<a href="article/{post.slug}">
+					<a href="/article/{post.slug}">
 						<h3>{post.title}</h3>
 						<p>{post.description}</p>
 					</a>
