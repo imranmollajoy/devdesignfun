@@ -1,1 +1,1 @@
-{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1,"tag":2},[],"Apps"],"uses":{"dependencies":["http://sveltekit-prerender/api/post"],"params":["tag"]}}]}
+{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1,"tag":2},[],"Apps"],"uses":{"dependencies":["http://sveltekit-prerender/api/posts"],"params":["tag"]}}]}
