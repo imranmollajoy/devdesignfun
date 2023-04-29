@@ -1,27 +1,31 @@
 <script lang="ts">
+	import Seo from '$lib/components/SEO.svelte';
 	import Img from '$lib/components/img.svelte';
 	import { getFormattedDate } from '$lib/utilities';
 	import { TableOfContents } from '@skeletonlabs/skeleton';
 	export let data;
+	const { title, description, category, tags, cover, slug } = data.meta;
 </script>
+
+<Seo {title} {description} {tags} ogType="article" ogImage="./{slug}/{cover.image}" />
 
 <div class="container my-8">
 	<div class="grid grid-cols-3 gap-8">
 		<article class="col-span-3 lg:col-span-2 space-y-8">
-			<a href="/category/{data.meta.category}">
+			<a href="/category/{category}">
 				<span class="badge variant-filled-primary">
-					{data.meta.category}
+					{category}
 				</span>
 			</a>
-			<h1>{data.meta.title}</h1>
-			{#if data.meta.cover}
-				<Img src="./{data.meta.slug}/{data.meta.cover.image}" alt="" />
+			<h1>{title}</h1>
+			{#if cover}
+				<Img src="./{slug}/{cover.image}" alt="" />
 			{/if}
 			<div class="prose-xl max-w-none" id="toc-target">
 				<svelte:component this={data.content} />
 			</div>
 			<div class="tags space-x-4">
-				{#each data.meta.tags as tag}
+				{#each tags as tag}
 					<a href="/tag/{tag}">
 						<span class="chip variant-filled-secondary">
 							{tag}
