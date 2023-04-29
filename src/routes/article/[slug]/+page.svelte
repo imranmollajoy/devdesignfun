@@ -4,6 +4,7 @@
 	import { getFormattedDate } from '$lib/utilities';
 	export let data;
 </script>
+
 {#if data.meta.cover}
 	<Seo
 		title={data.meta.title}

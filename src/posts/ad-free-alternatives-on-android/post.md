@@ -15,7 +15,6 @@ slug: ad-free-alternatives-on-android
 weight: 1
 ---
 
-
 Are you tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? You're not alone! Fortunately, there are some great apps available that can help you enjoy your favorite media and documents without the annoyance of ads. Here are a few of my favorites, which are all free and ad-free
 
 ## Video Player (VLC)

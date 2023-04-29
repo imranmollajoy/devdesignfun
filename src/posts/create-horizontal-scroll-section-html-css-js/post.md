@@ -14,7 +14,6 @@ cover:
 weight: 9
 ---
 
-
 ## Horizontal Section
 
 A horizontal section is a type of layout in which the content is arranged from left to right, rather than from top to bottom. This design can be elegant and visually appealing, and it can also save space by allowing more content to be displayed on the screen at once. Horizontal sections are commonly used in web design to create menus, galleries, or other types of content that can be easily scrolled through by the user. To create a horizontal section, you can use CSS styles such as `display: flex;` and `flex-wrap: wrap;` to control the layout and appearance of the content.
@@ -34,17 +33,15 @@ Create three files: index.html, index.css, and index.js. Name them to your likin
 		<title>Document</title>
 	</head>
 	<body>
-	    <main class="container">
-            <!-- The horizontal section -->
-            <section class="horizontal-section">
-                <!-- Here the row of content will be added -->
-            </section>
+		<main class="container">
+			<!-- The horizontal section -->
+			<section class="horizontal-section">
+				<!-- Here the row of content will be added -->
+			</section>
 		</main>
-    </body>
+	</body>
 	<script src="index.js" />
 </html>
-
-
 ```
 
 Open the CSS file, add the following code:
@@ -78,51 +75,49 @@ Now that we have the basic structure in place, let's add the content that we wan
 <!-- main start -->
 <!-- The horizontal section -->
 <section class="horizontal-section">
-    <div class="card">
-        <h4>Lorem ipsum</h4>
-        <p>
-            Sustainable pok pok pabst, pug cardigan chambray man bun big mood cold-pressed. Lo-fi
-            gastropub photo booth plaid af jean shorts you probably haven't heard of them enamel
-            pin.
-        </p>
-    </div>
-    <div class="card">
-        <h4>Lorem ipsum 2</h4>
-        <p>Edison bulb etsy vaporware, aesthetic praxis hashtag 3 wolf moon letterpress.</p>
-    </div>
-    <div class="card">
-        <h4>Lorem ipsum 3</h4>
-        <p>
-            DSA thundercats vinyl semiotics, adaptogen copper mug affogato big mood normcore craft
-            beer. Hexagon 8-bit whatever tote bag wolf messenger bag.
-        </p>
-    </div>
-    <div class="card">
-        <h4>Lorem ipsum 4</h4>
-        <p>Thundercats wolf lomo praxis, tofu direct trade bodega boys four loko semiotics.</p>
-    </div>
-    <div class="card">
-        <h4>Lorem ipsum 5</h4>
-        <p>
-            Paleo farm-to-table forage praxis small batch. Kitsch af woke, narwhal crucifix tumeric
-            organic pitchfork single-origin coffee microdosing. .
-        </p>
-    </div>
-    <div class="card">
-        <h4>Lorem ipsum 6</h4>
-        <p>
-            +1 tonx subway tile, fam vaporware normcore migas cronut direct trade heirloom four
-            dollar toast. Copper mug lomo hexagon glossier. Cred cornhole hammock, PBR&B kogi craft
-            beer edison bulb pinterest bushwick gatekeep cardigan enamel pin keytar succulents
-        </p>
-    </div>
-    <div class="card">
-        <h4>Lorem ipsum</h4>
-        <p>Lorem ipsum this is a text</p>
-    </div>
+	<div class="card">
+		<h4>Lorem ipsum</h4>
+		<p>
+			Sustainable pok pok pabst, pug cardigan chambray man bun big mood cold-pressed. Lo-fi
+			gastropub photo booth plaid af jean shorts you probably haven't heard of them enamel pin.
+		</p>
+	</div>
+	<div class="card">
+		<h4>Lorem ipsum 2</h4>
+		<p>Edison bulb etsy vaporware, aesthetic praxis hashtag 3 wolf moon letterpress.</p>
+	</div>
+	<div class="card">
+		<h4>Lorem ipsum 3</h4>
+		<p>
+			DSA thundercats vinyl semiotics, adaptogen copper mug affogato big mood normcore craft beer.
+			Hexagon 8-bit whatever tote bag wolf messenger bag.
+		</p>
+	</div>
+	<div class="card">
+		<h4>Lorem ipsum 4</h4>
+		<p>Thundercats wolf lomo praxis, tofu direct trade bodega boys four loko semiotics.</p>
+	</div>
+	<div class="card">
+		<h4>Lorem ipsum 5</h4>
+		<p>
+			Paleo farm-to-table forage praxis small batch. Kitsch af woke, narwhal crucifix tumeric
+			organic pitchfork single-origin coffee microdosing. .
+		</p>
+	</div>
+	<div class="card">
+		<h4>Lorem ipsum 6</h4>
+		<p>
+			+1 tonx subway tile, fam vaporware normcore migas cronut direct trade heirloom four dollar
+			toast. Copper mug lomo hexagon glossier. Cred cornhole hammock, PBR&B kogi craft beer edison
+			bulb pinterest bushwick gatekeep cardigan enamel pin keytar succulents
+		</p>
+	</div>
+	<div class="card">
+		<h4>Lorem ipsum</h4>
+		<p>Lorem ipsum this is a text</p>
+	</div>
 </section>
 <!-- main end -->
-
 ```
 
 Now that we have added the content, let's focus on styling the cards to make them look more attractive and professional. We can use CSS styles to control the layout, colors, fonts, and other aspects of the cards' appearance.
@@ -177,52 +172,66 @@ Here is the complete code for the index.html, index.css, and index.js files, whi
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main class="container">
-      <section class="horizontal-section">
-        <section class="horizontal-section">
-          <div class="card">
-            <h4>Lorem ipsum</h4>
-            <p> Sustainable pok pok pabst, pug cardigan chambray man bun big mood cold-pressed. Lo-fi gastropub photo booth plaid af jean shorts you probably haven't heard of them enamel pin. </p>
-          </div>
-          <div class="card">
-            <h4>Lorem ipsum 2</h4>
-            <p>Edison bulb etsy vaporware, aesthetic praxis hashtag 3 wolf moon letterpress.</p>
-          </div>
-          <div class="card">
-            <h4>Lorem ipsum 3</h4>
-            <p> DSA thundercats vinyl semiotics, adaptogen copper mug affogato big mood normcore craft beer. Hexagon 8-bit whatever tote bag wolf messenger bag. </p>
-          </div>
-          <div class="card">
-            <h4>Lorem ipsum 4</h4>
-            <p>Thundercats wolf lomo praxis, tofu direct trade bodega boys four loko semiotics.</p>
-          </div>
-          <div class="card">
-            <h4>Lorem ipsum 5</h4>
-            <p> Paleo farm-to-table forage praxis small batch. Kitsch af woke, narwhal crucifix tumeric organic pitchfork single-origin coffee microdosing. . </p>
-          </div>
-          <div class="card">
-            <h4>Lorem ipsum 6</h4>
-            <p> +1 tonx subway tile, fam vaporware normcore migas cronut direct trade heirloom four dollar toast. Copper mug lomo hexagon glossier. Cred cornhole hammock, PBR&B kogi craft beer edison bulb pinterest bushwick gatekeep cardigan enamel pin keytar succulents </p>
-          </div>
-          <div class="card">
-            <h4>Lorem ipsum</h4>
-            <p>Lorem ipsum this is a text</p>
-          </div>
-        </section>
-      </section>
-    </main>
-  </body>
-  <script src="index.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<main class="container">
+			<section class="horizontal-section">
+				<section class="horizontal-section">
+					<div class="card">
+						<h4>Lorem ipsum</h4>
+						<p>
+							Sustainable pok pok pabst, pug cardigan chambray man bun big mood cold-pressed. Lo-fi
+							gastropub photo booth plaid af jean shorts you probably haven't heard of them enamel
+							pin.
+						</p>
+					</div>
+					<div class="card">
+						<h4>Lorem ipsum 2</h4>
+						<p>Edison bulb etsy vaporware, aesthetic praxis hashtag 3 wolf moon letterpress.</p>
+					</div>
+					<div class="card">
+						<h4>Lorem ipsum 3</h4>
+						<p>
+							DSA thundercats vinyl semiotics, adaptogen copper mug affogato big mood normcore craft
+							beer. Hexagon 8-bit whatever tote bag wolf messenger bag.
+						</p>
+					</div>
+					<div class="card">
+						<h4>Lorem ipsum 4</h4>
+						<p>Thundercats wolf lomo praxis, tofu direct trade bodega boys four loko semiotics.</p>
+					</div>
+					<div class="card">
+						<h4>Lorem ipsum 5</h4>
+						<p>
+							Paleo farm-to-table forage praxis small batch. Kitsch af woke, narwhal crucifix
+							tumeric organic pitchfork single-origin coffee microdosing. .
+						</p>
+					</div>
+					<div class="card">
+						<h4>Lorem ipsum 6</h4>
+						<p>
+							+1 tonx subway tile, fam vaporware normcore migas cronut direct trade heirloom four
+							dollar toast. Copper mug lomo hexagon glossier. Cred cornhole hammock, PBR&B kogi
+							craft beer edison bulb pinterest bushwick gatekeep cardigan enamel pin keytar
+							succulents
+						</p>
+					</div>
+					<div class="card">
+						<h4>Lorem ipsum</h4>
+						<p>Lorem ipsum this is a text</p>
+					</div>
+				</section>
+			</section>
+		</main>
+	</body>
+	<script src="index.js"></script>
 </html>
-
 ```
 
 ```css
@@ -290,5 +299,3 @@ hSections.forEach((hSection) => {
 	});
 });
 ```
-
-

@@ -9,8 +9,5 @@ export default {
 	},
 	extensions: ['.md'],
 	rehypePlugins: [rehypeSlug, rehypeToc],
-	remarkPlugins: [
-		remarkUnwrapImages,
-		
-	]
+	remarkPlugins: [remarkUnwrapImages]
 };

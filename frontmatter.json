@@ -1,127 +1,120 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.taxonomy.contentTypes": [
-    {
-      "name": "default",
-      "pageBundle": false,
-      "previewPath": null,
-      "fields": [
-        {
-          "title": "title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "date",
-          "name": "date",
-          "type": "datetime"
-        },
-        {
-          "title": "category",
-          "name": "category",
-          "type": "categories"
-        },
-        {
-          "title": "author",
-          "name": "author",
-          "type": "string"
-        },
-        {
-          "title": "description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "cover",
-          "name": "cover",
-          "type": "fields",
-          "fields": [
-            {
-              "title": "image",
-              "name": "image",
-              "type": "image"
-            }
-          ]
-        },
-        {
-          "title": "weight",
-          "name": "weight",
-          "type": "number"
-        },
-        {
-          "title": "image",
-          "name": "image",
-          "type": "image"
-        },
-        {
-          "title": "draft",
-          "name": "draft",
-          "type": "boolean"
-        },
-        {
-          "title": "keywords",
-          "name": "keywords",
-          "type": "fields",
-          "fields": []
-        },
-        {
-          "title": "updated",
-          "name": "updated",
-          "type": "datetime"
-        }
-      ]
-    }
-  ],
-  "frontMatter.framework.id": "other",
-  "frontMatter.content.publicFolder": "",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "posts",
-      "path": "[[workspace]]/src/posts"
-    },
-    {
-      "title": "images",
-      "path": "[[workspace]]/static/article"
-    }
-  ],
-  "frontMatter.taxonomy.categories": [
-    "Apps",
-    "Code",
-    "Design"
-  ],
-  "frontMatter.taxonomy.tags": [
-    "alternative of apps",
-    "android alternative apps",
-    "colors",
-    "how-to",
-    "software",
-    "svelte",
-    "tips",
-    "tutorial",
-    "web design",
-    "web-dev"
-  ],
-  "frontMatter.content.snippets": {
-    "code block": {
-      "description": "A code block",
-      "body": [
-        "```[[lang]]",
-        "```"
-      ],
-      "fields": [
-        {
-          "name": "lang",
-          "title": "lang",
-          "type": "string",
-          "single": true,
-          "default": ""
-        }
-      ]
-    }
-  }
+	"$schema": "https://frontmatter.codes/frontmatter.schema.json",
+	"frontMatter.taxonomy.contentTypes": [
+		{
+			"name": "default",
+			"pageBundle": false,
+			"previewPath": null,
+			"fields": [
+				{
+					"title": "title",
+					"name": "title",
+					"type": "string"
+				},
+				{
+					"title": "date",
+					"name": "date",
+					"type": "datetime"
+				},
+				{
+					"title": "category",
+					"name": "category",
+					"type": "categories"
+				},
+				{
+					"title": "author",
+					"name": "author",
+					"type": "string"
+				},
+				{
+					"title": "description",
+					"name": "description",
+					"type": "string"
+				},
+				{
+					"title": "tags",
+					"name": "tags",
+					"type": "tags"
+				},
+				{
+					"title": "cover",
+					"name": "cover",
+					"type": "fields",
+					"fields": [
+						{
+							"title": "image",
+							"name": "image",
+							"type": "image"
+						}
+					]
+				},
+				{
+					"title": "weight",
+					"name": "weight",
+					"type": "number"
+				},
+				{
+					"title": "image",
+					"name": "image",
+					"type": "image"
+				},
+				{
+					"title": "draft",
+					"name": "draft",
+					"type": "boolean"
+				},
+				{
+					"title": "keywords",
+					"name": "keywords",
+					"type": "fields",
+					"fields": []
+				},
+				{
+					"title": "updated",
+					"name": "updated",
+					"type": "datetime"
+				}
+			]
+		}
+	],
+	"frontMatter.framework.id": "other",
+	"frontMatter.content.publicFolder": "",
+	"frontMatter.content.pageFolders": [
+		{
+			"title": "posts",
+			"path": "[[workspace]]/src/posts"
+		},
+		{
+			"title": "images",
+			"path": "[[workspace]]/static/article"
+		}
+	],
+	"frontMatter.taxonomy.categories": ["Apps", "Code", "Design"],
+	"frontMatter.taxonomy.tags": [
+		"alternative of apps",
+		"android alternative apps",
+		"colors",
+		"how-to",
+		"software",
+		"svelte",
+		"tips",
+		"tutorial",
+		"web design",
+		"web-dev"
+	],
+	"frontMatter.content.snippets": {
+		"code block": {
+			"description": "A code block",
+			"body": ["```[[lang]]", "```"],
+			"fields": [
+				{
+					"name": "lang",
+					"title": "lang",
+					"type": "string",
+					"single": true,
+					"default": ""
+				}
+			]
+		}
+	}
 }

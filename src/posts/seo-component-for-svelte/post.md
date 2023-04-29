@@ -15,27 +15,24 @@ cover:
   image: featured.webp
 ---
 
-
 It's really easy to make a component handling all the SEO stuff which can be used (and reused) throughout your Sveltekit website.
-Svelte has a really handy element ```svelte:head``` which can be used anywhere, and it will automatically inject the data into head in your site.
+Svelte has a really handy element `svelte:head` which can be used anywhere, and it will automatically inject the data into head in your site.
 
 Assuming you already know what SEO means, I'm not going to bother explaining it. All you need is a component for SEO, so here you go:
 
 ## Initial step
 
-Create a ```.svelte``` file and name it ```SEO.svelte``` (or whatever you want) in your desired directory. In my case, it's *src/lib/components*.
+Create a `.svelte` file and name it `SEO.svelte` (or whatever you want) in your desired directory. In my case, it's _src/lib/components_.
 
-Next, add ``` <svelte:head> </svelte:head>``` in the newly created component like so
+Next, add ` <svelte:head> </svelte:head>` in the newly created component like so
+
 ```html
 <!-- SEO.svelte -->
-<svelte:head>
-	
-</svelte:head>
-
+<svelte:head> </svelte:head>
 ```
 
-Inside of that tag, now we can use all the tags that are needed for ``` <head>```.
-``` title``` is the most important part of SEO. So let's add that next.
+Inside of that tag, now we can use all the tags that are needed for ` <head>`.
+` title` is the most important part of SEO. So let's add that next.
 
 ```diff svelte
 <!-- SEO.svelte -->
@@ -56,7 +53,8 @@ What about meta tags like description, tags etc? I got you covered.
 </svelte:head>
 
 ```
-In next step we will add OpenGraph meta tags. 
+
+In next step we will add OpenGraph meta tags.
 
 ```diff svelte
 <!-- SEO.svelte -->
@@ -75,12 +73,11 @@ If your site contains only one page, you can just import this component in your 
 
 ```svelte
 <script>
-    import SEO from "path/to/SEO.svelte"
-    // rest of your code
+	import SEO from 'path/to/SEO.svelte';
+	// rest of your code
 </script>
 
 <SEO />
-
 ```
 
 But in most cases, you have multiple pages, each containing different metadata. In that case, we need to make our component dynamic.
@@ -118,14 +115,14 @@ But in most cases, you have multiple pages, each containing different metadata. 
 </svelte:head>
 
 ```
-Now you should add this to your ```+layout.svelte``` file. It will use the default values. To use a different value on a page, just pass the value you want to override. For example:
+
+Now you should add this to your `+layout.svelte` file. It will use the default values. To use a different value on a page, just pass the value you want to override. For example:
 
 ```svelte
 <!-- routes/about-us/+page.svelte -->
 <!-- rest of you code -->
 
 <SEO title="About us" />
-
 ```
 
 This will overwrite the default value with "About us". Don't worry, meta tags won't be duplicated.
@@ -134,34 +131,33 @@ This will overwrite the default value with "About us". Don't worry, meta tags wo
 
 ```svelte
 <script lang="ts">
-
 	/**
 	 * The title of the page.
 	 */
-	export let title: string = "An Awesome Title";
+	export let title: string = 'An Awesome Title';
 
 	/**
 	 * The description of the page.
 	 */
-	export let description: string = "Describe what your site is about";
+	export let description: string = 'Describe what your site is about';
 
 	/**
 	 * The keywords associated with the page.
 	 */
-	export let tags: string[] =  ["Awesome", "site", "very nice", "website"];
+	export let tags: string[] = ['Awesome', 'site', 'very nice', 'website'];
 
 	/**
 	 * The Open Graph (OG) type of the page.
 	 * @default 'website'
-     * 'website' or 'article'
+	 * 'website' or 'article'
 	 */
 	export let ogType: string = 'website';
 </script>
 
 <svelte:head>
 	{#if title}
-        <title>{title}</title>
-        <meta property="og:title" content={title} />
+		<title>{title}</title>
+		<meta property="og:title" content={title} />
 	{/if}
 
 	{#if description}
