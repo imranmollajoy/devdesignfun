@@ -1,102 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
-		<link rel="manifest" href="../site.webmanifest" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.0206737e.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/default.5c045b07.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/post.8ac2c1fb.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.92b2f6fb.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.5d0e62ae.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.9a40f6e1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.6e46b5de.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.6ac3023c.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.dd9a968e.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.7368aea6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/SEO.45d02211.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.4d20e9d1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/post.81c879ca.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.ts.396be9bd.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.46b73265.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.svelte.2144dfad.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.ts.da7eaa7b.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page.145d269c.js"><title>SEO Component for Svelte</title><!-- HEAD_svelte-leocik_START -->
-		<meta property="og:title" content="Dev. Design. Fun"><meta name="description" content="A blog about web development and design">
-		<meta property="og:description" content="A blog about web development and design"><meta name="keywords" content="web development,web design"><meta property="og:type" content="website"><!-- HEAD_svelte-leocik_END --><!-- HEAD_svelte-1fqad1o_START --><!-- HTML_TAG_START --><script>(function setInitialClassState() {
-  const elemHtmlClasses = document.documentElement.classList;
-  const condLocalStorageUserPrefs = localStorage.getItem("modeUserPrefers") === "false";
-  const condLocalStorageUserPrefsExists = !("modeUserPrefers" in localStorage);
-  const condMatchMedia = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  if (condLocalStorageUserPrefs || condLocalStorageUserPrefsExists && condMatchMedia) {
-    elemHtmlClasses.add("dark");
-  } else {
-    elemHtmlClasses.remove("dark");
-  }
-})();</script><!-- HTML_TAG_END --><!-- HEAD_svelte-1fqad1o_END --><!-- HEAD_svelte-leocik_START -->
-		<meta property="og:title" content="SEO Component for Svelte"><meta name="description" content="Robust and flexible SEO component for your Svelte/SvelteKit project">
-		<meta property="og:description" content="Robust and flexible SEO component for your Svelte/SvelteKit project"><meta name="keywords" content="tutorial,how-to,svelte,web-dev"><meta property="og:type" content="article"><!-- HEAD_svelte-leocik_END -->
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
-
-
-
-<div class="app-bar flex flex-col bg-surface-100-800-token  space-y-4 p-4  sticky top-0 z-10" data-testid="app-bar" role="toolbar" aria-label="" aria-labelledby="">
-	<div class="app-bar-row-main grid items-center grid-cols-[auto_1fr_auto] gap-4 ">
-		<div class="app-bar-slot-lead flex-none flex justify-between items-center "><a href="/"><h4>Dev.Design.Fun</h4></a></div>
-		
-		<div class="app-bar-slot-default flex-auto "></div>
-		
-		<div class="app-bar-slot-trail flex-none flex items-center space-x-4 ">
-
-<div class="lightswitch-track cursor-pointer transition-all duration-[200ms] w-12 h-6 ring-[1px] ring-surface-500/30 rounded-token bg-surface-900 " role="switch" aria-label="Light Switch" aria-checked="false" title="Toggle Light Mode" tabindex="0">
-	<div class="lightswitch-thumb aspect-square scale-[0.8] flex justify-center items-center transition-all duration-[200ms] h-6 rounded-token bg-surface-50 ">
-		<svg class="lightswitch-icon w-[70%] aspect-square fill-surface-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></div></div>
-	</div></div>
-	
-	</div>
-
-
-<div class="container my-8"><div class="grid grid-cols-3 gap-8"><article class="col-span-3 lg:col-span-2 space-y-8"><a href="/category/Code"><span class="badge variant-filled-primary">Code</span></a>
-			<h1>SEO Component for Svelte</h1>
-			
-			<div class="prose-xl max-w-none" id="toc-target"><p>It’s really easy to make a component handling all the SEO stuff which can be used (and reused) throughout your Sveltekit website.
-Svelte has a really handy element <code>svelte:head</code> which can be used anywhere, and it will automatically inject the data into head in your site.</p>
-<p>Assuming you already know what SEO means, I’m not going to bother explaining it. All you need is a component for SEO, so here you go:</p>
-<h2>Initial step</h2>
-<p>Create a <code>.svelte</code> file and name it <code>SEO.svelte</code> (or whatever you want) in your desired directory. In my case, it’s <em>src/lib/components</em>.</p>
-<p>Next, add <code>&lt;svelte:head&gt; &lt;/svelte:head&gt;</code> in the newly created component like so</p>
-<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token comment">&lt;!-- SEO.svelte --></span>
+import{S as Ta,i as ja,s as Ia,I as zs,y as Pa,z as Da,A as Ca,a0 as Ha,a1 as ia,g as Ma,d as Ra,B as $a,J as ra,k as p,q as l,a as u,l as o,m as c,r as i,h as a,c as k,n as E,b as e,D as t,Q as La}from"./index.5d0e62ae.js";import{D as Fa}from"./default.e9485e12.js";function Ga(C){let r,y,v,b,d,f,w,gs,U,H,ws,V,m,hs,q,xs,_s,W,Es,bs,z,Os,Ss,X,h,As,J,Ts,js,Y,O,ka=`<code class="language-html"><span class="token comment">&lt;!-- SEO.svelte --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
 	
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
-</code><!-- HTML_TAG_END --></pre>
-<p>Inside of that tag, now we can use all the tags that are needed for <code>&lt;head&gt;</code>.
-<code>title</code> is the most important part of SEO. So let’s add that next.</p>
-<pre class="language-diff"><!-- HTML_TAG_START --><code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
+</code>`,ss,g,Is,K,Ps,Ds,Q,Cs,Hs,as,S,da=`<code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
 </span><span class="token prefix deleted">&lt;</span><span class="token line">svelte:head>
 </span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">   &lt;title>An Awesome Title&lt;/title>
 </span></span><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">/svelte:head>
-</span></span></code><!-- HTML_TAG_END --></pre>
-<p>What about meta tags like description, tags etc? I got you covered.</p>
-<pre class="language-diff"><!-- HTML_TAG_START --><code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
+</span></span></code>`,ns,M,Ms,es,A,fa=`<code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
 </span><span class="token prefix deleted">&lt;</span><span class="token line">svelte:head>
 </span></span><span class="token unchanged"><span class="token prefix unchanged"> </span><span class="token line">   &lt;title>An Awesome Title&lt;/title>
 </span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">   &lt;meta name="description" content="Describe what your site is about" />
 </span><span class="token prefix inserted">+</span><span class="token line">   &lt;meta name="keywords" content="Awesome, site, very nice, website" />
 </span></span><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">/svelte:head>
-</span></span></code><!-- HTML_TAG_END --></pre>
-<p>In next step we will add OpenGraph meta tags. </p>
-<pre class="language-diff"><!-- HTML_TAG_START --><code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
+</span></span></code>`,ts,R,Rs,ps,T,ma=`<code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
 </span><span class="token prefix deleted">&lt;</span><span class="token line">svelte:head>
 </span></span><span class="token unchanged"><span class="token prefix unchanged"> </span><span class="token line">   &lt;title>An Awesome Title&lt;/title>
 </span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">	&lt;meta property="og:title" content="An Awesome Title" />
@@ -105,18 +21,13 @@ Svelte has a really handy element <code>svelte:head</code> which can be used any
 </span></span><span class="token unchanged"><span class="token prefix unchanged"> </span><span class="token line">   &lt;meta name="keywords" content="Awesome, site, very nice, website" />
 </span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">   &lt;meta property="og:type" content="website" />
 </span></span><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">/svelte:head>
-</span></span></code><!-- HTML_TAG_END --></pre>
-<p>If your site contains only one page, you can just import this component in your +page.svelte file like so:</p>
-<pre class="language-svelte"><!-- HTML_TAG_START --><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+</span></span></code>`,ls,$,$s,os,j,va=`<code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
     <span class="token keyword">import</span> <span class="token constant">SEO</span> <span class="token keyword">from</span> <span class="token string">"path/to/SEO.svelte"</span>
     <span class="token comment">// rest of your code</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SEO</span> <span class="token punctuation">/></span></span>
-</code><!-- HTML_TAG_END --></pre>
-<p>But in most cases, you have multiple pages, each containing different metadata. In that case, we need to make our component dynamic.</p>
-<h2>Making the component dynamic</h2>
-<pre class="language-diff"><!-- HTML_TAG_START --><code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
+</code>`,cs,L,Ls,is,F,Fs,rs,I,ya=`<code class="language-diff"><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">!-- SEO.svelte -->
 </span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line"> &lt;script>
 </span><span class="token prefix inserted">+</span><span class="token line">    export let title = "An Awesome Title";
 </span><span class="token prefix inserted">+</span><span class="token line">    export let description = "Describe what your site is about";
@@ -144,16 +55,11 @@ Svelte has a really handy element <code>svelte:head</code> which can be used any
 </span><span class="token prefix inserted">+</span><span class="token line">	&#123;/if&#125;
 </span><span class="token prefix inserted">+</span><span class="token line">	&lt;meta property="og:type" content=&#123;ogType&#125; />
 </span></span><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">/svelte:head>
-</span></span></code><!-- HTML_TAG_END --></pre>
-<p>Now you should add this to your <code>+layout.svelte</code> file. It will use the default values. To use a different value on a page, just pass the value you want to override. For example:</p>
-<pre class="language-svelte"><!-- HTML_TAG_START --><code class="language-svelte"><span class="token comment">&lt;!-- routes/about-us/+page.svelte --></span>
+</span></span></code>`,us,x,Gs,Z,Ns,Bs,ks,P,ga=`<code class="language-svelte"><span class="token comment">&lt;!-- routes/about-us/+page.svelte --></span>
 <span class="token comment">&lt;!-- rest of you code --></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SEO</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>About us<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-</code><!-- HTML_TAG_END --></pre>
-<p>This will overwrite the default value with “About us”. Don’t worry, meta tags won’t be duplicated.</p>
-<h2>Final code</h2>
-<pre class="language-svelte"><!-- HTML_TAG_START --><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+</code>`,ds,G,qs,fs,N,Ws,ms,D,wa=`<code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
 
 	<span class="token comment">/**
 	 * The title of the page.
@@ -192,59 +98,8 @@ Svelte has a really handy element <code>svelte:head</code> which can be used any
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>keywords<span class="token punctuation">"</span></span> <span class="token attr-name">content=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>tags<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span>
 	<span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">if</span><span class="token punctuation">&#125;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:type<span class="token punctuation">"</span></span> <span class="token attr-name">content=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>ogType<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre></div>
-			<div class="tags space-x-4"><a href="/tag/tutorial"><span class="chip variant-filled-secondary">tutorial</span>
-					</a><a href="/tag/how-to"><span class="chip variant-filled-secondary">how-to</span>
-					</a><a href="/tag/svelte"><span class="chip variant-filled-secondary">svelte</span>
-					</a><a href="/tag/web-dev"><span class="chip variant-filled-secondary">web-dev</span>
-					</a></div></article>
-		<div class="col col-span-3 lg:col-span-1"><div class="space-y-8 sticky top-32">
-
-
-				<div class="space-y-4"><h3>Related</h3>
-					<article><p class="opacity-50">December 29, 2022</p>
-							<a href="/article/create-button-component-for-svelte"><h3>Create A Reusable Button Component for Svelte</h3>
-								<p>Robust and flexible button component for your Svelte/SvelteKit project</p></a>
-						</article><article><p class="opacity-50">December 12, 2022</p>
-							<a href="/article/create-horizontal-scroll-section-html-css-js"><h3>Create a horizontal scroll section with HTML,CSS and JS</h3>
-								<p>Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.</p></a>
-						</article></div></div></div></div></div>
-
-
-<footer class="py-32 variant-ghost-surface"><div class="container"><div class="grid grid-cols-2 lg:grid-cols-4 gap-8"><div class="col space-y-4"><h4>Navigation</h4>
-				<a href="/">Home</a></div>
-			<div class="col"><h4>Categories</h4>
-				<div class="space-y-2"></div></div>
-			<div class="col"></div>
-			<div class="col"><img src="/ddfllgotransparent.png" alt="" class="w-16">
-				<a href="/"><h3>DevDesignFun.com</h3></a></div></div></div></footer>
-
-
-			<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android\",\"date\":\"April 26, 2023\",\"category\":\"Apps\",\"author\":\"Imran\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\"],\"cover\":{\"image\":\"https://devdesignfun.com/article/ad-free-alternatives-on-android/featured.png\"},\"slug\":\"ad-free-alternatives-on-android\",\"weight\":1},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"December 29, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"create-button-component-for-svelte\",\"weight\":99,\"cover\":{\"image\":\"https://devdesignfun.com/article/create-button-component-for-svelte/featured.png\"}},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"December 12, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"cover\":{\"image\":\"https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/featured.png\"},\"weight\":9},{\"title\":\"SEO Component for Svelte\",\"date\":\"April 26, 2023\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible SEO component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"seo-component-for-svelte\",\"weight\":10,\"cover\":{}},{\"title\":\"The Last Tool For Colors\",\"slug\":\"the-last-tool-for-colors\",\"date\":\"April 28, 2023\",\"category\":\"Design\",\"author\":\"Imran\",\"description\":\"um\",\"tags\":[\"web design\",\"colors\"],\"weight\":3,\"updated\":\"2023-04-29T14:52:10.599Z\",\"draft\":false,\"cover\":{}}]"}</script>
-			<script>
-				{
-					__sveltekit_11nyagv = {
-						base: new URL("..", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.92b2f6fb.js"),
-						import("../_app/immutable/entry/app.6ac3023c.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 3],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span></code>`;return{c(){r=p("p"),y=l(`It’s really easy to make a component handling all the SEO stuff which can be used (and reused) throughout your Sveltekit website.
+Svelte has a really handy element `),v=p("code"),b=l("svelte:head"),d=l(" which can be used anywhere, and it will automatically inject the data into head in your site."),f=u(),w=p("p"),gs=l("Assuming you already know what SEO means, I’m not going to bother explaining it. All you need is a component for SEO, so here you go:"),U=u(),H=p("h2"),ws=l("Initial step"),V=u(),m=p("p"),hs=l("Create a "),q=p("code"),xs=l(".svelte"),_s=l(" file and name it "),W=p("code"),Es=l("SEO.svelte"),bs=l(" (or whatever you want) in your desired directory. In my case, it’s "),z=p("em"),Os=l("src/lib/components"),Ss=l("."),X=u(),h=p("p"),As=l("Next, add "),J=p("code"),Ts=l("<svelte:head> </svelte:head>"),js=l(" in the newly created component like so"),Y=u(),O=p("pre"),ss=u(),g=p("p"),Is=l("Inside of that tag, now we can use all the tags that are needed for "),K=p("code"),Ps=l("<head>"),Ds=l(`.
+`),Q=p("code"),Cs=l("title"),Hs=l(" is the most important part of SEO. So let’s add that next."),as=u(),S=p("pre"),ns=u(),M=p("p"),Ms=l("What about meta tags like description, tags etc? I got you covered."),es=u(),A=p("pre"),ts=u(),R=p("p"),Rs=l("In next step we will add OpenGraph meta tags."),ps=u(),T=p("pre"),ls=u(),$=p("p"),$s=l("If your site contains only one page, you can just import this component in your +page.svelte file like so:"),os=u(),j=p("pre"),cs=u(),L=p("p"),Ls=l("But in most cases, you have multiple pages, each containing different metadata. In that case, we need to make our component dynamic."),is=u(),F=p("h2"),Fs=l("Making the component dynamic"),rs=u(),I=p("pre"),us=u(),x=p("p"),Gs=l("Now you should add this to your "),Z=p("code"),Ns=l("+layout.svelte"),Bs=l(" file. It will use the default values. To use a different value on a page, just pass the value you want to override. For example:"),ks=u(),P=p("pre"),ds=u(),G=p("p"),qs=l("This will overwrite the default value with “About us”. Don’t worry, meta tags won’t be duplicated."),fs=u(),N=p("h2"),Ws=l("Final code"),ms=u(),D=p("pre"),this.h()},l(s){r=o(s,"P",{});var n=c(r);y=i(n,`It’s really easy to make a component handling all the SEO stuff which can be used (and reused) throughout your Sveltekit website.
+Svelte has a really handy element `),v=o(n,"CODE",{});var Js=c(v);b=i(Js,"svelte:head"),Js.forEach(a),d=i(n," which can be used anywhere, and it will automatically inject the data into head in your site."),n.forEach(a),f=k(s),w=o(s,"P",{});var Ks=c(w);gs=i(Ks,"Assuming you already know what SEO means, I’m not going to bother explaining it. All you need is a component for SEO, so here you go:"),Ks.forEach(a),U=k(s),H=o(s,"H2",{});var Qs=c(H);ws=i(Qs,"Initial step"),Qs.forEach(a),V=k(s),m=o(s,"P",{});var _=c(m);hs=i(_,"Create a "),q=o(_,"CODE",{});var Zs=c(q);xs=i(Zs,".svelte"),Zs.forEach(a),_s=i(_," file and name it "),W=o(_,"CODE",{});var Us=c(W);Es=i(Us,"SEO.svelte"),Us.forEach(a),bs=i(_," (or whatever you want) in your desired directory. In my case, it’s "),z=o(_,"EM",{});var Vs=c(z);Os=i(Vs,"src/lib/components"),Vs.forEach(a),Ss=i(_,"."),_.forEach(a),X=k(s),h=o(s,"P",{});var vs=c(h);As=i(vs,"Next, add "),J=o(vs,"CODE",{});var Xs=c(J);Ts=i(Xs,"<svelte:head> </svelte:head>"),Xs.forEach(a),js=i(vs," in the newly created component like so"),vs.forEach(a),Y=k(s),O=o(s,"PRE",{class:!0});var ha=c(O);ha.forEach(a),ss=k(s),g=o(s,"P",{});var B=c(g);Is=i(B,"Inside of that tag, now we can use all the tags that are needed for "),K=o(B,"CODE",{});var Ys=c(K);Ps=i(Ys,"<head>"),Ys.forEach(a),Ds=i(B,`.
+`),Q=o(B,"CODE",{});var sa=c(Q);Cs=i(sa,"title"),sa.forEach(a),Hs=i(B," is the most important part of SEO. So let’s add that next."),B.forEach(a),as=k(s),S=o(s,"PRE",{class:!0});var xa=c(S);xa.forEach(a),ns=k(s),M=o(s,"P",{});var aa=c(M);Ms=i(aa,"What about meta tags like description, tags etc? I got you covered."),aa.forEach(a),es=k(s),A=o(s,"PRE",{class:!0});var _a=c(A);_a.forEach(a),ts=k(s),R=o(s,"P",{});var na=c(R);Rs=i(na,"In next step we will add OpenGraph meta tags."),na.forEach(a),ps=k(s),T=o(s,"PRE",{class:!0});var Ea=c(T);Ea.forEach(a),ls=k(s),$=o(s,"P",{});var ea=c($);$s=i(ea,"If your site contains only one page, you can just import this component in your +page.svelte file like so:"),ea.forEach(a),os=k(s),j=o(s,"PRE",{class:!0});var ba=c(j);ba.forEach(a),cs=k(s),L=o(s,"P",{});var ta=c(L);Ls=i(ta,"But in most cases, you have multiple pages, each containing different metadata. In that case, we need to make our component dynamic."),ta.forEach(a),is=k(s),F=o(s,"H2",{});var pa=c(F);Fs=i(pa,"Making the component dynamic"),pa.forEach(a),rs=k(s),I=o(s,"PRE",{class:!0});var Oa=c(I);Oa.forEach(a),us=k(s),x=o(s,"P",{});var ys=c(x);Gs=i(ys,"Now you should add this to your "),Z=o(ys,"CODE",{});var la=c(Z);Ns=i(la,"+layout.svelte"),la.forEach(a),Bs=i(ys," file. It will use the default values. To use a different value on a page, just pass the value you want to override. For example:"),ys.forEach(a),ks=k(s),P=o(s,"PRE",{class:!0});var Sa=c(P);Sa.forEach(a),ds=k(s),G=o(s,"P",{});var oa=c(G);qs=i(oa,"This will overwrite the default value with “About us”. Don’t worry, meta tags won’t be duplicated."),oa.forEach(a),fs=k(s),N=o(s,"H2",{});var ca=c(N);Ws=i(ca,"Final code"),ca.forEach(a),ms=k(s),D=o(s,"PRE",{class:!0});var Aa=c(D);Aa.forEach(a),this.h()},h(){E(O,"class","language-html"),E(S,"class","language-diff"),E(A,"class","language-diff"),E(T,"class","language-diff"),E(j,"class","language-svelte"),E(I,"class","language-diff"),E(P,"class","language-svelte"),E(D,"class","language-svelte")},m(s,n){e(s,r,n),t(r,y),t(r,v),t(v,b),t(r,d),e(s,f,n),e(s,w,n),t(w,gs),e(s,U,n),e(s,H,n),t(H,ws),e(s,V,n),e(s,m,n),t(m,hs),t(m,q),t(q,xs),t(m,_s),t(m,W),t(W,Es),t(m,bs),t(m,z),t(z,Os),t(m,Ss),e(s,X,n),e(s,h,n),t(h,As),t(h,J),t(J,Ts),t(h,js),e(s,Y,n),e(s,O,n),O.innerHTML=ka,e(s,ss,n),e(s,g,n),t(g,Is),t(g,K),t(K,Ps),t(g,Ds),t(g,Q),t(Q,Cs),t(g,Hs),e(s,as,n),e(s,S,n),S.innerHTML=da,e(s,ns,n),e(s,M,n),t(M,Ms),e(s,es,n),e(s,A,n),A.innerHTML=fa,e(s,ts,n),e(s,R,n),t(R,Rs),e(s,ps,n),e(s,T,n),T.innerHTML=ma,e(s,ls,n),e(s,$,n),t($,$s),e(s,os,n),e(s,j,n),j.innerHTML=va,e(s,cs,n),e(s,L,n),t(L,Ls),e(s,is,n),e(s,F,n),t(F,Fs),e(s,rs,n),e(s,I,n),I.innerHTML=ya,e(s,us,n),e(s,x,n),t(x,Gs),t(x,Z),t(Z,Ns),t(x,Bs),e(s,ks,n),e(s,P,n),P.innerHTML=ga,e(s,ds,n),e(s,G,n),t(G,qs),e(s,fs,n),e(s,N,n),t(N,Ws),e(s,ms,n),e(s,D,n),D.innerHTML=wa},p:La,d(s){s&&a(r),s&&a(f),s&&a(w),s&&a(U),s&&a(H),s&&a(V),s&&a(m),s&&a(X),s&&a(h),s&&a(Y),s&&a(O),s&&a(ss),s&&a(g),s&&a(as),s&&a(S),s&&a(ns),s&&a(M),s&&a(es),s&&a(A),s&&a(ts),s&&a(R),s&&a(ps),s&&a(T),s&&a(ls),s&&a($),s&&a(os),s&&a(j),s&&a(cs),s&&a(L),s&&a(is),s&&a(F),s&&a(rs),s&&a(I),s&&a(us),s&&a(x),s&&a(ks),s&&a(P),s&&a(ds),s&&a(G),s&&a(fs),s&&a(N),s&&a(ms),s&&a(D)}}}function Na(C){let r,y;const v=[C[0],ua];let b={$$slots:{default:[Ga]},$$scope:{ctx:C}};for(let d=0;d<v.length;d+=1)b=zs(b,v[d]);return r=new Fa({props:b}),{c(){Pa(r.$$.fragment)},l(d){Da(r.$$.fragment,d)},m(d,f){Ca(r,d,f),y=!0},p(d,[f]){const w=f&1?Ha(v,[f&1&&ia(d[0]),f&0&&ia(ua)]):{};f&2&&(w.$$scope={dirty:f,ctx:d}),r.$set(w)},i(d){y||(Ma(r.$$.fragment,d),y=!0)},o(d){Ra(r.$$.fragment,d),y=!1},d(d){$a(r,d)}}}const ua={title:"SEO Component for Svelte",date:"2023-04-26T00:00:00.000Z",category:"Code",author:"Imran",description:"Robust and flexible SEO component for your Svelte/SvelteKit project",tags:["tutorial","how-to","svelte","web-dev"],slug:"seo-component-for-svelte",weight:10};function Ba(C,r,y){return C.$$set=v=>{y(0,r=zs(zs({},r),ra(v)))},r=ra(r),[r]}class za extends Ta{constructor(r){super(),ja(this,r,Ba,Na,Ia,{})}}export{za as default,ua as metadata};
