@@ -15,13 +15,13 @@
 							</span>
 						</a>
 						<p class="inline opacity-50">
-							{(post.date)}
+							{post.date}
 						</p>
 						<!-- <p class="inline opacity-50">{post.author}</p> -->
 					</span>
 				</p>
 				<div>
-					<a href={post.path}>
+					<a href="article/{post.slug}">
 						<h3>{post.title}</h3>
 						<p>{post.description}</p>
 					</a>
