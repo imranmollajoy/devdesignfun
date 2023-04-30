@@ -26,7 +26,7 @@ async function getPosts(url) {
 			} else {
 				updatedCover = {
 					...cover,
-					image: `${host}/featured.webp`
+					image: `${host}/ddf.webp`
 				};
 			}
 			const updatedMetadata = {
