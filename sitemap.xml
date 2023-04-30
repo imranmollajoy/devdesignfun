@@ -1,0 +1,111 @@
+
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+              <loc>https://devdesignfun.com</loc>
+              <changefreq>daily</changefreq>
+              <priority>1</priority>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+            </url>
+      
+            <url>
+              <loc>https://devdesignfun.com/article/ad-free-alternatives-on-android</loc>
+              <lastmod>2023-04-30T03:24:30.595Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.8</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/article/create-button-component-for-svelte</loc>
+              <lastmod>2023-04-30T03:24:46.019Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.8</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js</loc>
+              <lastmod>2023-04-30T03:24:57.043Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.8</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/article/seo-component-for-svelte</loc>
+              <lastmod>2023-04-30T03:25:13.955Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.8</priority>
+            </url>
+          
+      
+            <url>
+              <loc>https://devdesignfun.com/category/Apps</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/category/Code</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+         
+            <url>
+              <loc>https://devdesignfun.com/tag/alternative of apps</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/tag/android alternative apps</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/tag/tips</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/tag/software</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/tag/tutorial</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/tag/how-to</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/tag/svelte</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+            <url>
+              <loc>https://devdesignfun.com/tag/web-dev</loc>
+              <lastmod>2023-04-30T04:23:12.898Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
+            </url>
+          
+    </urlset>
+  
