@@ -8,7 +8,7 @@ export async function GET({ fetch }) {
 	const headers = { 'Content-Type': 'application/xml' };
 
 	const xml = `
-		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
 				<title>${config.title}</title>
 				<description>${config.description}</description>
@@ -24,10 +24,6 @@ export async function GET({ fetch }) {
 							<guid isPermaLink="true">${config.url}/article/${post.slug}</guid>
 							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
                             <category>${post.category}</category>
-                            <content:encoded>
-                            <![CDATA[<p><img src="${post.cover?.image}" alt=""/></p>
-                                <p>${post.description}</p>]]>
-                            </content:encoded>
 						</item>
 					`
 					)
