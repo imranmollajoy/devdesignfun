@@ -1,0 +1,61 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+			<channel>
+				<title>Dev. Design. Fun.</title>
+				<description>A Blog about Web Development and Web Design</description>
+				<link>https://devdesignfun.com</link>
+				<atom:link href="https://devdesignfun.com/rss.xml" rel="self" type="application/rss+xml"/>
+				
+						<item>
+							<title>Ad Free Alternatives on Android</title>
+							<description>Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.</description>
+							<link>https://devdesignfun.com/article/ad-free-alternatives-on-android</link>
+							<guid isPermaLink="true">https://devdesignfun.com/article/ad-free-alternatives-on-android</guid>
+							<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
+                            <category>Apps</category>
+                            <content:encoded>
+                            <![CDATA[<p><img src="https://devdesignfun.com/article/ad-free-alternatives-on-android/featured.webp" alt=""/></p>
+                                <p>Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.</p>]]>
+                            </content:encoded>
+						</item>
+					
+						<item>
+							<title>Create A Reusable Button Component for Svelte</title>
+							<description>Robust and flexible button component for your Svelte/SvelteKit project</description>
+							<link>https://devdesignfun.com/article/create-button-component-for-svelte</link>
+							<guid isPermaLink="true">https://devdesignfun.com/article/create-button-component-for-svelte</guid>
+							<pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate>
+                            <category>Code</category>
+                            <content:encoded>
+                            <![CDATA[<p><img src="https://devdesignfun.com/article/create-button-component-for-svelte/featured.webp" alt=""/></p>
+                                <p>Robust and flexible button component for your Svelte/SvelteKit project</p>]]>
+                            </content:encoded>
+						</item>
+					
+						<item>
+							<title>Create a horizontal scroll section with HTML,CSS and JS</title>
+							<description>Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.</description>
+							<link>https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js</link>
+							<guid isPermaLink="true">https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js</guid>
+							<pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate>
+                            <category>Code</category>
+                            <content:encoded>
+                            <![CDATA[<p><img src="https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/featured.webp" alt=""/></p>
+                                <p>Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.</p>]]>
+                            </content:encoded>
+						</item>
+					
+						<item>
+							<title>SEO Component for Svelte</title>
+							<description>Robust and flexible SEO component for your Svelte/SvelteKit project</description>
+							<link>https://devdesignfun.com/article/seo-component-for-svelte</link>
+							<guid isPermaLink="true">https://devdesignfun.com/article/seo-component-for-svelte</guid>
+							<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
+                            <category>Code</category>
+                            <content:encoded>
+                            <![CDATA[<p><img src="https://devdesignfun.com/article/seo-component-for-svelte/featured.webp" alt=""/></p>
+                                <p>Robust and flexible SEO component for your Svelte/SvelteKit project</p>]]>
+                            </content:encoded>
+						</item>
+					
+			</channel>
+		</rss>
