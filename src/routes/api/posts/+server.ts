@@ -23,6 +23,11 @@ async function getPosts(url) {
 					...cover,
 					image: `${host}/article/${slug}/${cover.image}`
 				};
+			} else {
+				updatedCover = {
+					...cover,
+					image: `${host}/featured.webp`
+				};
 			}
 			const updatedMetadata = {
 				...metadata,
