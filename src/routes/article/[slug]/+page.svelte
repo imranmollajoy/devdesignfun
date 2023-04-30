@@ -26,7 +26,7 @@
 		<article class="col-span-3 lg:col-span-2 space-y-8">
 			<div class="flex gap-4 flex-wrap">
 				<a href="/category/{data.meta.category}">
-					<span class="badge variant-filled-primary">
+					<span class="badge {data.meta.category}">
 						{data.meta.category}
 					</span>
 				</a>

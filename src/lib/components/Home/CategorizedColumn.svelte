@@ -7,7 +7,9 @@
 </script>
 
 <div class="col my-4">
-	<h2 class="mb-4">{title}</h2>
+	<a href="/category/{title}">
+		<h2 class="mb-4 text-{title}">{title}</h2>
+	</a>
 	{#if posts.length !== 0}
 		{#each posts as post}
 			<ListPost

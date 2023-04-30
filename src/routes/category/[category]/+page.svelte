@@ -3,7 +3,7 @@
 </script>
 
 <div class="container pb-64">
-	<h2 class="my-12">Category: {data.category}</h2>
+	<h2 class="my-12 text-{data.category}">Category: {data.category}</h2>
 	<div class="space-y-8">
 		{#each data.posts as post}
 			<article class="space-y-2 flex flex-col gap-4 lg:flex-row">

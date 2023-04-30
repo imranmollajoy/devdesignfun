@@ -27,7 +27,7 @@
 		<span class="space-x-2">
 			{#if category}
 				<a href="/category/{category}">
-					<span class="badge variant-filled-primary">
+					<span class="badge {category} ">
 						{category}
 					</span>
 				</a>

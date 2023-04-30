@@ -19,7 +19,7 @@
 <!-- @component
  Footer for all pages. will be used in the root +layout.svelte
  -->
-<footer class="py-32 variant-ghost-surface">
+<footer class="py-32 bg-surface-100-800-token">
 	<div class="container">
 		<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
 			<div class="col space-y-4">
@@ -44,3 +44,13 @@
 		</div>
 	</div>
 </footer>
+
+<style>
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+</style>

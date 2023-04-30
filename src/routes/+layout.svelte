@@ -25,6 +25,7 @@
 	</svelte:fragment>
 </AppBar>
 
-<slot />
-
+<div class="bg-surface-50-900-token mb-96">
+	<slot />
+</div>
 <Footer />
