@@ -1,6 +1,6 @@
 ---
 title: Ad Free Alternatives on Android
-date: 2023-04-26
+date: 2023-02-07T18:00:00.000Z
 category: Apps
 author: Imran
 description: Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.
