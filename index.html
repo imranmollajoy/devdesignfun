@@ -10,20 +10,34 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
 		<link rel="manifest" href="./site.webmanifest" />
+		<script type="module">
+			const htmlElement = document.documentElement;
+			const userTheme = localStorage.theme;
+
+			// check if the user set a theme
+			if (userTheme) {
+				htmlElement.dataset.theme = userTheme;
+			}
+			// otherwise check for user preference
+			if (!userTheme) {
+				htmlElement.dataset.theme = 'Blu';
+				localStorage.theme = 'Blu';
+			}
+		</script>
 		<meta http-equiv="content-security-policy" content="">
 <meta http-equiv="cache-control" content="max-age=0, s-maxage=3600">
-		<link href="./_app/immutable/assets/_layout.bd723e58.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout.fb18f4c0.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/_page.890b2f5c.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.69691f66.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.c855c50f.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.18bd6673.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.75c7dec9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.bdb52f4b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.e84d7b59.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.87d21f5c.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.96d27cee.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.279d9aa7.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.d6d533f3.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.fbe28def.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.5c804a41.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.6f228fa0.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/post.81c879ca.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.ts.396be9bd.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.46b73265.js">
@@ -167,7 +181,7 @@
 			
 			<script>
 				{
-					__sveltekit_1mxhz5j = {
+					__sveltekit_1m9q30a = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -177,8 +191,8 @@
 					const data = [null,{"type":"data","data":(function(a,b,c,d){a.title="Ad Free Alternatives on Android";a.date="April 26, 2023";a.category="Apps";a.author="Imran";a.description="Tired of dealing with ads and pop-ups in your video and music players, or when r...";a.tags=["alternative of apps","android alternative apps","tips","software"];a.cover={image:"https:\u002F\u002Fdevdesignfun.com\u002Farticle\u002Fad-free-alternatives-on-android\u002Ffeatured.webp"};a.slug="ad-free-alternatives-on-android";a.weight=1;a.readingTime="3 minutes";a.updated="2023-04-30T03:24:30.595Z";b.title="SEO Component for Svelte";b.date="April 26, 2023";b.category="Code";b.author="Imran";b.description="Robust and flexible SEO component for your Svelte\u002FSvelteKit project";b.tags=["tutorial","how-to","svelte","web-dev"];b.slug="seo-component-for-svelte";b.weight=10;b.cover={image:"https:\u002F\u002Fdevdesignfun.com\u002Farticle\u002Fseo-component-for-svelte\u002Ffeatured.webp"};b.readingTime="4 minutes";b.updated="2023-04-30T03:25:13.955Z";c.title="Create A Reusable Button Component for Svelte";c.date="December 29, 2022";c.category="Code";c.author="Imran";c.description="Robust and flexible button component for your Svelte\u002FSvelteKit project";c.tags=["tutorial","how-to","svelte","web-dev"];c.slug="create-button-component-for-svelte";c.weight=99;c.cover={image:"https:\u002F\u002Fdevdesignfun.com\u002Farticle\u002Fcreate-button-component-for-svelte\u002Ffeatured.webp"};c.readingTime="7 minutes";c.updated="2023-04-30T03:24:46.019Z";d.title="Create a horizontal scroll section with HTML,CSS and JS";d.date="December 12, 2022";d.category="Code";d.author="Imran";d.description="Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling sect...";d.tags=["tutorial","how-to","web-dev"];d.slug="create-horizontal-scroll-section-html-css-js";d.cover={image:"https:\u002F\u002Fdevdesignfun.com\u002Farticle\u002Fcreate-horizontal-scroll-section-html-css-js\u002Ffeatured.webp"};d.weight=9;d.readingTime="8 minutes";d.updated="2023-04-30T03:24:57.043Z";return {posts:{posts:[a,b,c,d],latest:[a,b,c,d],featured:[c,b,d,a],categorized:{code:[b,c,d],apps:[a],design:[]}}}}({},{},{},{})),"uses":{"dependencies":["http://sveltekit-prerender/api/posts"]}}];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.69691f66.js"),
-						import("./_app/immutable/entry/app.87d21f5c.js")
+						import("./_app/immutable/entry/start.c855c50f.js"),
+						import("./_app/immutable/entry/app.96d27cee.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
