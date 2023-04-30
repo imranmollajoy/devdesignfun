@@ -71,6 +71,18 @@ export async function getPostsByCategory(
 	}
 }
 
+export async function getAllTags(posts: PostType[]) {
+	const allTags = new Set();
+
+	posts.forEach((post) => {
+		post.tags.forEach((tag) => {
+			allTags.add(tag);
+		});
+	});
+
+	return Array.from(allTags);
+}
+
 /**
  * Gets posts by tag
  */
