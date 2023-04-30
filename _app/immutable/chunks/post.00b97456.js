@@ -1,105 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.ico" />
-		<link rel="alternate" type="application/atom+xml" href="/rss.xml" />
-		<link rel="sitemap" href="/sitemap.xml" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
-		<link rel="manifest" href="../site.webmanifest" />
-		<script type="module">
-			const htmlElement = document.documentElement;
-			const userTheme = localStorage.theme;
-
-			// check if the user set a theme
-			if (userTheme) {
-				htmlElement.dataset.theme = userTheme;
-			}
-			// otherwise check for user preference
-			if (!userTheme) {
-				htmlElement.dataset.theme = 'Blu';
-				localStorage.theme = 'Blu';
-			}
-		</script>
-		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.d99939ff.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/img.ebe4283e.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/default.5c045b07.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/post.8ac2c1fb.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.3f2c22a8.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.a3b8d16d.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c497f9a4.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.c1a5b80a.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.1ff9527a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.4d3a45cd.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.834793c8.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.505b2605.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/post.81c879ca.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.ts.396be9bd.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.46b73265.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.svelte.4c62abd6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/SEO.eb89c16a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/img.d47dcdc4.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.ts.c3343faf.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page.fb3261ec.js"><title>Create a horizontal scroll section with HTML,CSS and JS</title><!-- HEAD_svelte-1fqad1o_START --><!-- HTML_TAG_START --><script>(function setInitialClassState() {
-  const elemHtmlClasses = document.documentElement.classList;
-  const condLocalStorageUserPrefs = localStorage.getItem("modeUserPrefers") === "false";
-  const condLocalStorageUserPrefsExists = !("modeUserPrefers" in localStorage);
-  const condMatchMedia = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  if (condLocalStorageUserPrefs || condLocalStorageUserPrefsExists && condMatchMedia) {
-    elemHtmlClasses.add("dark");
-  } else {
-    elemHtmlClasses.remove("dark");
-  }
-})();</script><!-- HTML_TAG_END --><!-- HEAD_svelte-1fqad1o_END --><!-- HEAD_svelte-leocik_START -->
-		<meta property="og:title" content="Create a horizontal scroll section with HTML,CSS and JS"><meta name="description" content="Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.">
-		<meta property="og:description" content="Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website."><meta name="keywords" content="tutorial,how-to,web-dev"><meta property="og:type" content="article"><meta property="og:image" content="./create-horizontal-scroll-section-html-css-js/featured.webp"><!-- HEAD_svelte-leocik_END -->
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
-
-
-
-
-<div class="app-bar flex flex-col bg-surface-50-900-token   space-y-4 p-4  sticky top-0 z-10 " data-testid="app-bar" role="toolbar" aria-label="" aria-labelledby="">
-	<div class="app-bar-row-main grid items-center grid-cols-[auto_1fr_auto] gap-4 ">
-		<div class="app-bar-slot-lead flex-none flex justify-between items-center "><a href="/"><h4>Dev.Design.Fun</h4></a></div>
-		
-		<div class="app-bar-slot-default flex-auto "></div>
-		
-		<div class="app-bar-slot-trail flex-none flex items-center space-x-4 ">
-
-<div class="lightswitch-track cursor-pointer transition-all duration-[200ms] w-12 h-6 ring-[1px] ring-surface-500/30 rounded-token bg-surface-900 " role="switch" aria-label="Light Switch" aria-checked="false" title="Toggle Light Mode" tabindex="0">
-	<div class="lightswitch-thumb aspect-square scale-[0.8] flex justify-center items-center transition-all duration-[200ms] h-6 rounded-token bg-surface-50 ">
-		<svg class="lightswitch-icon w-[70%] aspect-square fill-surface-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></div></div>
-	</div></div>
-	
-	</div>
-
-<div class="bg-surface-50-900-token mb-96">
-<div class="container my-8"><div class="grid grid-cols-3 gap-8"><article class="col-span-3 lg:col-span-2 space-y-8"><div class="flex gap-4 flex-wrap"><a href="/category/Code"><span class="badge Code">Code</span></a>
-				<p class="opacity-50">8 minutes to read ~
-					December 12, 2022</p></div>
-
-			<h1>Create a horizontal scroll section with HTML,CSS and JS</h1>
-			<figure class="svelte-1q560ut"><img src="./create-horizontal-scroll-section-html-css-js/featured.webp" alt="" loading="lazy" class="svelte-1q560ut">
-	<div class="svelte-1q560ut"><p class="svelte-1q560ut"></p></div>
-</figure>
-			<main class="prose-xl max-w-none"><h3>Table of contents</h3>
-				<nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#horizontal-section">Horizontal Section</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#making-a-horizontal-section">Making a horizontal section</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#adding-scroll-functionality">Adding scroll functionality</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#final-code">Final Code</a></li></ol></nav>
-
-
-
-<h2 id="horizontal-section">Horizontal Section</h2>
-<p>A horizontal section is a type of layout in which the content is arranged from left to right, rather than from top to bottom. This design can be elegant and visually appealing, and it can also save space by allowing more content to be displayed on the screen at once. Horizontal sections are commonly used in web design to create menus, galleries, or other types of content that can be easily scrolled through by the user. To create a horizontal section, you can use CSS styles such as <code>display: flex;</code> and <code>flex-wrap: wrap;</code> to control the layout and appearance of the content.</p>
-<h2 id="making-a-horizontal-section">Making a horizontal section</h2>
-<p>Create three files: index.html, index.css, and index.js. Name them to your liking, but make sure to link them properly in the index.html file. Then, open the index.html file in your favorite code editor and add the following code:</p>
-<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+import{S as pn,i as on,s as en,I as La,k as o,q as k,a as m,y as cn,l as e,m as c,r,h as n,c as g,z as ln,n as u,b as t,D as p,A as un,Z as kn,_ as Ba,g as rn,d as mn,B as gn,J as Fa,Q as hn}from"./index.a3b8d16d.js";import{D as dn}from"./default.7af4f45d.js";function fn(Z){let i,f,y,d,R,w,x,O,b,T,E,j,v,S,M,q,_,A,z,sa=`<code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
@@ -117,9 +16,7 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
-<p>Open the CSS file, add the following code:</p>
-<pre class="language-css"><!-- HTML_TAG_START --><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">&#123;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code>`,l,h,L,I,C,ta=`<code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">max-width</span><span class="token punctuation">:</span> 1024px<span class="token punctuation">;</span>
 	<span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
@@ -138,9 +35,7 @@
 <span class="token selector">.horizontal-section::-webkit-scrollbar</span> <span class="token punctuation">&#123;</span>
 	<span class="token comment">/* Hide the scrollbar */</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>Now that we have the basic structure in place, let’s add the content that we want to display in the horizontal section of the page.</p>
-<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token comment">&lt;!-- main start --></span>
+<span class="token punctuation">&#125;</span></code>`,N,P,K,$,H,oa=`<code class="language-html"><span class="token comment">&lt;!-- main start --></span>
 <span class="token comment">&lt;!-- The horizontal section --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal-section<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -185,20 +80,14 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Lorem ipsum this is a text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span>
-<span class="token comment">&lt;!-- main end --></span></code><!-- HTML_TAG_END --></pre>
-<p>Now that we have added the content, let’s focus on styling the cards to make them look more attractive and professional. We can use CSS styles to control the layout, colors, fonts, and other aspects of the cards’ appearance.</p>
-<pre class="language-css"><!-- HTML_TAG_START --><code class="language-css"><span class="token selector">.card</span> <span class="token punctuation">&#123;</span>
+<span class="token comment">&lt;!-- main end --></span></code>`,ea,X,ya,ca,B,Wa=`<code class="language-css"><span class="token selector">.card</span> <span class="token punctuation">&#123;</span>
 	<span class="token comment">/* setting a width a important, otherwise */</span>
 	<span class="token comment">/* the section won't be overflowed */</span>
 	<span class="token property">min-width</span><span class="token punctuation">:</span> 250px <span class="token important">!important</span><span class="token punctuation">;</span>
 	<span class="token property">height</span><span class="token punctuation">:</span> 356px<span class="token punctuation">;</span>
 	<span class="token property">background-color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
 	<span class="token property">padding</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>Great! Now, open the index.html file in your web browser to see the result. You’ll notice that the section is horizontal and that the contents are overflowing and hidden.</p>
-<h3 id="adding-scroll-functionality">Adding scroll functionality</h3>
-<p>But you can’t scroll to view rest of them. This is where we need a little bit of javascript. Open the index.js file and add the following code</p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token comment">// get all classes .horizontal-section, assign it to const hSection</span>
+<span class="token punctuation">&#125;</span></code>`,la,Q,wa,ua,F,ba,ia,V,_a,ka,Y,Ua=`<code class="language-javascript"><span class="token comment">// get all classes .horizontal-section, assign it to const hSection</span>
 <span class="token keyword">const</span> hSections <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.horizontal-section'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">//attach wheel event listener to each hSection</span>
@@ -217,11 +106,7 @@ hSections<span class="token punctuation">.</span><span class="token function">fo
 		<span class="token comment">// otherwise to the right</span>
 		<span class="token keyword">else</span> hSection<span class="token punctuation">.</span>scrollLeft <span class="token operator">-=</span> scrollAmount<span class="token punctuation">;</span>
 	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
-<p>Save and test the index.html. It’s <strong>working</strong>!</p>
-<h2 id="final-code">Final Code</h2>
-<p>Here is the complete code for the index.html, index.css, and index.js files, which you can use to create a horizontal section with scrollable cards:</p>
-<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token comment">&lt;!-- index.html --></span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`,ra,D,xa,pa,Ea,Sa,ma,W,qa,ga,aa,za,ha,U,Ga=`<code class="language-html"><span class="token comment">&lt;!-- index.html --></span>
 <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -283,8 +168,7 @@ hSections<span class="token punctuation">.</span><span class="token function">fo
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
-<pre class="language-css"><!-- HTML_TAG_START --><code class="language-css"><span class="token comment">/* index.css */</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code>`,da,G,Ja=`<code class="language-css"><span class="token comment">/* index.css */</span>
 <span class="token selector">.container</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">max-width</span><span class="token punctuation">:</span> 1024px<span class="token punctuation">;</span>
 	<span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
@@ -333,8 +217,7 @@ hSections<span class="token punctuation">.</span><span class="token function">fo
 	<span class="token property">font-weight</span><span class="token punctuation">:</span> 300<span class="token punctuation">;</span>
 	<span class="token property">line-height</span><span class="token punctuation">:</span> 1.3<span class="token punctuation">;</span>
 	<span class="token property">font-size</span><span class="token punctuation">:</span> 1.777rem<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token comment">// index.js</span>
+<span class="token punctuation">&#125;</span></code>`,fa,J,Za=`<code class="language-js"><span class="token comment">// index.js</span>
 <span class="token keyword">const</span> hSections <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.horizontal-section'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 hSections<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">hSection</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
 	<span class="token keyword">const</span> scrollAmount <span class="token operator">=</span> hSection<span class="token punctuation">.</span>clientWidth<span class="token punctuation">;</span>
@@ -343,57 +226,4 @@ hSections<span class="token punctuation">.</span><span class="token function">fo
 		<span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>deltaY <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> hSection<span class="token punctuation">.</span>scrollLeft <span class="token operator">+=</span> scrollAmount<span class="token punctuation">;</span>
 		<span class="token keyword">else</span> hSection<span class="token punctuation">.</span>scrollLeft <span class="token operator">-=</span> scrollAmount<span class="token punctuation">;</span>
 	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre></main>
-			<div class="tags space-x-4"><a href="/tag/tutorial"><span class="chip variant-filled-secondary">tutorial</span>
-					</a><a href="/tag/how-to"><span class="chip variant-filled-secondary">how-to</span>
-					</a><a href="/tag/web-dev"><span class="chip variant-filled-secondary">web-dev</span>
-					</a></div>
-			<p class="opacity-50 py-16"><strong>Last updated: April 30, 2023</strong></p></article>
-		<div class="col col-span-3 lg:col-span-1"><div class="space-y-8 sticky top-32">
-				<div class="space-y-4"><h3>Related</h3>
-					<article><p class="opacity-50">December 29, 2022</p>
-							<a href="/article/create-button-component-for-svelte"><h3>Create A Reusable Button Component for Svelte</h3>
-								<p>Robust and flexible button component for your Svelte/SvelteKit project</p></a>
-						</article><article><p class="opacity-50">April 26, 2023</p>
-							<a href="/article/seo-component-for-svelte"><h3>SEO Component for Svelte</h3>
-								<p>Robust and flexible SEO component for your Svelte/SvelteKit project</p></a>
-						</article></div></div></div></div></div></div>
-
-<footer class="py-32 bg-surface-100-800-token svelte-1t8ntuv"><div class="container"><div class="grid grid-cols-2 lg:grid-cols-4 gap-8"><div class="col space-y-4"><h4>Navigation</h4>
-				<a href="/">Home</a></div>
-			<div class="col"><h4>Categories</h4>
-				<div class="space-y-2"></div></div>
-			<div class="col"></div>
-			<div class="col"><img src="/ddfllgotransparent.png" alt="" class="w-16">
-				<a href="/"><h3>DevDesignFun.com</h3></a></div></div></div>
-</footer>
-
-
-			<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android\",\"date\":\"February 7, 2023\",\"category\":\"Apps\",\"author\":\"Imran\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\"],\"cover\":{\"image\":\"https://devdesignfun.com/article/ad-free-alternatives-on-android/featured.webp\"},\"slug\":\"ad-free-alternatives-on-android\",\"weight\":1,\"readingTime\":\"3 minutes\",\"updated\":\"2023-04-30T03:24:30.595Z\"},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"December 29, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"create-button-component-for-svelte\",\"weight\":99,\"cover\":{\"image\":\"https://devdesignfun.com/article/create-button-component-for-svelte/featured.webp\"},\"readingTime\":\"7 minutes\",\"updated\":\"2023-04-30T03:24:46.019Z\"},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"December 12, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"cover\":{\"image\":\"https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/featured.webp\"},\"weight\":9,\"readingTime\":\"8 minutes\",\"updated\":\"2023-04-30T03:24:57.043Z\"},{\"title\":\"SEO Component for Svelte\",\"date\":\"April 26, 2023\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible SEO component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"seo-component-for-svelte\",\"weight\":10,\"cover\":{\"image\":\"https://devdesignfun.com/article/seo-component-for-svelte/featured.webp\"},\"readingTime\":\"4 minutes\",\"updated\":\"2023-04-30T03:25:13.955Z\"},{\"title\":\"The Last Tool For Colors You'll Ever Need\",\"slug\":\"the-last-tool-for-colors\",\"date\":\"April 28, 2023\",\"category\":\"Design\",\"author\":\"Imran\",\"description\":\"Choosing colors is hard. What if an AI can do it for you? Let's explore the possibilities.\",\"tags\":[\"web design\",\"colors\"],\"weight\":12,\"updated\":\"2023-04-29T14:52:10.599Z\",\"draft\":false,\"readingTime\":\"3 minutes\",\"cover\":{\"image\":\"https://devdesignfun.com/ddf.webp\"}}]"}</script>
-			<script>
-				{
-					__sveltekit_sp8tq4 = {
-						base: new URL("..", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.3f2c22a8.js"),
-						import("../_app/immutable/entry/app.1ff9527a.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 3],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`;return{c(){i=o("h2"),f=k("Horizontal Section"),y=m(),d=o("p"),R=k("A horizontal section is a type of layout in which the content is arranged from left to right, rather than from top to bottom. This design can be elegant and visually appealing, and it can also save space by allowing more content to be displayed on the screen at once. Horizontal sections are commonly used in web design to create menus, galleries, or other types of content that can be easily scrolled through by the user. To create a horizontal section, you can use CSS styles such as "),w=o("code"),x=k("display: flex;"),O=k(" and "),b=o("code"),T=k("flex-wrap: wrap;"),E=k(" to control the layout and appearance of the content."),j=m(),v=o("h2"),S=k("Making a horizontal section"),M=m(),q=o("p"),_=k("Create three files: index.html, index.css, and index.js. Name them to your liking, but make sure to link them properly in the index.html file. Then, open the index.html file in your favorite code editor and add the following code:"),A=m(),z=o("pre"),l=m(),h=o("p"),L=k("Open the CSS file, add the following code:"),I=m(),C=o("pre"),N=m(),P=o("p"),K=k("Now that we have the basic structure in place, let’s add the content that we want to display in the horizontal section of the page."),$=m(),H=o("pre"),ea=m(),X=o("p"),ya=k("Now that we have added the content, let’s focus on styling the cards to make them look more attractive and professional. We can use CSS styles to control the layout, colors, fonts, and other aspects of the cards’ appearance."),ca=m(),B=o("pre"),la=m(),Q=o("p"),wa=k("Great! Now, open the index.html file in your web browser to see the result. You’ll notice that the section is horizontal and that the contents are overflowing and hidden."),ua=m(),F=o("h3"),ba=k("Adding scroll functionality"),ia=m(),V=o("p"),_a=k("But you can’t scroll to view rest of them. This is where we need a little bit of javascript. Open the index.js file and add the following code"),ka=m(),Y=o("pre"),ra=m(),D=o("p"),xa=k("Save and test the index.html. It’s "),pa=o("strong"),Ea=k("working"),Sa=k("!"),ma=m(),W=o("h2"),qa=k("Final Code"),ga=m(),aa=o("p"),za=k("Here is the complete code for the index.html, index.css, and index.js files, which you can use to create a horizontal section with scrollable cards:"),ha=m(),U=o("pre"),da=m(),G=o("pre"),fa=m(),J=o("pre"),this.h()},l(a){i=e(a,"H2",{id:!0});var s=c(i);f=r(s,"Horizontal Section"),s.forEach(n),y=g(a),d=e(a,"P",{});var na=c(d);R=r(na,"A horizontal section is a type of layout in which the content is arranged from left to right, rather than from top to bottom. This design can be elegant and visually appealing, and it can also save space by allowing more content to be displayed on the screen at once. Horizontal sections are commonly used in web design to create menus, galleries, or other types of content that can be easily scrolled through by the user. To create a horizontal section, you can use CSS styles such as "),w=e(na,"CODE",{});var Ta=c(w);x=r(Ta,"display: flex;"),Ta.forEach(n),O=r(na," and "),b=e(na,"CODE",{});var Ca=c(b);T=r(Ca,"flex-wrap: wrap;"),Ca.forEach(n),E=r(na," to control the layout and appearance of the content."),na.forEach(n),j=g(a),v=e(a,"H2",{id:!0});var Ha=c(v);S=r(Ha,"Making a horizontal section"),Ha.forEach(n),M=g(a),q=e(a,"P",{});var Aa=c(q);_=r(Aa,"Create three files: index.html, index.css, and index.js. Name them to your liking, but make sure to link them properly in the index.html file. Then, open the index.html file in your favorite code editor and add the following code:"),Aa.forEach(n),A=g(a),z=e(a,"PRE",{class:!0});var Ka=c(z);Ka.forEach(n),l=g(a),h=e(a,"P",{});var Pa=c(h);L=r(Pa,"Open the CSS file, add the following code:"),Pa.forEach(n),I=g(a),C=e(a,"PRE",{class:!0});var Xa=c(C);Xa.forEach(n),N=g(a),P=e(a,"P",{});var ja=c(P);K=r(ja,"Now that we have the basic structure in place, let’s add the content that we want to display in the horizontal section of the page."),ja.forEach(n),$=g(a),H=e(a,"PRE",{class:!0});var Qa=c(H);Qa.forEach(n),ea=g(a),X=e(a,"P",{});var Ma=c(X);ya=r(Ma,"Now that we have added the content, let’s focus on styling the cards to make them look more attractive and professional. We can use CSS styles to control the layout, colors, fonts, and other aspects of the cards’ appearance."),Ma.forEach(n),ca=g(a),B=e(a,"PRE",{class:!0});var Va=c(B);Va.forEach(n),la=g(a),Q=e(a,"P",{});var Da=c(Q);wa=r(Da,"Great! Now, open the index.html file in your web browser to see the result. You’ll notice that the section is horizontal and that the contents are overflowing and hidden."),Da.forEach(n),ua=g(a),F=e(a,"H3",{id:!0});var Ra=c(F);ba=r(Ra,"Adding scroll functionality"),Ra.forEach(n),ia=g(a),V=e(a,"P",{});var Oa=c(V);_a=r(Oa,"But you can’t scroll to view rest of them. This is where we need a little bit of javascript. Open the index.js file and add the following code"),Oa.forEach(n),ka=g(a),Y=e(a,"PRE",{class:!0});var an=c(Y);an.forEach(n),ra=g(a),D=e(a,"P",{});var va=c(D);xa=r(va,"Save and test the index.html. It’s "),pa=e(va,"STRONG",{});var Ia=c(pa);Ea=r(Ia,"working"),Ia.forEach(n),Sa=r(va,"!"),va.forEach(n),ma=g(a),W=e(a,"H2",{id:!0});var Na=c(W);qa=r(Na,"Final Code"),Na.forEach(n),ga=g(a),aa=e(a,"P",{});var $a=c(aa);za=r($a,"Here is the complete code for the index.html, index.css, and index.js files, which you can use to create a horizontal section with scrollable cards:"),$a.forEach(n),ha=g(a),U=e(a,"PRE",{class:!0});var nn=c(U);nn.forEach(n),da=g(a),G=e(a,"PRE",{class:!0});var sn=c(G);sn.forEach(n),fa=g(a),J=e(a,"PRE",{class:!0});var tn=c(J);tn.forEach(n),this.h()},h(){u(i,"id","horizontal-section"),u(v,"id","making-a-horizontal-section"),u(z,"class","language-html"),u(C,"class","language-css"),u(H,"class","language-html"),u(B,"class","language-css"),u(F,"id","adding-scroll-functionality"),u(Y,"class","language-javascript"),u(W,"id","final-code"),u(U,"class","language-html"),u(G,"class","language-css"),u(J,"class","language-js")},m(a,s){t(a,i,s),p(i,f),t(a,y,s),t(a,d,s),p(d,R),p(d,w),p(w,x),p(d,O),p(d,b),p(b,T),p(d,E),t(a,j,s),t(a,v,s),p(v,S),t(a,M,s),t(a,q,s),p(q,_),t(a,A,s),t(a,z,s),z.innerHTML=sa,t(a,l,s),t(a,h,s),p(h,L),t(a,I,s),t(a,C,s),C.innerHTML=ta,t(a,N,s),t(a,P,s),p(P,K),t(a,$,s),t(a,H,s),H.innerHTML=oa,t(a,ea,s),t(a,X,s),p(X,ya),t(a,ca,s),t(a,B,s),B.innerHTML=Wa,t(a,la,s),t(a,Q,s),p(Q,wa),t(a,ua,s),t(a,F,s),p(F,ba),t(a,ia,s),t(a,V,s),p(V,_a),t(a,ka,s),t(a,Y,s),Y.innerHTML=Ua,t(a,ra,s),t(a,D,s),p(D,xa),p(D,pa),p(pa,Ea),p(D,Sa),t(a,ma,s),t(a,W,s),p(W,qa),t(a,ga,s),t(a,aa,s),p(aa,za),t(a,ha,s),t(a,U,s),U.innerHTML=Ga,t(a,da,s),t(a,G,s),G.innerHTML=Ja,t(a,fa,s),t(a,J,s),J.innerHTML=Za},p:hn,d(a){a&&n(i),a&&n(y),a&&n(d),a&&n(j),a&&n(v),a&&n(M),a&&n(q),a&&n(A),a&&n(z),a&&n(l),a&&n(h),a&&n(I),a&&n(C),a&&n(N),a&&n(P),a&&n($),a&&n(H),a&&n(ea),a&&n(X),a&&n(ca),a&&n(B),a&&n(la),a&&n(Q),a&&n(ua),a&&n(F),a&&n(ia),a&&n(V),a&&n(ka),a&&n(Y),a&&n(ra),a&&n(D),a&&n(ma),a&&n(W),a&&n(ga),a&&n(aa),a&&n(ha),a&&n(U),a&&n(da),a&&n(G),a&&n(fa),a&&n(J)}}}function vn(Z){let i,f,y,d,R,w,x,O,b,T,E,j,v,S,M,q,_,A;const z=[Z[0],Ya];let sa={$$slots:{default:[fn]},$$scope:{ctx:Z}};for(let l=0;l<z.length;l+=1)sa=La(sa,z[l]);return _=new dn({props:sa}),{c(){i=o("nav"),f=o("ol"),y=o("li"),d=o("a"),R=k("Horizontal Section"),w=o("li"),x=o("a"),O=k("Making a horizontal section"),b=o("ol"),T=o("li"),E=o("a"),j=k("Adding scroll functionality"),v=o("li"),S=o("a"),M=k("Final Code"),q=m(),cn(_.$$.fragment),this.h()},l(l){i=e(l,"NAV",{class:!0});var h=c(i);f=e(h,"OL",{class:!0});var L=c(f);y=e(L,"LI",{class:!0});var I=c(y);d=e(I,"A",{class:!0,href:!0});var C=c(d);R=r(C,"Horizontal Section"),C.forEach(n),I.forEach(n),w=e(L,"LI",{class:!0});var ta=c(w);x=e(ta,"A",{class:!0,href:!0});var N=c(x);O=r(N,"Making a horizontal section"),N.forEach(n),b=e(ta,"OL",{class:!0});var P=c(b);T=e(P,"LI",{class:!0});var K=c(T);E=e(K,"A",{class:!0,href:!0});var $=c(E);j=r($,"Adding scroll functionality"),$.forEach(n),K.forEach(n),P.forEach(n),ta.forEach(n),v=e(L,"LI",{class:!0});var H=c(v);S=e(H,"A",{class:!0,href:!0});var oa=c(S);M=r(oa,"Final Code"),oa.forEach(n),H.forEach(n),L.forEach(n),h.forEach(n),q=g(l),ln(_.$$.fragment,l),this.h()},h(){u(d,"class","toc-link toc-link-h2"),u(d,"href","#horizontal-section"),u(y,"class","toc-item toc-item-h2"),u(x,"class","toc-link toc-link-h2"),u(x,"href","#making-a-horizontal-section"),u(E,"class","toc-link toc-link-h3"),u(E,"href","#adding-scroll-functionality"),u(T,"class","toc-item toc-item-h3"),u(b,"class","toc-level toc-level-2"),u(w,"class","toc-item toc-item-h2"),u(S,"class","toc-link toc-link-h2"),u(S,"href","#final-code"),u(v,"class","toc-item toc-item-h2"),u(f,"class","toc-level toc-level-1"),u(i,"class","toc")},m(l,h){t(l,i,h),p(i,f),p(f,y),p(y,d),p(d,R),p(f,w),p(w,x),p(x,O),p(w,b),p(b,T),p(T,E),p(E,j),p(f,v),p(v,S),p(S,M),t(l,q,h),un(_,l,h),A=!0},p(l,[h]){const L=h&1?kn(z,[h&1&&Ba(l[0]),h&0&&Ba(Ya)]):{};h&2&&(L.$$scope={dirty:h,ctx:l}),_.$set(L)},i(l){A||(rn(_.$$.fragment,l),A=!0)},o(l){mn(_.$$.fragment,l),A=!1},d(l){l&&n(i),l&&n(q),gn(_,l)}}}const Ya={title:"Create a horizontal scroll section with HTML,CSS and JS",date:"2022-12-12T00:00:00.000Z",category:"Code",author:"Imran",description:"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.",tags:["tutorial","how-to","web-dev"],slug:"create-horizontal-scroll-section-html-css-js",cover:{image:"featured.webp"},weight:9,readingTime:"8 minutes",updated:"2023-04-30T03:24:57.043Z"};function yn(Z,i,f){return Z.$$set=y=>{f(0,i=La(La({},i),Fa(y)))},i=Fa(i),[i]}class _n extends pn{constructor(i){super(),on(this,i,yn,vn,en,{})}}export{_n as default,Ya as metadata};
