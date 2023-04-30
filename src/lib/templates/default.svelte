@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
 	import img from '$lib/components/img.svelte';
-	export { img };
+	import a from '$lib/components/Link.svelte';
+	export { img, a };
 </script>
 
 <script>
