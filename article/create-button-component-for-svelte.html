@@ -25,26 +25,28 @@
 			}
 		</script>
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.fb18f4c0.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_layout.7189d351.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/img.ebe4283e.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/default.5c045b07.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/post.8ac2c1fb.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.c855c50f.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.18bd6673.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.bdb52f4b.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.e84d7b59.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.96d27cee.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.6754353c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.f816d489.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.97460ad3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.696c7053.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.15de5233.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.d6d533f3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.fbe28def.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.6f228fa0.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.3119afb9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.79642e74.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.253ab4ae.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/post.81c879ca.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.ts.396be9bd.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.46b73265.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.svelte.66229a8a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/SEO.a1ff08d3.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.ts.c7d65ee6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page.5f1acc6e.js"><title>Create A Reusable Button Component for Svelte</title><!-- HEAD_svelte-1fqad1o_START --><!-- HTML_TAG_START --><script>(function setInitialClassState() {
+		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.svelte.b25ce196.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/SEO.d7753f6c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/img.133ce50d.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/article-_slug_-page.ts.342df70b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.b3006576.js"><title>Create A Reusable Button Component for Svelte</title><!-- HEAD_svelte-1fqad1o_START --><!-- HTML_TAG_START --><script>(function setInitialClassState() {
   const elemHtmlClasses = document.documentElement.classList;
   const condLocalStorageUserPrefs = localStorage.getItem("modeUserPrefers") === "false";
   const condLocalStorageUserPrefsExists = !("modeUserPrefers" in localStorage);
@@ -83,7 +85,9 @@
 					December 29, 2022</p></div>
 
 			<h1>Create A Reusable Button Component for Svelte</h1>
-			<img src="./create-button-component-for-svelte/featured.webp" alt="" loading="lazy">
+			<figure class="svelte-1q560ut"><img src="./create-button-component-for-svelte/featured.webp" alt="" loading="lazy" class="svelte-1q560ut">
+	<div class="svelte-1q560ut"><p class="svelte-1q560ut"></p></div>
+</figure>
 			<main class="prose-xl max-w-none"><h3>Table of contents</h3>
 				<nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#final-result">Final result</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#usages">Usages</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#customizing">Customizing</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#colors">Colors</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#extending">Extending</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#code">Code</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ts-and-sass-version">TS and SASS Version</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#js-and-css-version">JS and CSS Version</a></li></ol></li></ol></nav>
 
@@ -453,10 +457,10 @@
 				<a href="/"><h3>DevDesignFun.com</h3></a></div></div></div></footer>
 
 
-			<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android\",\"date\":\"April 26, 2023\",\"category\":\"Apps\",\"author\":\"Imran\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\"],\"cover\":{\"image\":\"https://devdesignfun.com/article/ad-free-alternatives-on-android/featured.webp\"},\"slug\":\"ad-free-alternatives-on-android\",\"weight\":1,\"readingTime\":\"3 minutes\",\"updated\":\"2023-04-30T03:24:30.595Z\"},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"December 29, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"create-button-component-for-svelte\",\"weight\":99,\"cover\":{\"image\":\"https://devdesignfun.com/article/create-button-component-for-svelte/featured.webp\"},\"readingTime\":\"7 minutes\",\"updated\":\"2023-04-30T03:24:46.019Z\"},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"December 12, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"cover\":{\"image\":\"https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/featured.webp\"},\"weight\":9,\"readingTime\":\"8 minutes\",\"updated\":\"2023-04-30T03:24:57.043Z\"},{\"title\":\"SEO Component for Svelte\",\"date\":\"April 26, 2023\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible SEO component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"seo-component-for-svelte\",\"weight\":10,\"cover\":{\"image\":\"https://devdesignfun.com/article/seo-component-for-svelte/featured.webp\"},\"readingTime\":\"4 minutes\",\"updated\":\"2023-04-30T03:25:13.955Z\"}]"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android\",\"date\":\"April 26, 2023\",\"category\":\"Apps\",\"author\":\"Imran\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\"],\"cover\":{\"image\":\"https://devdesignfun.com/article/ad-free-alternatives-on-android/featured.webp\"},\"slug\":\"ad-free-alternatives-on-android\",\"weight\":1,\"readingTime\":\"3 minutes\",\"updated\":\"2023-04-30T03:24:30.595Z\"},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"December 29, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"create-button-component-for-svelte\",\"weight\":99,\"cover\":{\"image\":\"https://devdesignfun.com/article/create-button-component-for-svelte/featured.webp\"},\"readingTime\":\"7 minutes\",\"updated\":\"2023-04-30T03:24:46.019Z\"},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"December 12, 2022\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"cover\":{\"image\":\"https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/featured.webp\"},\"weight\":9,\"readingTime\":\"8 minutes\",\"updated\":\"2023-04-30T03:24:57.043Z\"},{\"title\":\"SEO Component for Svelte\",\"date\":\"April 26, 2023\",\"category\":\"Code\",\"author\":\"Imran\",\"description\":\"Robust and flexible SEO component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"seo-component-for-svelte\",\"weight\":10,\"cover\":{\"image\":\"https://devdesignfun.com/article/seo-component-for-svelte/featured.webp\"},\"readingTime\":\"4 minutes\",\"updated\":\"2023-04-30T03:25:13.955Z\"},{\"title\":\"The Last Tool For Colors You'll Ever Need\",\"slug\":\"the-last-tool-for-colors\",\"date\":\"April 28, 2023\",\"category\":\"Design\",\"author\":\"Imran\",\"description\":\"Choosing colors is hard. What if an AI can do it for you? Let's explore the possibilities.\",\"tags\":[\"web design\",\"colors\"],\"weight\":12,\"updated\":\"2023-04-29T14:52:10.599Z\",\"draft\":false,\"readingTime\":\"3 minutes\",\"cover\":{\"image\":\"https://devdesignfun.com/featured.webp\"}}]"}</script>
 			<script>
 				{
-					__sveltekit_1m9q30a = {
+					__sveltekit_13yl6wn = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -466,8 +470,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.c855c50f.js"),
-						import("../_app/immutable/entry/app.96d27cee.js")
+						import("../_app/immutable/entry/start.6754353c.js"),
+						import("../_app/immutable/entry/app.15de5233.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
