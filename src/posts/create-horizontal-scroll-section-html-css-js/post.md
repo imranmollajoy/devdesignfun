@@ -12,6 +12,8 @@ slug: create-horizontal-scroll-section-html-css-js
 cover:
   image: featured.webp
 weight: 9
+readingTime: 8 minutes
+updated: 2023-04-30T03:24:57.043Z
 ---
 
 ## Horizontal Section

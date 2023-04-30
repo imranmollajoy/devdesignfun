@@ -13,6 +13,8 @@ slug: create-button-component-for-svelte
 weight: 99
 cover:
   image: featured.webp
+readingTime: 7 minutes
+updated: 2023-04-30T03:24:46.019Z
 ---
 
 <script>
