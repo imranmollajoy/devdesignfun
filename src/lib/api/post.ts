@@ -4,21 +4,8 @@ import type { PostsType, PostType } from '$lib/types';
  */
 export async function getPosts(data: PostType[]): Promise<PostsType> {
 	const postLimit = 8;
-	const characterLimit = 80;
 
-	const posts = data
-		.filter((post) => !post.draft)
-		.map((post) => {
-			const descriptionLength = post.description.length;
-			const ellipsis = descriptionLength > characterLimit ? '...' : '';
-			const description = post.description.substring(0, characterLimit) + ellipsis;
-
-			return {
-				...post,
-				description
-			};
-		});
-
+	const posts = data.filter((post) => !post.draft);
 	function sortedPosts(): PostType[] {
 		return [...posts].sort((firstElement, secondElement) => {
 			return new Date(secondElement.date).getTime() - new Date(firstElement.date).getTime();

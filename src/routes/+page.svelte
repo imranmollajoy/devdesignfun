@@ -9,7 +9,6 @@
 
 <Seo />
 <HeroPosts {featured} />
-
 <section class="py-12">
 	<div class="container">
 		<CategorizedPosts categorizedPosts={categorized} />
