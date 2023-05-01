@@ -17,14 +17,14 @@ export async function getPosts(data: PostType[]): Promise<PostsType> {
 	}
 
 	function getPicks(): PostType[] {
-		return [...posts].sort((f, s) => s.weight - f.weight).slice(0, 4);
+		return [...sortedPosts()].sort((f, s) => s.weight - f.weight).slice(0, 4);
 	}
 
 	async function getCategorizedPosts() {
 		return {
-			code: await getPostsByCategory(sortedPosts(), 'Code', 4),
-			apps: await getPostsByCategory(sortedPosts(), 'Apps', 4),
-			design: await getPostsByCategory(sortedPosts(), 'Design', 4)
+			code: await getPostsByCategory(sortedPosts(), 'Code', 3),
+			apps: await getPostsByCategory(sortedPosts(), 'Apps', 3),
+			design: await getPostsByCategory(sortedPosts(), 'Design', 3)
 		};
 	}
 

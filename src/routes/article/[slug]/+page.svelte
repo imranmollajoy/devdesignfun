@@ -59,7 +59,7 @@
 				</p>
 			{/if}
 		</article>
-		<div class="col col-span-3 lg:col-span-1">
+		<div class="col col-span-3 lg:col-span-1 pb-32">
 			<div class="space-y-8 sticky top-32">
 				<!-- {#key data.content}
 				{/key} -->
