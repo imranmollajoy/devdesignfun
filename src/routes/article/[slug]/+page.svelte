@@ -70,23 +70,23 @@
 				</p>
 			{/if}
 		</article>
-		<div class="py-8">
-			<!-- {#key data.content}
-				{/key} -->
-			<div class="space-y-4">
-				<h3>Related</h3>
-				{#each data.related as post}
-					<article>
-						<p class="opacity-50">{post.date}</p>
-						<a href="/article/{post.slug}">
-							<h3>
-								{post.title}
-							</h3>
-							<p>{post.description}</p>
-						</a>
-					</article>
-				{/each}
+		{#if data.related.length>0}
+			<div class="py-8">
+				<div class="space-y-4">
+					<h3>Related</h3>
+					{#each data.related as post}
+						<article>
+							<p class="opacity-50">{post.date}</p>
+							<a href="/article/{post.slug}">
+								<h3>
+									{post.title}
+								</h3>
+								<p>{post.description}</p>
+							</a>
+						</article>
+					{/each}
+				</div>
 			</div>
-		</div>
+		{/if}
 	</div>
 </div>
