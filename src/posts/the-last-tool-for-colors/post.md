@@ -1,5 +1,5 @@
 ---
-title: The Last Tool For Colors You'll Ever Need
+title: The Last Tool You'll Ever Need For Color Palette
 slug: the-last-tool-for-colors
 date: 2023-04-28
 category: Design
