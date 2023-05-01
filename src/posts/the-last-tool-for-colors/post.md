@@ -3,7 +3,9 @@ title: The Last Tool You'll Ever Need For Color Palette
 slug: the-last-tool-for-colors
 date: 2023-04-28
 category: Design
-author: Imran
+author:
+  name: Imran Molla Joy
+  link: https://imranmollajoy.github.io
 description: Choosing colors is hard. What if an AI can do it for you? Let's explore the possibilities.
 tags:
   - web design

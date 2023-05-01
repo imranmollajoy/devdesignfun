@@ -2,7 +2,6 @@
 title: Create a horizontal scroll section with HTML,CSS and JS
 date: 2022-12-12
 category: Code
-author: Imran
 description: Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.
 tags:
   - tutorial
@@ -14,6 +13,9 @@ cover:
 weight: 9
 readingTime: 8 minutes
 updated: 2023-04-30T03:24:57.043Z
+author:
+  name: Imran Molla Joy
+  link: https://imranmollajoy.github.io
 ---
 
 ## Horizontal Section

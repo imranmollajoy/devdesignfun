@@ -2,7 +2,6 @@
 title: SEO Component for Svelte
 date: 2023-04-26
 category: Code
-author: Imran
 description: Robust and flexible SEO component for your Svelte/SvelteKit project
 tags:
   - tutorial
@@ -15,6 +14,9 @@ cover:
   image: featured.webp
 readingTime: 4 minutes
 updated: 2023-04-30T03:25:13.955Z
+author:
+  name: Imran Molla Joy
+  link: https://imranmollajoy.github.io
 ---
 
 It's really easy to make a component handling all the SEO stuff which can be used (and reused) throughout your Sveltekit website.

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Seo from '$lib/components/SEO.svelte';
-	import Img from '$lib/components/img.svelte';
 	import { getFormattedDate } from '$lib/utilities';
 	export let data;
 </script>
@@ -40,6 +39,9 @@
 		</div>
 
 		<h1>{data.meta.title}</h1>
+		<p class="underline">
+			<a href={data.meta.author?.link}>{data.meta.author?.name}</a>
+		</p>
 		{#if data.meta.cover}
 			<img
 				src="./{data.meta.slug}/{data.meta.cover?.image}"
@@ -70,7 +72,7 @@
 				</p>
 			{/if}
 		</article>
-		{#if data.related.length>0}
+		{#if data.related.length > 0}
 			<div class="py-8">
 				<div class="space-y-4">
 					<h3>Related</h3>

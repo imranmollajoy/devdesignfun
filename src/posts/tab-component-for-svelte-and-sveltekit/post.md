@@ -2,7 +2,9 @@
 title: Tab Component for Svelte/SvelteKit
 date: 2023-05-01T06:10:57.032Z
 category: Code
-author: ''
+author:
+  name: Imran Molla Joy
+  link: https://imranmollajoy.github.io
 description: A reusable tab component for svelte
 tags:
   - how-to

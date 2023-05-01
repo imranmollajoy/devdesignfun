@@ -2,14 +2,20 @@ export type Cover = {
 	image: string;
 	alt: string;
 };
+type Author = {
+	name: string;
+	link: string;
+};
 export type PostType = {
 	title: string;
 	description: string;
 	draft?: string;
 	slug: string;
-	author?: string;
+	author?: Author;
 	cover?: Cover;
 	date: string;
+	updated?: string;
+	readingTime: string;
 	tags: string[];
 	category: string;
 	weight: number;

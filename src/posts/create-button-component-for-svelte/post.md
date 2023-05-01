@@ -2,7 +2,6 @@
 title: Create A Reusable Button Component for Svelte
 date: 2022-12-29
 category: Code
-author: Imran
 description: Robust and flexible button component for your Svelte/SvelteKit project
 tags:
   - tutorial
@@ -15,6 +14,9 @@ cover:
   image: featured.webp
 readingTime: 7 minutes
 updated: 2023-05-01T13:31:23.485Z
+author:
+  name: Imran Molla Joy
+  link: https://imranmollajoy.github.io
 ---
 
 <script>
