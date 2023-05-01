@@ -24,7 +24,19 @@
         {
           "title": "author",
           "name": "author",
-          "type": "string"
+          "type": "fields",
+          "fields": [
+            {
+              "title": "name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "title": "link",
+              "name": "link",
+              "type": "string"
+            }
+          ]
         },
         {
           "title": "description",
