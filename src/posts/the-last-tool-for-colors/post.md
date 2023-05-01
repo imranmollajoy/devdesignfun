@@ -11,7 +11,7 @@ tags:
 weight: 12
 updated: 2023-04-29T14:52:10.599Z
 draft: false
-readingTime: 3 minutes
+readingTime: 4 minutes
 ---
 
 ## Colors
@@ -24,13 +24,13 @@ Huemint is a web-based tool that uses machine learning algorithms to suggest col
 
 ![Homepage of Huemint]({slug}/huemint_homepage.webp)
 
-*The interactive cube in the homepage is actually a subset of samples used to train the AI model! [More](https://huemint.com/about/#:~:text=subset%20of%20the-,samples,-plotted%20in%20CIE)*
+_The interactive cube in the homepage is actually a subset of samples used to train the AI model! [More](https://huemint.com/about/#:~:text=subset%20of%20the-,samples,-plotted%20in%20CIE)_
 
 ## Generating colors
 
 ![Color generation page](the-last-tool-for-colors/magazine_colors.webp)
 
-You can click on **Generate** to generate new set of colors. 
+You can click on **Generate** to generate new set of colors.
 
 How about you like some colors of a palette, but want to change a (or more) color? Well, you can lock your preferred color and hit Generate again to replace the undesired color.
 
@@ -62,7 +62,7 @@ You can also choose dominant colors and even contrast with color graph! Try ever
 
 ### AI Model
 
-You can change the AI model responsible for creating the color palette along with the *creativity*. High creativity will result in a more random results.
+You can change the AI model responsible for creating the color palette along with the _creativity_. High creativity will result in a more random results.
 
 ![AI models](the-last-tool-for-colors/generation_option.webp)
 

@@ -5,9 +5,11 @@
 
 <figure>
 	<img {src} {alt} loading="lazy" />
-	<div>
-		<p>{alt}</p>
-	</div>
+	{#if alt}
+		<div>
+			<p>{alt}</p>
+		</div>
+	{/if}
 </figure>
 
 <style>
