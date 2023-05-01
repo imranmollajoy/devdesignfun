@@ -7,6 +7,8 @@ author:
   name: Imran Molla Joy
   link: https://imranmollajoy.github.io
 description: Choosing colors is hard. What if an AI can do it for you? Let's explore the possibilities.
+cover:
+  image: featured.webp
 tags:
   - web design
   - colors

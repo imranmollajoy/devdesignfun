@@ -11,7 +11,7 @@ export type PostType = {
 	description: string;
 	draft?: string;
 	slug: string;
-	author?: Author;
+	author: Author;
 	cover?: Cover;
 	date: string;
 	updated?: string;
