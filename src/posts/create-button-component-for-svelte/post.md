@@ -14,7 +14,7 @@ weight: 99
 cover:
   image: featured.webp
 readingTime: 7 minutes
-updated: 2023-04-30T03:24:46.019Z
+updated: 2023-05-01T13:31:23.485Z
 ---
 
 <script>
@@ -59,7 +59,7 @@ Extending the button component is also easy. For example, if you want to add a n
 <script lang="ts">
 	export let size: String | 'small' | 'normal' | 'large' = 'normal';
 	export let variant: String | 'primary' | 'secondary' | 'neutral' = 'primary';
-	export let invert = false;
+	export let inverted = false;
 	export let outline = false;
 	export let flat = false;
 	export let disabled = false;
@@ -72,7 +72,7 @@ Extending the button component is also easy. For example, if you want to add a n
 
 <button
 	class="{variant} {size}"
-	class:invert
+	class:inverted
 	class:outline
 	class:flat
 	class:disabled
@@ -141,16 +141,16 @@ Extending the button component is also easy. For example, if you want to add a n
 		&.primary {
 			background-color: var(--primary);
 			color: var(--primary-text);
-			&.invert {
-				background-color: var(--primary-text);
-				color: var(--primary);
+			&.inverted {
+				background-color: var(--primary-text) !important;
+				color: var(--primary) !important;
 			}
 		}
 		&.secondary {
 			background-color: var(--secondary);
 			color: var(--secondary-text);
 
-			&.invert {
+			&.inverted {
 				background-color: var(--secondary-text);
 				color: var(--secondary);
 			}
@@ -159,7 +159,7 @@ Extending the button component is also easy. For example, if you want to add a n
 			background-color: var(--neutral);
 			color: var(--neutral-text);
 
-			&.invert {
+			&.inverted {
 				background-color: var(--neutral-text);
 				color: var(--neutral);
 			}
@@ -212,7 +212,7 @@ Extending the button component is also easy. For example, if you want to add a n
 
 	//   'primary', 'secondary', 'neutral'
 	export let variant = 'primary';
-	export let invert = false;
+	export let inverted = false;
 	export let outline = false;
 	export let flat = false;
 	export let disabled = false;
@@ -225,7 +225,7 @@ Extending the button component is also easy. For example, if you want to add a n
 
 <button
 	class="{variant} {size}"
-	class:invert
+	class:inverted
 	class:outline
 	class:flat
 	class:disabled
@@ -282,7 +282,7 @@ Extending the button component is also easy. For example, if you want to add a n
 		background-color: var(--primary);
 		color: var(--primary-text);
 	}
-	button.primary.invert {
+	button.primary.inverted {
 		background-color: var(--primary-text);
 		color: var(--primary);
 	}
@@ -290,7 +290,7 @@ Extending the button component is also easy. For example, if you want to add a n
 		background-color: var(--secondary);
 		color: var(--secondary-text);
 	}
-	button.secondary.invert {
+	button.secondary.inverted {
 		background-color: var(--secondary-text);
 		color: var(--secondary);
 	}
@@ -298,7 +298,7 @@ Extending the button component is also easy. For example, if you want to add a n
 		background-color: var(--neutral);
 		color: var(--neutral-text);
 	}
-	button.neutral.invert {
+	button.neutral.inverted {
 		background-color: var(--neutral-text);
 		color: var(--neutral);
 	}
@@ -337,3 +337,6 @@ Extending the button component is also easy. For example, if you want to add a n
 	}
 </style>
 ```
+
+Update 1: Added Interactive preview
+Update 2: Changed .invert to .inverted

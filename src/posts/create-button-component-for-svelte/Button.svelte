@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let size: String | 'small' | 'normal' | 'large' = 'normal';
 	export let variant: String | 'primary' | 'secondary' | 'neutral' = 'primary';
-	export let invert = false;
+	export let inverted = false;
 	export let outline = false;
 	export let flat = false;
 	export let disabled = false;
@@ -14,7 +14,7 @@
 
 <button
 	class="{variant} {size}"
-	class:invert
+	class:inverted
 	class:outline
 	class:flat
 	class:disabled
@@ -83,7 +83,7 @@
 		&.primary {
 			background-color: var(--primary);
 			color: var(--primary-text);
-			&.invert {
+			&.inverted {
 				background-color: var(--primary-text);
 				color: var(--primary);
 			}
@@ -92,7 +92,7 @@
 			background-color: var(--secondary);
 			color: var(--secondary-text);
 
-			&.invert {
+			&.inverted {
 				background-color: var(--secondary-text);
 				color: var(--secondary);
 			}
@@ -101,7 +101,7 @@
 			background-color: var(--neutral);
 			color: var(--neutral-text);
 
-			&.invert {
+			&.inverted {
 				background-color: var(--neutral-text);
 				color: var(--neutral);
 			}

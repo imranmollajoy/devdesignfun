@@ -7,7 +7,7 @@
 	let selectedSize = sizes[1];
 	let selectedVariant = variants[0];
 	let disabled = false;
-	let invert = false;
+	let inverted = false;
 	let flat = false;
 </script>
 
@@ -32,9 +32,9 @@
 	</div>
 	<div>
 		<SlideToggle name="slideFlat" bind:checked={flat}>Flat</SlideToggle>
-		<SlideToggle name="slideInvert" bind:checked={invert}>inverted</SlideToggle>
+		<SlideToggle name="slideinverted" bind:checked={inverted}>Inverted</SlideToggle>
 		<SlideToggle name="slideDisabled" bind:checked={disabled}>Disabled</SlideToggle>
 	</div>
 
-	<Button variant={selectedVariant} size={selectedSize} {flat} {disabled} {invert}>Button</Button>
+	<Button variant={selectedVariant} size={selectedSize} {flat} {disabled} {inverted}>Button</Button>
 </div>
