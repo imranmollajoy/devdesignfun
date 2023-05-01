@@ -42,6 +42,15 @@
 						</item>
 					
 						<item>
+							<title>Tab Component for Svelte/SvelteKit</title>
+							<description>A reusable tab component for svelte</description>
+							<link>https://devdesignfun.com/article/tab-component-for-svelte-and-sveltekit</link>
+							<guid isPermaLink="true">https://devdesignfun.com/article/tab-component-for-svelte-and-sveltekit</guid>
+							<pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
+                            <category>Code</category>
+						</item>
+					
+						<item>
 							<title>The Last Tool For Colors You'll Ever Need</title>
 							<description>Choosing colors is hard. What if an AI can do it for you? Let's explore the possibilities.</description>
 							<link>https://devdesignfun.com/article/the-last-tool-for-colors</link>
