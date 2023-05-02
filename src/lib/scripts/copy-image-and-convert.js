@@ -15,17 +15,27 @@ fs.readdir(inputDir, (err, postDirs) => {
 			if (err) throw err;
 			files.forEach((file) => {
 				if (!file.endsWith('.png') && !file.endsWith('.jpg')) return;
-				const extension = file.split('.').at(-1);
 				const inputPath = path.join(postPath, file);
-				const outputPath = path.join(outputDir, postDir, file.replace(extension, 'webp'));
-
-				// Create output directory if it doesn't exist
-				if (!fs.existsSync(path.dirname(outputPath))) {
-					fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-				}
+				const fileName = file.split('.').at(0);
+				const outputPath = path.join(outputDir, postDir, fileName, '.webp');
+				mkdir(outputPath);
 				// Convert image to WebP
 				webp.cwebp(inputPath, outputPath, '-q 80');
+
+				// reduced image for plavceholder
+				const outputPathPlaceholder = path.join(outputDir, postDir, `${fileName}_placeholder.webp`);
+				console.log(outputPathPlaceholder);
+				// mkdir(outputPathPlaceholder);
+				// webp.cwebp(inputPath, outputPathPlaceholder, '-q 5');
+				// webp.cwebp(inputPath, `${outputPath}`, '-q 80');
 			});
 		});
 	});
 });
+
+function mkdir(outputPath) {
+	// Create output directory if it doesn't exist
+	if (!fs.existsSync(path.dirname(outputPath))) {
+		fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+	}
+}
