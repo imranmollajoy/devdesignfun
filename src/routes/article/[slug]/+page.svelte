@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { LazyImage, useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import Seo from '$lib/components/SEO.svelte';
-	import { getFormattedDate } from '$lib/utilities';
+	import { getFormattedDate, getPlaceholder } from '$lib/utilities';
 	export let data;
+	$: placeholder = getPlaceholder(`${data.meta.slug}/${data.meta.cover?.image}`);
 </script>
 
 {#if data.meta.cover}
@@ -42,14 +44,17 @@
 		<p class="underline">
 			<a href={data.meta.author?.link}>{data.meta.author?.name}</a>
 		</p>
-		{#if data.meta.cover}
-			<img
-				src="./{data.meta.slug}/{data.meta.cover?.image}"
-				alt=""
-				loading="lazy"
-				class="max-w-96 mx-auto"
-			/>
-		{/if}
+		<div class="max-w-[1200px] mx-auto">
+			{#if data.meta.cover}
+				<img
+					src={placeholder}
+					data-src="./{data.meta.slug}/{data.meta.cover?.image}"
+					alt=""
+					class="w-full"
+					use:lazyImage={{ threshold: 0.5 }}
+				/>
+			{/if}
+		</div>
 	</div>
 	<div class="max-w-[1000px] mx-auto px-4">
 		<article class="col-span-3 lg:col-span-2 space-y-8">

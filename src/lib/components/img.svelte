@@ -1,10 +1,14 @@
 <script lang="ts">
+	import { getPlaceholder } from '$lib/utilities';
+	import { LazyImage, useLazyImage as lazyImage } from 'svelte-lazy-image';
 	export let src: string;
 	export let alt: string;
+
+	const placeholder = getPlaceholder(src);
 </script>
 
 <figure>
-	<img {src} {alt} loading="lazy" />
+	<img src={placeholder} data-src={src} {alt} use:lazyImage={{ threshold: 0.5 }} />
 	{#if alt}
 		<div>
 			<p>{alt}</p>
@@ -19,6 +23,7 @@
 	}
 	img {
 		margin-inline: auto;
+		width: 100%;
 	}
 	div {
 		padding: 1rem;

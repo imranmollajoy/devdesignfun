@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import webp from 'webp-converter';
+import sharp from 'sharp';
 import fsExtra from 'fs-extra';
 const inputDir = 'src/posts';
 const outputDir = 'static/article';
@@ -15,6 +16,7 @@ fs.readdir(inputDir, (err, postDirs) => {
 			if (err) throw err;
 			files.forEach((file) => {
 				if (!file.endsWith('.png') && !file.endsWith('.jpg')) return;
+
 				const inputPath = path.join(postPath, file);
 				const fileName = file.split('.').at(0);
 				const outputPath = path.join(outputDir, postDir, `${fileName}.webp`);
@@ -24,9 +26,9 @@ fs.readdir(inputDir, (err, postDirs) => {
 
 				// reduced image for plavceholder
 				const outputPathPlaceholder = path.join(outputDir, postDir, `${fileName}_placeholder.webp`);
-				console.log(outputPathPlaceholder);
-				mkdir(outputPathPlaceholder);
-				webp.cwebp(inputPath, outputPathPlaceholder, '-q 5');
+				// mkdir(outputPathPlaceholder);
+				// webp.cwebp(inputPath, outputPathPlaceholder, '-q 1');
+				createPlaceholder(inputPath, outputPathPlaceholder);
 			});
 		});
 	});
@@ -37,4 +39,8 @@ function mkdir(outputPath) {
 	if (!fs.existsSync(path.dirname(outputPath))) {
 		fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 	}
+}
+
+function createPlaceholder(inputFilePath, outputFilePath) {
+	sharp(inputFilePath).resize({ width: 100 }).blur().toFile(outputFilePath);
 }
