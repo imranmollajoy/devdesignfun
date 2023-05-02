@@ -17,7 +17,7 @@ fs.readdir(inputDir, (err, postDirs) => {
 				if (!file.endsWith('.png') && !file.endsWith('.jpg')) return;
 				const inputPath = path.join(postPath, file);
 				const fileName = file.split('.').at(0);
-				const outputPath = path.join(outputDir, postDir, fileName, '.webp');
+				const outputPath = path.join(outputDir, postDir, `${fileName}.webp`);
 				mkdir(outputPath);
 				// Convert image to WebP
 				webp.cwebp(inputPath, outputPath, '-q 80');
@@ -25,9 +25,8 @@ fs.readdir(inputDir, (err, postDirs) => {
 				// reduced image for plavceholder
 				const outputPathPlaceholder = path.join(outputDir, postDir, `${fileName}_placeholder.webp`);
 				console.log(outputPathPlaceholder);
-				// mkdir(outputPathPlaceholder);
-				// webp.cwebp(inputPath, outputPathPlaceholder, '-q 5');
-				// webp.cwebp(inputPath, `${outputPath}`, '-q 80');
+				mkdir(outputPathPlaceholder);
+				webp.cwebp(inputPath, outputPathPlaceholder, '-q 5');
 			});
 		});
 	});
