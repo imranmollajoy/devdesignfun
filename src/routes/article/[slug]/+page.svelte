@@ -3,7 +3,7 @@
 	import Seo from '$lib/components/SEO.svelte';
 	import { getFormattedDate, getPlaceholder } from '$lib/utilities';
 	export let data;
-	$: placeholder = getPlaceholder(`${data.meta.slug}/${data.meta.cover?.image}`);
+	$: placeholder = getPlaceholder(`${data.meta.cover?.image}`);
 </script>
 
 {#if data.meta.cover}
@@ -12,7 +12,7 @@
 		description={data.meta.description}
 		tags={data.meta.tags}
 		ogType="article"
-		ogImage="./{data.meta.slug}/{data.meta.cover.image}"
+		ogImage={data.meta.cover.image}
 	/>
 {:else}
 	<Seo
@@ -48,7 +48,7 @@
 			{#if data.meta.cover}
 				<img
 					src={placeholder}
-					data-src="./{data.meta.slug}/{data.meta.cover?.image}"
+					data-src={data.meta.cover?.image}
 					alt=""
 					class="w-full"
 					use:lazyImage={{ threshold: 0.5 }}

@@ -36,6 +36,10 @@ export async function getPosts(data: PostType[]): Promise<PostsType> {
 	};
 }
 
+export async function getPostMetadata(data: PostType[], title: string) {
+	return data.filter((p) => p.title === title)[0];
+}
+
 export async function getAllCategories(data: PostType[]) {
 	const posts = data;
 	return [...new Set(posts.map((post) => post.category))];
