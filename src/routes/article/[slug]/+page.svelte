@@ -62,10 +62,10 @@
 				<h3>Table of contents</h3>
 				<svelte:component this={data.content} />
 			</main>
-			<div class="tags space-x-4">
+			<div class="tags space-4">
 				{#each data.meta.tags as tag}
 					<a href="/tag/{tag}">
-						<span class="chip variant-filled-secondary">
+						<span class="chip variant-ghost-secondary">
 							{tag}
 						</span>
 					</a>

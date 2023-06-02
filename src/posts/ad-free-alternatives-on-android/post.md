@@ -8,6 +8,7 @@ tags:
   - android alternative apps
   - tips
   - software
+  - apps
 cover:
   image: featured.webp
 slug: ad-free-alternatives-on-android

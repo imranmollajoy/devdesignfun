@@ -8,7 +8,7 @@
 
 <section class="hero">
 	<div class="container py-12">
-		<h1 class="font-bold text-4xl">Dev. Design. Fun.</h1>
+		<h1 class="font-bold text-4xl">Dev. Design. Fun</h1>
 	</div>
 	<div class="bg-surface-100-800-token py-32">
 		<div class="container space-y-8">
