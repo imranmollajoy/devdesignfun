@@ -24,6 +24,10 @@ export async function GET({ fetch }) {
 							<guid isPermaLink="true">${config.url}/article/${post.slug}</guid>
 							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
                             <category>${post.category}</category>
+							<content:encoded>
+                            <![CDATA[<p><img src="${post.cover?.image}" alt=""/></p>
+                                <p>${post.description}</p>]]>
+                            </content:encoded>
 						</item>
 					`
 					)
