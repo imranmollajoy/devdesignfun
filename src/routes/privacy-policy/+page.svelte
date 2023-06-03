@@ -5,7 +5,7 @@
 <div class="max-w-[1000px] mx-auto px-4 py-8">
 	<div
 		id="ppms_cm_privacy_settings"
-		class="ppms_cm_privacy_settings_widget"
+		class="ppms_cm_privacy_settings_widget mb-8 space-y-4"
 		data-editor-centralize="true"
 		data-main-container="true"
 		data-root="true"
@@ -24,9 +24,11 @@
 				We collect and process your data on this site to better understand how it is used. We always
 				ask you for consent to do that. You can change your privacy settings here.
 			</p>
-			<button class="ppms_cm_privacy_settings_button_show" id="ppms_cm_privacy_settings_button"
-				>Manage settings</button
-			>
+			<button
+				class="ppms_cm_privacy_settings_button_show variant-ghost-primary"
+				id="ppms_cm_privacy_settings_button"
+				>Manage settings
+			</button>
 		</div>
 	</div>
 	<article class="prose-xl max-w-none">
