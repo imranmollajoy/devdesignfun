@@ -14,6 +14,17 @@
 	onMount(async () => {
 		categories = await get();
 	});
+
+	const pages = [
+		{
+			href: '/',
+			title: 'Home'
+		},
+		{
+			href: '/privacy-policy',
+			title: 'Privacy Policy'
+		}
+	];
 </script>
 
 <!-- @component
@@ -22,9 +33,13 @@
 <footer class="py-32 bg-surface-100-800-token">
 	<div class="container">
 		<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-			<div class="col space-y-4">
+			<div class="col">
 				<h4>Navigation</h4>
-				<a href="/">Home</a>
+				<div class="space-y-2">
+					{#each pages as p}
+						<a href={p.href} class="block">{p.title}</a>
+					{/each}
+				</div>
 			</div>
 			<div class="col">
 				<h4>Categories</h4>

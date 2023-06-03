@@ -8,6 +8,6 @@ export default {
 		_: './src/lib/templates/default.svelte'
 	},
 	extensions: ['.md'],
-	rehypePlugins: [rehypeSlug, rehypeToc],
+	rehypePlugins: [rehypeSlug],
 	remarkPlugins: [remarkUnwrapImages]
 };
