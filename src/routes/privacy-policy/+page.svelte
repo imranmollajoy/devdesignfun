@@ -5,12 +5,12 @@
 <div class="max-w-[1000px] mx-auto px-4 py-8">
 	<div
 		id="ppms_cm_privacy_settings"
-		class="ppms_cm_privacy_settings_widget mb-8 space-y-4"
+		class="ppms_cm_privacy_settings_widget mb-8"
 		data-editor-centralize="true"
 		data-main-container="true"
 		data-root="true"
 	>
-		<div class="ppms_cm_privacy_settings_widget_content" data-disable-select="true">
+		<div class="ppms_cm_privacy_settings_widget_content space-y-4" data-disable-select="true">
 			<h1
 				class="ppms_cm_privacy_settings_form_link_header"
 				id="ppms_cm_privacy_settings_form_link_header_id"
@@ -25,7 +25,7 @@
 				ask you for consent to do that. You can change your privacy settings here.
 			</p>
 			<button
-				class="ppms_cm_privacy_settings_button_show variant-ghost-primary"
+				class="ppms_cm_privacy_settings_button_show btn variant-ghost-primary"
 				id="ppms_cm_privacy_settings_button"
 				>Manage settings
 			</button>
