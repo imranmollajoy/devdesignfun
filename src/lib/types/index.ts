@@ -1,6 +1,7 @@
 export type Cover = {
 	image: string;
-	alt: string;
+	alt?: string;
+	placeholder?: string;
 };
 type Author = {
 	name: string;

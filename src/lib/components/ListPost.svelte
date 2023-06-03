@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { getPlaceholder } from '$lib/utilities';
+	import type { Cover } from '$lib/types';
 	import { LazyImage, useLazyImage as lazyImage } from 'svelte-lazy-image';
 	export let path: string;
 	export let title: string;
-	export let cover = {};
+	export let cover: Cover;
 	export let category: string;
 	export let date: string;
 	export let description: string;
@@ -15,14 +15,13 @@
 		cls = ' flex flex-wrap align-center';
 		txtCls = 'grow basis-1/2 md:pl-2';
 	}
-	$: placeholder = getPlaceholder(cover?.image);
 </script>
 
 <div class="space-y-2 {cls} py-2">
 	<div class="grow-0 md:basis-1/2">
 		{#if cover}
 			<img
-				src={placeholder}
+				src={cover?.placeholder}
 				data-src={cover?.image}
 				alt={cover?.alt}
 				use:lazyImage={{ threshold: 0.5 }}

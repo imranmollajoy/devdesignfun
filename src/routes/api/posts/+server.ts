@@ -1,7 +1,7 @@
 import { json } from '@sveltejs/kit';
 import { dev } from '$app/environment';
-import type { PostType } from '$lib/types';
-import { getFormattedDate } from '$lib/utilities';
+import type { Cover, PostType } from '$lib/types';
+import { getFormattedDate, getPlaceholder } from '$lib/utilities';
 export const prerender = true;
 async function getPosts(url) {
 	let posts: PostType[] = [];
@@ -16,17 +16,19 @@ async function getPosts(url) {
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<PostType, 'slug'>;
 			const { date, cover } = metadata;
-			let updatedCover = {};
+			let updatedCover: Cover = {};
 			const host = dev ? url.origin : 'https://devdesignfun.com';
 			if (cover) {
 				updatedCover = {
 					...cover,
-					image: `${host}/article/${slug}/${cover.image}`
+					image: `${host}/article/${slug}/${cover.image}`,
+					placeholder: getPlaceholder(`${host}/article/${slug}/${cover.image}`)
 				};
 			} else {
 				updatedCover = {
 					...cover,
-					image: `${host}/ddf.webp`
+					image: `${host}/ddf.webp`,
+					placeholder: `${host}/ddf_placeholder.webp`
 				};
 			}
 			const updatedMetadata = {
