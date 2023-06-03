@@ -1,12 +1,4 @@
-export function getFormattedDate(date: string) {
-	return new Date(date).toLocaleDateString('en-US', {
-		day: 'numeric',
-		month: 'long',
-		year: 'numeric'
-	});
-}
-
-export function getPlaceholder(src: string) {
+export function getPlaceholder(src) {
 	if (!src) return;
 	let parts = src.split('/');
 	const filename = parts.pop();
@@ -15,3 +7,7 @@ export function getPlaceholder(src: string) {
 	parts.push(placeholderFilename);
 	return parts.join('/');
 }
+
+console.log(
+	getPlaceholder('https://localhost.com/article/google-new-feature-june23/featured.webp')
+);

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import Seo from '$lib/components/SEO.svelte';
 	import { getFormattedDate } from '$lib/utilities';
 	export let data;
@@ -45,13 +44,7 @@
 		</p>
 		<div class="max-w-[1200px] mx-auto">
 			{#if data.meta.cover}
-				<img
-					src={data.meta.cover.placeholder}
-					data-src={data.meta.cover.image}
-					alt="cover image of {data.meta.title}"
-					class="w-full"
-					use:lazyImage={{ threshold: 0.5 }}
-				/>
+				<img src={data.meta.cover.image} alt="cover image of {data.meta.title}" class="w-full" />
 			{/if}
 		</div>
 	</div>

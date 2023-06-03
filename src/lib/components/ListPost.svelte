@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { Cover } from '$lib/types';
-	import { LazyImage, useLazyImage as lazyImage } from 'svelte-lazy-image';
+	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	export let path: string;
 	export let title: string;
-	export let cover: Cover;
+	export let cover = {};
 	export let category: string;
 	export let date: string;
 	export let description: string;
