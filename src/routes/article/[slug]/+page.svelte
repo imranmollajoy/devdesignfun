@@ -48,8 +48,8 @@
 			{#if data.meta.cover}
 				<img
 					src={placeholder}
-					data-src={data.meta.cover?.image}
-					alt=""
+					data-src={data.meta.cover.image}
+					alt="cover image of {data.meta.title}"
 					class="w-full"
 					use:lazyImage={{ threshold: 0.5 }}
 				/>
