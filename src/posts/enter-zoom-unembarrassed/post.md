@@ -8,7 +8,7 @@ tags:
   - apps
   - tips
   - zoom
-slug: enter-zoom-unembarresed
+slug: enter-zoom-unembarrassed
 cover:
   image: featured.webp
 weight: 9
