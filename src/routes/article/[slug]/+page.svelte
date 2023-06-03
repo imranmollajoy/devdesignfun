@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { LazyImage, useLazyImage as lazyImage } from 'svelte-lazy-image';
+	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import Seo from '$lib/components/SEO.svelte';
 	import { getFormattedDate, getPlaceholder } from '$lib/utilities';
 	export let data;
-	$: placeholder = getPlaceholder(`${data.meta.cover?.image}`);
+	$: placeholder = getPlaceholder(data.meta.cover.image);
 </script>
 
 {#if data.meta.cover}
