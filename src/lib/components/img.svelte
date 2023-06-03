@@ -20,6 +20,7 @@
 	figure {
 		background-color: rgba(var(--color-surface-500) / 0.1);
 		margin: 0;
+		margin-bottom: 1rem;
 	}
 	img {
 		margin-inline: auto;

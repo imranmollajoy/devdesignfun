@@ -36,7 +36,7 @@ Entering a meeting and finding no sound is frustrating. You may assume your devi
 
 ![Connect to audio automatically]({slug}/connect_to_audio.webp)
 
-![Connect to audio automatically completed]({slug}/connect_to_audio_completed.webp)
+![Select the 2nd option]({slug}/connect_to_audio_completed.webp)
 
 Now you will have sound from the very first second you attend a meeting or class.
 
