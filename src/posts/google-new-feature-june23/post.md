@@ -13,7 +13,7 @@ slug: google-new-feature-june23
 cover:
   image: featured.webp
 weight: 9
-readingTime: 4 minutes
+readingTime: 2 minutes
 updated: 2023-06-03T06:39:30.446Z
 author:
   name: Imran Molla Joy

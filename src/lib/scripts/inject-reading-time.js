@@ -10,10 +10,9 @@ if (args && args.length > 0) {
 
 	const buffer = fs.readFileSync(fileArg);
 	const content = buffer.toString().split('---').at(-1);
-
 	const imageRegex = /!\[.*?\]\((.*?)\)/g;
 	const img = content.match(imageRegex);
-	const imageCount = img.length;
+	const imageCount = img?.length;
 	let imgTimeInSec = 0;
 	for (let i = 0; i < imageCount; i++) {
 		if (i === 0) {
@@ -27,7 +26,6 @@ if (args && args.length > 0) {
 		}
 	}
 	const imgTime = imgTimeInSec / 60;
-
 	const clean = content?.replace(/<\/?[^>]+(>|$)/g, '');
 	const numberOfWords = clean?.split(/\s/g).length;
 	const time = numberOfWords && Math.ceil(imgTime + numberOfWords / WORDS_PER_MINUTE);
