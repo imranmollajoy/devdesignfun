@@ -1,12 +1,14 @@
 <script>
 	import '../theme.postcss';
-
 	import '@skeletonlabs/skeleton/styles/all.css';
-
 	import '../app.postcss';
+
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/Footer.svelte';
+
+	export let data;
+
 	let y = 0;
 	let cls = '';
 	$: cls = y > 0 ? 'shadow-lg' : '';
@@ -28,4 +30,4 @@
 <div class="bg-surface-50-900-token">
 	<slot />
 </div>
-<Footer />
+<Footer categories={data.categories} />

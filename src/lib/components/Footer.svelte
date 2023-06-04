@@ -1,20 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { getAllCategories } from '$lib/api/post';
-	import { onMount } from 'svelte';
-	let categories: any[] = [];
-	const get = async () => {
-		const response = await fetch(`${$page.url.origin}/api/posts`);
-
-		const allposts = await response.json();
-
-		const cat = await getAllCategories(allposts);
-		return cat;
-	};
-	onMount(async () => {
-		categories = await get();
-	});
-
 	const pages = [
 		{
 			href: '/',
@@ -25,6 +9,7 @@
 			title: 'Privacy Policy'
 		}
 	];
+	export let categories: any[];
 </script>
 
 <!-- @component
