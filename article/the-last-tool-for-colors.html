@@ -24,19 +24,52 @@
 				localStorage.theme = 'Blu';
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3656558229552166"
-     crossorigin="anonymous"></script>
+		<!-- piwik sync tag -->
+		<script type="text/javascript">
+			(function (window, document, dataLayerName, id) {
+				function stgCreateCookie(a, b, c) {
+					var d = '';
+					if (c) {
+						var e = new Date();
+						e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), (d = '; expires=' + e.toUTCString());
+					}
+					document.cookie = a + '=' + b + d + '; path=/';
+				}
+				var isStgDebug =
+					(window.location.href.match('stg_debug') || document.cookie.match('stg_debug')) &&
+					!window.location.href.match('stg_disable_debug');
+				stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1);
+				var qP = [];
+				dataLayerName !== 'dataLayer' && qP.push('data_layer_name=' + dataLayerName),
+					isStgDebug && qP.push('stg_debug');
+				var qPString = qP.length > 0 ? '?' + qP.join('&') : '';
+				document.write(
+					'<script src="https://devdesignfun.containers.piwik.pro/' +
+						id +
+						'.sync.js' +
+						qPString +
+						'"></' +
+						'script>'
+				);
+			})(window, document, 'dataLayer', 'bb6bd01f-069b-4b24-ad92-09dcf2d85be8');
+		</script>
+
+		<script
+			async
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3656558229552166"
+			crossorigin="anonymous"
+		></script>
 		
 		<link href="../_app/immutable/assets/0.27d2fe2d.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/default.b7b96979.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/post.e5a87918.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/post.11a65b74.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.29e3d0c5.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.159b1b4f.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.0c27b2d7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.b45816b9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.960a0031.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.7fb8422d.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.380a69f8.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.5abb06f9.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.a0fd46e7.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/post.ff11ab49.js">
@@ -58,6 +91,7 @@
 		<meta property="og:description" content="Choosing colors is hard. What if an AI can do it for you? Let's explore the possibilities."><meta name="keywords" content="web design,colors"><meta property="og:type" content="article"><meta property="og:image" content="https://devdesignfun.com/article/the-last-tool-for-colors/f_hue.webp"><!-- HEAD_svelte-leocik_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<!-- piwik async tags -->
 		<script type="text/javascript">
 			(function (window, document, dataLayerName, id) {
 				(window[dataLayerName] = window[dataLayerName] || []),
@@ -196,7 +230,7 @@
 			<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Ad Free Alternatives on Android\",\"date\":\"February 7, 2023\",\"category\":\"Apps\",\"description\":\"Tired of dealing with ads and pop-ups in your video and music players, or when reading documents on your phone? Try using ad-free apps listed here.\",\"tags\":[\"alternative of apps\",\"android alternative apps\",\"tips\",\"software\",\"apps\"],\"cover\":{\"image\":\"https://devdesignfun.com/article/ad-free-alternatives-on-android/featured.webp\",\"placeholder\":\"https://devdesignfun.com/article/ad-free-alternatives-on-android/featured_placeholder.webp\"},\"slug\":\"ad-free-alternatives-on-android\",\"weight\":1,\"readingTime\":\"3 minutes\",\"updated\":\"2023-04-30T03:24:30.595Z\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"}},{\"title\":\"Create A Reusable Button Component for Svelte\",\"date\":\"December 29, 2022\",\"category\":\"Code\",\"description\":\"Robust and flexible button component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"create-button-component-for-svelte\",\"weight\":99,\"cover\":{\"image\":\"https://devdesignfun.com/article/create-button-component-for-svelte/featured.webp\",\"placeholder\":\"https://devdesignfun.com/article/create-button-component-for-svelte/featured_placeholder.webp\"},\"readingTime\":\"7 minutes\",\"updated\":\"2023-05-01T13:31:23.485Z\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"}},{\"title\":\"Create a horizontal scroll section with HTML,CSS and JS\",\"date\":\"December 12, 2022\",\"category\":\"Code\",\"description\":\"Learn how to use HTML, CSS, and JavaScript to create a horizontal scrolling section on your website.\",\"tags\":[\"tutorial\",\"how-to\",\"web-dev\"],\"slug\":\"create-horizontal-scroll-section-html-css-js\",\"cover\":{\"image\":\"https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/featured.webp\",\"placeholder\":\"https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/featured_placeholder.webp\"},\"weight\":9,\"readingTime\":\"8 minutes\",\"updated\":\"2023-04-30T03:24:57.043Z\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"}},{\"title\":\"Enter Zoom without being embarrassed\",\"date\":\"June 3, 2023\",\"category\":\"Tech\",\"description\":\"Without some tweaks, the Zoom mobile app directly forces the camera and microphone to open during meetings, which often leads to awkward and embarrassing moments. However, this default behavior can be changed. Let's explore how.\",\"tags\":[\"android\",\"apps\",\"tips\",\"zoom\"],\"slug\":\"enter-zoom-unembarrassed\",\"cover\":{\"image\":\"https://devdesignfun.com/article/enter-zoom-unembarrassed/featured.webp\",\"placeholder\":\"https://devdesignfun.com/article/enter-zoom-unembarrassed/featured_placeholder.webp\"},\"weight\":9,\"readingTime\":\"3 minutes\",\"updated\":\"2023-06-03T07:23:41.786Z\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"},\"draft\":false},{\"title\":\"New features announced by Google for various devices\",\"date\":\"June 2, 2023\",\"category\":\"Tech\",\"description\":\"Let's look into all the features that are coming to android devices.\",\"tags\":[\"news\",\"update\",\"google\",\"android\",\"apps\"],\"slug\":\"google-new-feature-june23\",\"cover\":{\"image\":\"https://devdesignfun.com/article/google-new-feature-june23/featured.webp\",\"placeholder\":\"https://devdesignfun.com/article/google-new-feature-june23/featured_placeholder.webp\"},\"weight\":9,\"readingTime\":\"2 minutes\",\"updated\":\"2023-06-03T06:39:30.446Z\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"}},{\"title\":\"SEO Component for Svelte\",\"date\":\"April 26, 2023\",\"category\":\"Code\",\"description\":\"Robust and flexible SEO component for your Svelte/SvelteKit project\",\"tags\":[\"tutorial\",\"how-to\",\"svelte\",\"web-dev\"],\"slug\":\"seo-component-for-svelte\",\"weight\":10,\"cover\":{\"image\":\"https://devdesignfun.com/article/seo-component-for-svelte/featured.webp\",\"placeholder\":\"https://devdesignfun.com/article/seo-component-for-svelte/featured_placeholder.webp\"},\"readingTime\":\"4 minutes\",\"updated\":\"2023-04-30T03:25:13.955Z\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"}},{\"title\":\"Tab Component for Svelte/SvelteKit\",\"date\":\"May 1, 2023\",\"category\":\"Code\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"},\"description\":\"A reusable tab component for svelte\",\"tags\":[\"how-to\",\"svelte\",\"tutorial\",\"web-dev\"],\"weight\":13,\"image\":\"\",\"draft\":false,\"keywords\":{},\"updated\":\"2023-05-01T07:36:26.006Z\",\"readingTime\":\"1 minutes\",\"slug\":\"tab-component-for-svelte-and-sveltekit\",\"cover\":{\"image\":\"https://devdesignfun.com/ddf.webp\",\"placeholder\":\"https://devdesignfun.com/ddf_placeholder.webp\"}},{\"title\":\"The Last Tool You'll Ever Need For Color Palette\",\"slug\":\"the-last-tool-for-colors\",\"date\":\"April 28, 2023\",\"category\":\"Design\",\"author\":{\"name\":\"Imran Molla Joy\",\"link\":\"https://imranmollajoy.github.io\"},\"description\":\"Choosing colors is hard. What if an AI can do it for you? Let's explore the possibilities.\",\"cover\":{\"image\":\"https://devdesignfun.com/article/the-last-tool-for-colors/f_hue.webp\",\"placeholder\":\"https://devdesignfun.com/article/the-last-tool-for-colors/f_hue_placeholder.webp\"},\"tags\":[\"web design\",\"colors\"],\"weight\":12,\"updated\":\"2023-04-29T14:52:10.599Z\",\"draft\":false,\"readingTime\":\"4 minutes\"}]"}</script>
 			<script>
 				{
-					__sveltekit_flj4l4 = {
+					__sveltekit_1bapty7 = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -206,8 +240,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.29e3d0c5.js"),
-						import("../_app/immutable/entry/app.380a69f8.js")
+						import("../_app/immutable/entry/start.159b1b4f.js"),
+						import("../_app/immutable/entry/app.5abb06f9.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
