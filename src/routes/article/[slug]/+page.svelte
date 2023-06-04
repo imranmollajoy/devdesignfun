@@ -1,7 +1,15 @@
 <script lang="ts">
 	import Seo from '$lib/components/SEO.svelte';
 	import { getFormattedDate } from '$lib/utilities';
+	import { onMount } from 'svelte';
+
 	export let data;
+
+	const { key, action, namespace, options, views } = data.counter;
+	onMount(() => {
+		//increase a counter
+		window.counterApi.increment(key, action, namespace, options, function (err, res) {});
+	});
 </script>
 
 {#if data.meta.cover}
@@ -34,6 +42,9 @@
 				</span>
 				<span>
 					{getFormattedDate(data.meta.date)}
+				</span>
+				<span>
+					{views} reads
 				</span>
 			</p>
 		</div>
