@@ -5,13 +5,12 @@
 
 	export let data;
 
-	const { key, action, namespace, options, views } = data.counter;
+	const { action, namespace, options } = data.counter;
 	onMount(() => {
 		//increase a counter
-		window.counterApi.increment(key, action, namespace, options, function (err, res) {});
+		window.counterApi.increment(data.counter.key, action, namespace, options, function (err, res) {});
 	});
 </script>
-
 {#if data.meta.cover}
 	<Seo
 		title={data.meta.title}
@@ -44,7 +43,7 @@
 					{getFormattedDate(data.meta.date)}
 				</span>
 				<span>
-					{views} reads
+					{data.counter.views.value} reads
 				</span>
 			</p>
 		</div>
