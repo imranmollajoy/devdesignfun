@@ -8,9 +8,16 @@
 	const { action, namespace, options } = data.counter;
 	onMount(() => {
 		//increase a counter
-		window.counterApi.increment(data.counter.key, action, namespace, options, function (err, res) {});
+		window.counterApi.increment(
+			data.counter.key,
+			action,
+			namespace,
+			options,
+			function (err, res) {}
+		);
 	});
 </script>
+
 {#if data.meta.cover}
 	<Seo
 		title={data.meta.title}
@@ -60,7 +67,7 @@
 	</div>
 	<div class="max-w-[1000px] mx-auto px-4">
 		<article class="col-span-3 lg:col-span-2 space-y-8">
-			<main class="prose lg:prose-xl max-w-none">
+			<main class="prose lg:prose-xl dark:prose-invert max-w-none">
 				<svelte:component this={data.content} />
 			</main>
 			<div class="tags space-4">
@@ -98,4 +105,3 @@
 		{/if}
 	</div>
 </div>
-
