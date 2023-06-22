@@ -60,7 +60,7 @@
 	</div>
 	<div class="max-w-[1000px] mx-auto px-4">
 		<article class="col-span-3 lg:col-span-2 space-y-8">
-			<main class="prose-xl max-w-none">
+			<main class="prose lg:prose-xl max-w-none">
 				<svelte:component this={data.content} />
 			</main>
 			<div class="tags space-4">
@@ -98,3 +98,4 @@
 		{/if}
 	</div>
 </div>
+
