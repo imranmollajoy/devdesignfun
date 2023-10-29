@@ -111,27 +111,6 @@
       "path": "[[workspace]]/static/article"
     }
   ],
-  "frontMatter.taxonomy.categories": [
-    "Apps",
-    "Code",
-    "Design",
-    "Tech"
-  ],
-  "frontMatter.taxonomy.tags": [
-    "alternative of apps",
-    "android alternative apps",
-    "colors",
-    "font pairs",
-    "fonts",
-    "graphics design",
-    "how-to",
-    "software",
-    "svelte",
-    "tips",
-    "tutorial",
-    "web design",
-    "web-dev"
-  ],
   "frontMatter.content.snippets": {
     "code block": {
       "description": "A code block",
