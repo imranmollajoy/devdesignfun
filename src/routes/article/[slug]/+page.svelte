@@ -84,6 +84,20 @@
 					<strong>Last updated: {getFormattedDate(data.meta.updated)}</strong>
 				</p>
 			{/if}
+			<script type="text/javascript">
+				atOptions = {
+					key: '1feba1ac02629b64fa8e8ad90a2ffa68',
+					format: 'iframe',
+					height: 90,
+					width: 728,
+					params: {}
+				};
+				document.write(
+					'<scr' +
+						'ipt type="text/javascript" src="//www.topcreativeformat.com/1feba1ac02629b64fa8e8ad90a2ffa68/invoke.js"></scr' +
+						'ipt>'
+				);
+			</script>
 		</article>
 		{#if data.related.length > 0}
 			<div class="py-8">
