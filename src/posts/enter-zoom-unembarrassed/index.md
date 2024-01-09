@@ -26,17 +26,17 @@ Zoom is the ultimate app for online meetings. Zoom is the go-to app for team mee
 
 Open the Zoom app. Once launched, tap the gear icon in the top-left corner to navigate to the settings page.
 
-![Zoom homescreen]({slug}/zm_home.webp)
+![Zoom homescreen](./zm_home.webp)
 
-![Zoom settings page]({slug}/zm_settings.webp)
+![Zoom settings page](./zm_settings.webp)
 
 ## Connecting to audio
 
 Entering a meeting and hearing no sound is frustrating. You may assume your device or connection is faulty when, in reality, you just forgot to connect to the audio. To avoid remembering to do this every time you enter a meeting, you can set the audio option to Wi-Fi or mobile data.
 
-![Connect to audio automatically]({slug}/connect_to_audio.webp)
+![Connect to audio automatically](./connect_to_audio.webp)
 
-![Select the 2nd option]({slug}/connect_to_audio_completed.webp)
+![Select the 2nd option](./connect_to_audio_completed.webp)
 
 Now you will have sound from the very first moment you attend a meeting or a class.
 
@@ -44,17 +44,17 @@ Now you will have sound from the very first moment you attend a meeting or a cla
 
 You may often forget to mute your microphone when you join a meeting. You can change the default settings to mute the microphone when you enter a meeting, as shown below.
 
-![Mute microphone]({slug}/mute_mic.webp)
+![Mute microphone](./mute_mic.webp)
 
-![Completed audio tweaks]({slug}/audio_completed.webp)
+![Completed audio tweaks](./audio_completed.webp)
 
 ## Turning off video
 
 This is the most important part. Just enable this setting, and your camera will be turned off by defualt when you attend a meeting.
 
-![Turn off video]({slug}/turn_off_video.webp)
+![Turn off video](./turn_off_video.webp)
 
-![Completed video tweaks]({slug}/video_completed.webp)
+![Completed video tweaks](./video_completed.webp)
 
 ## Wrapping up
 

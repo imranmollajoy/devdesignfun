@@ -6,7 +6,7 @@ export const prerender = true;
 async function getPosts(url) {
 	let posts: PostType[] = [];
 
-	const paths = import.meta.glob('/src/posts/**/post.md', { eager: true });
+	const paths = import.meta.glob('/src/posts/**/index.md', { eager: true });
 
 	for (const path in paths) {
 		const file = paths[path];

@@ -40,7 +40,7 @@ _All of the fonts mentioned here are Google Fonts._
 
 ## Barlow and IBM Plex Sans
 
-![Barlow and IBM Plex Sans]({slug}/barlow_ibmplxsns.webp)
+![Barlow and IBM Plex Sans](./barlow_ibmplxsns.webp)
 
 **Accent font:** [Satisfy](https://fonts.google.com/specimen/Satisfy)
 
@@ -50,7 +50,7 @@ _All of the fonts mentioned here are Google Fonts._
 
 ## Lexend and Prata
 
-![Lexend and Prata]({slug}/lexend_prata.webp)
+![Lexend and Prata](./lexend_prata.webp)
 
 **Heading font:** [Lexend](https://fonts.google.com/specimen/Lexend)
 
@@ -58,7 +58,7 @@ _All of the fonts mentioned here are Google Fonts._
 
 ## Fraunces and Montserrat
 
-![Fraunces and Montserrat]({slug}/fraunces_montserrat.webp)
+![Fraunces and Montserrat](./fraunces_montserrat.webp)
 
 **Heading font:** [Fraunces](https://fonts.google.com/specimen/Fraunces)
 
@@ -66,7 +66,7 @@ _All of the fonts mentioned here are Google Fonts._
 
 ## Syne
 
-![Syne]({slug}/syne.webp)
+![Syne](./syne.webp)
 
 Syne alone is enough!
 
@@ -74,7 +74,7 @@ Syne alone is enough!
 
 ## Inter and Roboto
 
-![Inter and Roboto]({slug}/inter_roboto.webp)
+![Inter and Roboto](./inter_roboto.webp)
 
 **Heading font:** [Inter](https://fonts.google.com/specimen/Inter)
 
@@ -82,7 +82,7 @@ Syne alone is enough!
 
 ## Teko and Source Sans Pro
 
-![Teko and Source Sans Pro]({slug}/teko_srcsnspro.webp)
+![Teko and Source Sans Pro](./teko_srcsnspro.webp)
 
 **Heading font:** [Teko](https://fonts.google.com/specimen/Teko)
 

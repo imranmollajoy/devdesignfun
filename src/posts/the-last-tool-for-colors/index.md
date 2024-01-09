@@ -26,23 +26,23 @@ Color is one of the most important aspect in any visual design. Colors affect ae
 
 Huemint is a web-based tool that uses machine learning algorithms to suggest color palettes. It is a time-saving tool for designers who want to quickly generate color schemes for various design projects. Huemint generates color palettes for a variety of use cases, including gradients, illustrations, websites, logos, and more. Its machine learning algorithms analyze vast amounts of data to suggest color combinations that are visually appealing and harmonious.
 
-![Homepage of Huemint]({slug}/huemint_homepage.webp)
+![Homepage of Huemint](./huemint_homepage.webp)
 
 _The interactive cube in the homepage is actually a subset of samples used to train the AI model! [More](https://huemint.com/about/#:~:text=subset%20of%20the-,samples,-plotted%20in%20CIE)_
 
 ## Generating colors
 
-![Color generation page](the-last-tool-for-colors/magazine_colors.webp)
+![Color generation page](./magazine_colors.webp)
 
 You can click on **Generate** to generate new set of colors.
 
 How about you like some colors of a palette, but want to change a (or more) color? Well, you can lock your preferred color and hit Generate again to replace the undesired color.
 
-![Locking colors](the-last-tool-for-colors/lock_colors.webp)
+![Locking colors](./lock_colors.webp)
 
 I didn't quite like the 4th color in the above image. So, I locked the rest of the color and clicked generate a few times.
 
-![New color after locking](the-last-tool-for-colors/picked_color_after_lock.webp)
+![New color after locking](./picked_color_after_lock.webp)
 
 And found as my liking!
 
@@ -52,13 +52,13 @@ And found as my liking!
 
 Huemint has some presets to generate colors based on your preferred aesthetics. They can be found by clicking on the gear icon
 
-![Presets](the-last-tool-for-colors/preset_options.webp)
+![Presets](./preset_options.webp)
 
 <div class="flex gap-4 flex-col lg:flex-row">
 
-![Default preset](the-last-tool-for-colors/preset_default.webp)
-![Bright and light preset](the-last-tool-for-colors/preset_bright.webp)
-![Pastel preset](the-last-tool-for-colors/preset_pastel.webp)
+![Default preset](./preset_default.webp)
+![Bright and light preset](./preset_bright.webp)
+![Pastel preset](./preset_pastel.webp)
 
 </div>
 
@@ -68,7 +68,7 @@ You can also choose dominant colors and even contrast with color graph! Try ever
 
 You can change the AI model responsible for creating the color palette along with the _creativity_. High creativity will result in a more random results.
 
-![AI models](the-last-tool-for-colors/generation_option.webp)
+![AI models](./generation_option.webp)
 
 ## Pitfalls
 
