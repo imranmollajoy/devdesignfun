@@ -7,6 +7,10 @@
 		{
 			href: '/privacy-policy',
 			title: 'Privacy Policy'
+		},
+		{
+			href: '/about-us',
+			title: 'About Us'
 		}
 	];
 	export let categories: any[];
