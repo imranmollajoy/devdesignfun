@@ -84,6 +84,19 @@
 						</item>
 					
 						<item>
+							<title>LaTeX - Common Errors and How to Fix Them</title>
+							<description>LaTeX is a powerful tool. As we know, with great power, comes great obstacles. But fear not, we will overcome those in this article.</description>
+							<link>https://devdesignfun.com/article/latex-errors-and-fixes</link>
+							<guid isPermaLink="true">https://devdesignfun.com/article/latex-errors-and-fixes</guid>
+							<pubDate>Tue, 09 Jan 2024 00:00:00 GMT</pubDate>
+                            <category>Tech</category>
+							<content:encoded>
+                            <![CDATA[<p><img src="https://devdesignfun.com/ddf.webp" alt=""/></p>
+                                <p>LaTeX is a powerful tool. As we know, with great power, comes great obstacles. But fear not, we will overcome those in this article.</p>]]>
+                            </content:encoded>
+						</item>
+					
+						<item>
 							<title>SEO Component for Svelte</title>
 							<description>Robust and flexible SEO component for your Svelte/SvelteKit project</description>
 							<link>https://devdesignfun.com/article/seo-component-for-svelte</link>
