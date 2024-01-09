@@ -1,8 +1,7 @@
 ---
-title: Latex - Common Errors and How to Fix Them
+title: LaTeX - Common Errors and How to Fix Them
 date: 2024-01-09T08:02:00.123Z
-category:
-  - Tech
+category: Tech
 author:
   name: Imran Molla Joy
   link: https://imranmollajoy.github.io
@@ -14,6 +13,7 @@ tags:
 weight: 99
 slug: latex-errors-and-fixes
 readingTime: 10 minutes
+updated: 2024-01-09T08:31:00.841Z
 ---
 
 LaTeX is a powerful typesetting system widely used for document preparation, specially in academic and technical fields. Its significance lies in producing high-quality documents with precision in mathematical typesetting, consistent formatting, and efficient bibliography management. LaTeX is favored for its stability, portability, and open-source nature, making it a key tool for professionals and researchers.
@@ -129,7 +129,17 @@ LaTeX is a powerful tool, but errors are common, especially for beginners. In th
 
 4. **Scale or Resize Figures:**
 
-   - If the figure is too large, consider scaling it down using `\includegraphics[scale=x]{filename}` or resizing with `\includegraphics[width=\textwidth]{filename}`.
+   - If the figure is too large, consider scaling it down using
+
+   ```tex
+
+   \includegraphics[scale=x]{filename}
+
+   % or
+
+   \includegraphics[width=\textwidth]{filename}
+
+   ```
 
 5. **Use the `caption` Package:**
 
