@@ -1,5 +1,5 @@
 ---
-title: The Best Font Pairing for Your Next Project
+title: The Best Font Pairings for Your Next Project
 slug: best-font-pairings
 date: 2023-06-22
 category: Design
@@ -15,7 +15,7 @@ tags:
   - font pairs
   - graphics design
 weight: 13
-updated: 2023-06-22T14:52:10.599Z
+updated: 2024-01-09T06:56:17.353Z
 draft: false
 readingTime: 4 minutes
 ---
@@ -89,3 +89,5 @@ Syne alone is enough!
 **Body font:** [Source Sans 3\*](https://fonts.google.com/specimen/Source+Sans+3)
 
 _Note:_ Looks like Source Sans Pro is not available on Google fonts right now, so I have linked to Source Sans 3 instead.
+
+Update 1: Fixed typo in the title. Ooops!
