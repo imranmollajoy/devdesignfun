@@ -1,5 +1,5 @@
 export type Cover = {
-	image: string;
+	image?: string;
 	alt?: string;
 	placeholder?: string;
 };

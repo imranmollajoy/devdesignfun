@@ -28,5 +28,8 @@
 				/>
 			{/each}
 		</div>
+		<div class="flex flex-col items-center">
+			<a href="/archives/1" class="btn variant-soft-primary">More</a>
+		</div>
 	</div>
 </section>

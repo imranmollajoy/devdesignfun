@@ -5,6 +5,10 @@
 			title: 'Home'
 		},
 		{
+			href: '/archives',
+			title: 'Archives'
+		},
+		{
 			href: '/privacy-policy',
 			title: 'Privacy Policy'
 		},

@@ -4,7 +4,7 @@ import { getAllCategories, getAllTags } from '$lib/api/post';
 export const prerender = true;
 export async function GET({ fetch }): Promise<Response> {
 	const baseUrl = config.url;
-	const response = await fetch('api/posts');
+	const response = await fetch('api/posts.json');
 	const posts: PostType[] = await response.json();
 	const categories = await getAllCategories(posts);
 	const tags = await getAllTags(posts);

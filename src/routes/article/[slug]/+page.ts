@@ -4,12 +4,12 @@ import type { PostType } from '$lib/types';
 
 export async function load({ params, url, fetch }) {
 	const post = await import(`../../../posts/${params.slug}/index.md`);
-	const allPosts: PostType[] = await fetch(`${url.origin}/api/posts`).then((e) => e.json());
+	const allPosts: PostType[] = await fetch(`${url.origin}/api/posts.json`).then((e) => e.json());
 
-	const meta = await getPostMetadata(allPosts, post.metadata.title);
+	const meta = await getPostMetadata(post.metadata.title);
 	const { title, category, tags, slug } = meta;
 
-	const related: PostType[] = await getRelatedPosts(allPosts, title, category, tags);
+	const related: PostType[] = await getRelatedPosts(title, category, tags);
 
 	const action = 'view';
 	const namespace = 'devdesignfun.com';

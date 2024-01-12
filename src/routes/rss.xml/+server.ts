@@ -1,8 +1,8 @@
 import { config } from '$lib/config';
 import type { PostType } from '$lib/types';
 export const prerender = true;
-export async function GET({ fetch }) {
-	const response = await fetch('api/posts');
+export async function GET({ fetch, url }) {
+	const response = await fetch(`api/posts.json`);
 	const posts: PostType[] = await response.json();
 
 	const headers = { 'Content-Type': 'application/xml' };

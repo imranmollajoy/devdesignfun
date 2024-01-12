@@ -40,11 +40,9 @@ async function getPosts(url) {
 			!post.draft && posts.push(post);
 		}
 	}
-	// posts = posts.sort(
-	// 	(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
-	// );
-
-	return posts;
+	return [...posts].sort((firstElement, secondElement) => {
+		return new Date(secondElement.date).getTime() - new Date(firstElement.date).getTime();
+	});
 }
 
 export async function GET({ url }) {
