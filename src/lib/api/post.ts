@@ -56,10 +56,10 @@ export async function fetchPosts(offset = 0, limit = 100) {
 }
 // for homepage
 export async function getPosts(): Promise<PostsType> {
-	const postLimit = 8;
 	const posts = await fetchPosts();
+	const postLimit = 8;
 	function getLatestPosts(): PostType[] {
-		return posts.slice(0, postLimit);
+		return [...posts].slice(0, postLimit);
 	}
 
 	function getPicks(): PostType[] {
@@ -69,7 +69,7 @@ export async function getPosts(): Promise<PostsType> {
 	async function getCategorizedPosts() {
 		return {
 			code: await getPostsByCategory('Code', 3),
-			apps: await getPostsByCategory('Tech', 3),
+			tech: await getPostsByCategory('Tech', 3),
 			design: await getPostsByCategory('Design', 3)
 		};
 	}
@@ -92,7 +92,7 @@ export async function getArchivedPosts() {
 
 export async function getPostMetadata(title: string) {
 	const posts = await fetchPosts();
-	return posts.filter((p) => p.title === title)[0];
+	return [...posts].filter((p) => p.title === title)[0];
 }
 
 export async function getAllCategories() {
@@ -139,7 +139,6 @@ export async function getPostsByTag(tag: string): Promise<PostType[]> {
  */
 
 export async function getPostsByCategoryForHomepage(category: string): Promise<PostType[]> {
-	const posts = await fetchPosts();
 	const postLimit = 4;
 	return getPostsByCategory(category).then((e) => e.slice(0, postLimit));
 }
