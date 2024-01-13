@@ -4,4 +4,4 @@ export const config = {
 	description: 'A Blog about Web Development and Web Design'
 };
 
-export const postsPerPage = 6;
+export const postsPerPage = 8;
