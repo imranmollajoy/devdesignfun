@@ -27,7 +27,9 @@ Creating a button component for Svelte can be a quick and easy way to add custom
 
 We will use TypeScript and SASS to create the button component (Recommended, you will get autocompletion). However, if you prefer to use JavaScript and CSS, code for that will also be included in the article. You can copy the code which works best for you and your project.
 
-## Final result
+## Table of contents
+
+## Playground
 
 <InteractiveButtonContainer />
 

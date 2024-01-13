@@ -20,6 +20,8 @@ LaTeX is a powerful typesetting system widely used for document preparation, spe
 
 LaTeX is a powerful tool, but errors are common, especially for beginners. In this article, we'll address common LaTeX errors and provide solutions to help you navigate through them with confidence.
 
+## Table of contents
+
 # Common errors and solution
 
 ## Undefined Control Sequence
