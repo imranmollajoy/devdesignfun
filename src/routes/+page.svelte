@@ -4,7 +4,7 @@
 	import ListPost from '$lib/components/ListPost.svelte';
 	import Seo from '$lib/components/SEO.svelte';
 	export let data;
-	const { posts, featured, categorized } = data.posts;
+	const { latest, featured, categorized } = data.posts;
 </script>
 
 <Seo />
@@ -17,7 +17,7 @@
 <section class="py-12">
 	<div class="container">
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-			{#each posts as post}
+			{#each latest as post}
 				<ListPost
 					title={post.title}
 					category={post.category}

@@ -75,7 +75,6 @@ export async function getPosts(): Promise<PostsType> {
 	}
 
 	return {
-		posts,
 		latest: getLatestPosts(),
 		featured: getPicks(),
 		categorized: await getCategorizedPosts()

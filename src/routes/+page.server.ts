@@ -1,5 +1,5 @@
 import type { PostType } from '$lib/types';
-import { getPosts, fetchPosts } from '$lib/api/post';
+import { getPosts } from '$lib/api/post';
 export const load = async ({ setHeaders, url, fetch }) => {
 	const posts = await getPosts();
 	setHeaders({
