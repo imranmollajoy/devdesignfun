@@ -4,7 +4,6 @@ import type { PostType } from '$lib/types';
 
 export async function load({ params, url, fetch }) {
 	const post = await import(`../../../posts/${params.slug}/index.md`);
-	const allPosts: PostType[] = await fetch(`${url.origin}/api/posts.json`).then((e) => e.json());
 
 	const meta = await getPostMetadata(post.metadata.title);
 	const { title, category, tags, slug } = meta;
