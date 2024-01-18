@@ -2,7 +2,9 @@
 	export let href: string;
 
 	function noTarget(href: string) {
-		return href.includes('localhost') || href.includes('devdesignfun.com');
+		return (
+			href.includes('localhost') || href.includes('devdesignfun.com') || href.charAt(0) === '#'
+		);
 	}
 </script>
 
