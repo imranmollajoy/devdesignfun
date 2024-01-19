@@ -21,6 +21,7 @@ author:
 
 <script>
   import InteractiveButtonContainer from "./InteractiveButtonContainer.svelte"
+  import AdText from "../../lib/components/AdText.svelte"
 </script>
 
 Creating a button component for Svelte can be a quick and easy way to add custom, reusable buttons to your Svelte application. In this article, we'll go through the steps to create a simple button component that you can use in your own Svelte projects.
@@ -53,7 +54,12 @@ Colors are in CSS variable, so changing them will do most of the customizing you
 
 ### Extending
 
-Extending the button component is also easy. For example, if you want to add a new button type that is pill-shaped or rounded, you can simply add a new exported variable in the script tag named rounded. Then, in the style tag, add a new class called .rounded with the desired properties, in this case, `border-radius`.
+Extending the button component is also easy. For example, if you want to add a new button type that is pill-shaped or rounded, you can simply add a new exported variable in the script tag named rounded. 
+
+
+<AdText float text="Get a website for yourself!" href="https://fiverr.com/imranmollajoy/design-and-develop-a-custom-website-for-you"/>
+
+Then, in the style tag, add a new class called .rounded with the desired properties, in this case, `border-radius`.
 
 ## Code
 
