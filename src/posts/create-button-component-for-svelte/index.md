@@ -54,8 +54,7 @@ Colors are in CSS variable, so changing them will do most of the customizing you
 
 ### Extending
 
-Extending the button component is also easy. For example, if you want to add a new button type that is pill-shaped or rounded, you can simply add a new exported variable in the script tag named rounded. 
-
+Extending the button component is also easy. For example, if you want to add a new button type that is pill-shaped or rounded, you can simply add a new exported variable in the script tag named rounded.
 
 <AdText float text="Get a website for yourself!" href="https://fiverr.com/imranmollajoy/design-and-develop-a-custom-website-for-you"/>
 
@@ -349,4 +348,5 @@ Then, in the style tag, add a new class called .rounded with the desired propert
 ```
 
 Update 1: Added Interactive preview
+
 Update 2: Changed .invert to .inverted
