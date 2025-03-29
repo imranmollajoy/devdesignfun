@@ -7,15 +7,15 @@
 			title: 'Home'
 		},
 		{
-			href: '/archives',
+			href: base + '/archives',
 			title: 'Archives'
 		},
 		{
-			href: '/privacy-policy',
+			href: base + '/privacy-policy',
 			title: 'Privacy Policy'
 		},
 		{
-			href: '/about-us',
+			href: base + '/about-us',
 			title: 'About Us'
 		}
 	];
@@ -46,7 +46,7 @@
 			</div>
 			<div class="col" />
 			<div class="col">
-				<img src="/ddfllgotransparent.png" alt="" class="w-16" />
+				<img src="{base}/ddfllgotransparent.png" alt="" class="w-16" />
 				<a href="{base}/">
 					<h3>DevDesignFun.com</h3>
 				</a>

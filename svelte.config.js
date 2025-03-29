@@ -19,7 +19,11 @@ const config = {
 		},
 		prerender: {
 			crawl: true,
-			entries: ['*']
+			entries: ['*'],
+			handleHttpError: ({ path, referrer, message }) => {
+				// ignore deliberate link to shiny 404 page
+				return;
+			}
 		}
 	}
 };

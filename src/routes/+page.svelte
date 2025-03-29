@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import CategorizedPosts from '$lib/components/Home/CategorizedPosts.svelte';
 	import HeroPosts from '$lib/components/Home/HeroPosts.svelte';
 	import ListPost from '$lib/components/ListPost.svelte';
@@ -29,7 +30,7 @@
 			{/each}
 		</div>
 		<div class="flex flex-col items-center">
-			<a href="/archives/1" class="btn variant-soft-primary">More</a>
+			<a href="{base}/archives/1" class="btn variant-soft-primary">More</a>
 		</div>
 	</div>
 </section>

@@ -72,7 +72,7 @@
 			<main class="prose lg:prose-xl dark:prose-invert max-w-none">
 				<svelte:component this={data.content} />
 			</main>
-			<div class="tags space-4">
+			<!-- <div class="tags space-4">
 				{#each data.meta.tags as tag}
 					<a href="{base}/tag/{tag}">
 						<span class="chip variant-ghost-secondary">
@@ -80,7 +80,7 @@
 						</span>
 					</a>
 				{/each}
-			</div>
+			</div> -->
 			{#if data.meta.updated}
 				<p class="opacity-50 py-16">
 					<strong>Last updated: {getFormattedDate(data.meta.updated)}</strong>
