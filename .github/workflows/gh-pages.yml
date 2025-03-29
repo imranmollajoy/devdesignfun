@@ -18,7 +18,7 @@ jobs:
           persist-credentials: false
 
       - name: Cache dependencies 📦
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
