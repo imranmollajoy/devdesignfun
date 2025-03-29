@@ -18,7 +18,7 @@
 							{post.date}
 						</p>
 					</span>
-					<a href="/article/{post.slug}">
+					<a href="article/{post.slug}">
 						<h3>{post.title}</h3>
 						<p>{post.description}</p>
 					</a>
@@ -29,10 +29,10 @@
 			<p>Showing {data.entry.start} to {data.entry.end} of {totalPosts} posts</p>
 			<div class="btn-group variant-soft mt-4">
 				{#if data.page != 1}
-					<a href="/archives/{data.page - 1}">Previous</a>
+					<a href="archives/{data.page - 1}">Previous</a>
 				{/if}
 				{#if data.totalPages !== 1 && data.page !== data.totalPages}
-					<a href="/archives/{data.page + 1}">Next</a>
+					<a href="archives/{data.page + 1}">Next</a>
 				{/if}
 			</div>
 		</div>

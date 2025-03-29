@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import ListPost from '$lib/components/ListPost.svelte';
 
 	export let data;
@@ -18,7 +20,7 @@
 							{post.date}
 						</p>
 					</span>
-					<a href="/article/{post.slug}">
+					<a href="{base}/article/{post.slug}">
 						<h3>{post.title}</h3>
 						<p>{post.description}</p>
 					</a>

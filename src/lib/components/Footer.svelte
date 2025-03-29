@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	const pages = [
 		{
-			href: '/',
+			href: base,
 			title: 'Home'
 		},
 		{
@@ -38,14 +40,14 @@
 				<h4>Categories</h4>
 				<div class="space-y-2">
 					{#each categories as cat}
-						<a href="/category/{cat}" class="block">{cat}</a>
+						<a href="{base}/category/{cat}" class="block">{cat}</a>
 					{/each}
 				</div>
 			</div>
 			<div class="col" />
 			<div class="col">
 				<img src="/ddfllgotransparent.png" alt="" class="w-16" />
-				<a href="/">
+				<a href="{base}/">
 					<h3>DevDesignFun.com</h3>
 				</a>
 			</div>

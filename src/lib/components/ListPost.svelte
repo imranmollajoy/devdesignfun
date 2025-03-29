@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import type { Cover } from '$lib/types';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	export let path: string;
@@ -33,7 +35,7 @@
 	<div class="{txtCls} space-y-2">
 		<span class="space-x-2">
 			{#if category}
-				<a href="/category/{category}">
+				<a href="{base}/category/{category}">
 					<span class="badge {category} ">
 						{category}
 					</span>
@@ -53,7 +55,7 @@
 		</span>
 		{#if path}
 			<div>
-				<a href="/article/{path}">
+				<a href="{base}/article/{path}">
 					{#if title}
 						{#if smallTitle}
 							<h4 class="font-bold">{title}</h4>

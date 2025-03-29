@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import Seo from '$lib/components/SEO.svelte';
 	import { getFormattedDate } from '$lib/utilities';
 	import { onMount } from 'svelte';
@@ -37,7 +39,7 @@
 <div class="container my-8">
 	<div class="space-y-4 my-16 mx-auto text-center">
 		<div class="flex gap-4 flex-wrap align-center justify-center">
-			<a href="/category/{data.meta.category}">
+			<a href="{base}/category/{data.meta.category}">
 				<span class="badge {data.meta.category}">
 					{data.meta.category}
 				</span>
@@ -72,7 +74,7 @@
 			</main>
 			<div class="tags space-4">
 				{#each data.meta.tags as tag}
-					<a href="/tag/{tag}">
+					<a href="{base}/tag/{tag}">
 						<span class="chip variant-ghost-secondary">
 							{tag}
 						</span>
@@ -92,7 +94,7 @@
 					{#each data.related as post}
 						<article>
 							<p class="opacity-50">{post.date}</p>
-							<a href="/article/{post.slug}">
+							<a href="{base}/article/{post.slug}">
 								<h3>
 									{post.title}
 								</h3>

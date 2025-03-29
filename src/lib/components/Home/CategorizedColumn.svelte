@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { PostType } from '$lib/types';
 	import ListPost from '../ListPost.svelte';
 
@@ -7,7 +8,7 @@
 </script>
 
 <div class="col my-4">
-	<a href="/category/{title}">
+	<a href="{base}/category/{title}">
 		<h2 class="mb-4 text-{title}">
 			{title}
 			<svg

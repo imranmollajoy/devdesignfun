@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
@@ -18,7 +20,7 @@
 
 <AppBar class="sticky top-0 z-10 {cls}" background="bg-surface-50-900-token ">
 	<svelte:fragment slot="lead">
-		<a href="/">
+		<a href="{base}/">
 			<h4>Dev.Design.Fun</h4>
 		</a>
 	</svelte:fragment>
