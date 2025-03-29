@@ -14,6 +14,9 @@ const config = {
 		adapter: adapter({
 			precompress: false
 		}),
+		paths: {
+			base: '/devdesignfun'
+		},
 		prerender: {
 			crawl: true,
 			entries: ['*']

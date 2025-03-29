@@ -17,7 +17,7 @@ async function getPosts(url) {
 			const metadata = file.metadata as Omit<PostType, 'slug'>;
 			const { date, cover } = metadata;
 			let updatedCover: Cover = {};
-			const host = dev ? url.origin : 'https://devdesignfun.com';
+			const host = dev ? url.origin : 'https://imranmollajoy.github.io/devdesignfun';
 			if (cover) {
 				updatedCover = {
 					...cover,

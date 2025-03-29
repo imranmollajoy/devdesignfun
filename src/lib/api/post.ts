@@ -17,7 +17,9 @@ export async function fetchPosts(offset = 0, limit = 100) {
 			const metadata = file.metadata as Omit<PostType, 'slug'>;
 			const { date, cover } = metadata;
 			let updatedCover: Cover = {};
-			const host = dev ? 'http://192.168.0.141:5173' : 'https://devdesignfun.com';
+			const host = dev
+				? 'http://localhost:5173/devdesignfun'
+				: 'https://imranmollajoy.github.io/devdesignfun';
 			if (cover) {
 				updatedCover = {
 					...cover,
