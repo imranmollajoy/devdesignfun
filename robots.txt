@@ -1,4 +1,4 @@
-Sitemap: https://devdesignfun.com/sitemap.xml
+Sitemap: https://imranmollajoy.github.io/devdesignfun/sitemap.xml
 
 User-agent: *
 Disallow:
